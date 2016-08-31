@@ -38,7 +38,7 @@ public class ActionBarList extends AppCompatActivity {
                         intent = new Intent(ActionBarList.this, ActionBar1.class);
                         break;
                     case 1:
-                        intent = new Intent(ActionBarList.this, EditText.class);
+                        intent = new Intent(ActionBarList.this, ActionItem.class);
                         break;
                     case 2:
                         intent = new Intent(ActionBarList.this, Button.class);
