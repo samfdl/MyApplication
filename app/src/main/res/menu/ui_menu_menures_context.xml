@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 定义一组单选菜单项目 -->
+    <group android:checkableBehavior="single">
+        <!-- 定义三个菜单项 -->
+        <item
+            android:id="@+id/red"
+            android:alphabeticShortcut="r"
+            android:title="@string/ui_menu_menures_red_title" />
+        <item
+            android:id="@+id/green"
+            android:alphabeticShortcut="g"
+            android:title="@string/ui_menu_menures_green_title" />
+        <item
+            android:id="@+id/blue"
+            android:alphabeticShortcut="b"
+            android:title="@string/ui_menu_menures_blue_title" />
+    </group>
+</menu>

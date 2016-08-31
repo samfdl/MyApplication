@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+    <!-- 定义一个自动完成文本框，指定输入一个字符后进行提示 -->
+    <AutoCompleteTextView
+        android:id="@+id/auto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1"
+        android:dropDownHorizontalOffset="0dp"
+        android:hint="请填写您的邮箱地址" />
+    <!-- 定义一个MultiAutoCompleteTextView组件 -->
+    <MultiAutoCompleteTextView
+        android:id="@+id/mauto"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:completionThreshold="1" />
+</LinearLayout>

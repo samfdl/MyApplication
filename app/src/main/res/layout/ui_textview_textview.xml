@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <!-- 设置字号为20pt，文本框结尾处绘制图片  -->
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableEnd="@mipmap/ic_launcher"
+        android:text="我爱Java"
+        android:textSize="20pt" />
+    <!-- 设置中间省略，所有字母大写 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="middle"
+        android:singleLine="true"
+        android:text="我爱Java我爱Java我爱Java我爱Java我爱Java我aaaJava"
+        android:textAllCaps="true" />
+    <!-- 对邮件、电话增加链接 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoLink="email|phone"
+        android:singleLine="true"
+        android:text="邮件是kongyeeku@163.com，电话是02088888888" />
+    <!-- 设置文字颜色、大小，并使用阴影 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#00f"
+        android:shadowDx="10.0"
+        android:shadowDy="8.0"
+        android:shadowRadius="3.0"
+        android:text="测试文字"
+        android:textColor="#f00"
+        android:textSize="18pt" />
+    <!-- 测试密码框 -->
+    <TextView
+        android:id="@+id/passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:password="true"
+        android:text="hello_world" />
+
+    <CheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checkMark="@drawable/ui_textview_textview0"
+        android:text="可勾选的文本" />
+    <!-- 通过android:background指定背景 -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ui_textview_textview1"
+        android:text="带边框的文本"
+        android:textSize="24pt" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ui_textview_textview2"
+        android:text="圆角边框、渐变背景的文本"
+        android:textSize="24pt" />
+</LinearLayout>

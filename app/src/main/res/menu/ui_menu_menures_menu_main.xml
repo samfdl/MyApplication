@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:icon="@drawable/ui_menu_menu_font"
+        android:title="@string/ui_menu_menures_font_size">
+        <menu>
+            <!-- 定义一组单选菜单项 -->
+            <group android:checkableBehavior="single">
+                <!-- 定义多个菜单项 -->
+                <item
+                    android:id="@+id/font_10"
+                    android:title="@string/ui_menu_menures_font_10" />
+                <item
+                    android:id="@+id/font_12"
+                    android:title="@string/ui_menu_menures_font_12" />
+                <item
+                    android:id="@+id/font_14"
+                    android:title="@string/ui_menu_menures_font_14" />
+                <item
+                    android:id="@+id/font_16"
+                    android:title="@string/ui_menu_menures_font_16" />
+                <item
+                    android:id="@+id/font_18"
+                    android:title="@string/ui_menu_menures_font_18" />
+            </group>
+        </menu>
+    </item>
+    <!-- 定义一个普通菜单项 -->
+    <item
+        android:id="@+id/plain_item"
+        android:title="@string/ui_menu_menures_plain_item"></item>
+    <item
+        android:icon="@drawable/ui_menu_menu_color"
+        android:title="@string/ui_menu_menures_font_color">
+        <menu>
+            <!-- 定义一组普通的菜单项 -->
+            <group>
+                <!-- 定义三个菜单项 -->
+                <item
+                    android:id="@+id/red_font"
+                    android:title="@string/ui_menu_menures_red_title" />
+                <item
+                    android:id="@+id/green_font"
+                    android:title="@string/ui_menu_menures_green_title" />
+                <item
+                    android:id="@+id/blue_font"
+                    android:title="@string/ui_menu_menures_blue_title" />
+            </group>
+        </menu>
+    </item>
+</menu>

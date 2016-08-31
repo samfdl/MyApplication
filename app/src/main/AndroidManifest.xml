@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.samfdl">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.UIList" />
+        <activity android:name=".ui.layout.Layout" />
+        <activity android:name=".ui.layout.LinearLayout" />
+        <activity android:name=".ui.layout.RelativeLayout" />
+        <activity android:name=".ui.layout.FrameLayout" />
+        <activity android:name=".ui.layout.GridLayoutActivity" />
+        <activity android:name=".ui.layout.AbsoluteLayout" />
+        <activity android:name=".ui.layout.TableLayout" />
+        <activity android:name=".ui.textview.TextViewList" />
+        <activity android:name=".ui.textview.TextViewActivity" />
+        <activity android:name=".ui.textview.EditText" />
+        <activity android:name=".ui.textview.Button" />
+        <activity android:name=".ui.textview.RadioButton" />
+        <activity android:name=".ui.textview.ToggleButton1" />
+        <activity android:name=".ui.textview.Clock" />
+        <activity android:name=".ui.textview.Chronometer1" />
+        <activity android:name=".ui.imageview.ImageViewList" />
+        <activity android:name=".ui.imageview.ImageView1" />
+        <activity android:name=".ui.imageview.ImageButton" />
+        <activity android:name=".ui.imageview.QuickContactBadge1" />
+        <activity android:name=".ui.listview.ListViewList" />
+        <activity android:name=".ui.listview.SimpleListView" />
+        <activity android:name=".ui.listview.ArrayAdapterListView" />
+        <activity android:name=".ui.listview.ListActivity1" />
+        <activity android:name=".ui.listview.SimpleAdapterListView" />
+        <activity android:name=".ui.listview.BaseAdapterListView" />
+        <activity android:name=".ui.listview.AutoCompleteTextView1" />
+        <activity android:name=".ui.listview.GridView1" />
+        <activity android:name=".ui.listview.ExpandableListView1" />
+        <activity android:name=".ui.listview.Spinner1" />
+        <activity android:name=".ui.listview.AdapterViewFlipper1" />
+        <activity android:name=".ui.listview.StackView1" />
+        <activity android:name=".ui.progressbar.ProgressBarList" />
+        <activity android:name=".ui.progressbar.ProgressBar1" />
+        <activity
+            android:name=".ui.progressbar.TitleProgressBar"
+            android:theme="@android:style/Theme.Holo" />
+        <activity android:name=".ui.progressbar.SeekBar1" />
+        <activity android:name=".ui.progressbar.RatingBar1" />
+        <activity android:name=".ui.viewanimator.ViewAnimatorList" />
+        <activity android:name=".ui.viewanimator.ViewSwitcher1" />
+        <activity android:name=".ui.viewanimator.ImageSwitcher1" />
+        <activity android:name=".ui.viewanimator.TextSwitcher1" />
+        <activity android:name=".ui.viewanimator.ViewFlipper1" />
+        <activity android:name=".ui.toast.ToastList" />
+        <activity android:name=".ui.toast.Toast1" />
+        <activity android:name=".ui.toast.CalendarView1" />
+        <activity android:name=".ui.toast.DatePicker1" />
+        <activity android:name=".ui.toast.NumberPicker1" />
+        <activity android:name=".ui.toast.SearchView1" />
+        <activity android:name=".ui.toast.TabHost1" />
+        <activity android:name=".ui.toast.ScrollView1" />
+        <activity android:name=".ui.toast.Notification1" />
+        <activity android:name=".ui.toast.Notification2" />
+        <activity android:name=".ui.dialog.DialogList" />
+        <activity android:name=".ui.dialog.AlertDialog1" />
+        <activity
+            android:name=".ui.dialog.DialogTheme"
+            android:theme="@android:style/Theme.Material.Dialog" />
+        <activity
+            android:name=".ui.dialog.PopupWindow1"
+            android:theme="@android:style/Theme.Material.Dialog" />
+        <activity android:name=".ui.dialog.DatePickerDialog1" />
+        <activity android:name=".ui.dialog.ProgressDialog1" />
+        <activity android:name=".ui.menu.MenuList" />
+        <activity android:name=".ui.menu.Menu1" />
+        <activity android:name=".ui.menu.ActivityMenu" />
+        <activity android:name=".ui.menu.ContextMenu1" />
+        <activity android:name=".ui.menu.MenuRes" />
+        <activity android:name=".ui.menu.PopupMenu1" />
+        <activity android:name=".ui.actionbar.ActionBarList" />
+        <activity android:name=".ui.actionbar.ActionBar1" />
+        <activity android:name=".ui.webview.WebView" />
+    </application>
+
+</manifest>

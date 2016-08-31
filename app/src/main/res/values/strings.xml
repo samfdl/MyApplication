@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">集大成者</string>
+
+    <string name="ui_listview_spinner_tip">请选择您喜欢的人物</string>
+
+    <string name="ui_menu_menures_font_size">字体大小</string>
+    <string name="ui_menu_menures_font_color">字体颜色</string>
+    <string name="ui_menu_menures_plain_item">普通菜单项</string>
+    <string name="ui_menu_menures_font_10">10号字体</string>
+    <string name="ui_menu_menures_font_12">12号字体</string>
+    <string name="ui_menu_menures_font_14">14号字体</string>
+    <string name="ui_menu_menures_font_16">16号字体</string>
+    <string name="ui_menu_menures_font_18">18号字体</string>
+    <string name="ui_menu_menures_red_title">红色</string>
+    <string name="ui_menu_menures_blue_title">蓝色</string>
+    <string name="ui_menu_menures_green_title">绿色</string>
+</resources>
