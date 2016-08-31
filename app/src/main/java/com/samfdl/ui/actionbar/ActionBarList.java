@@ -41,7 +41,7 @@ public class ActionBarList extends AppCompatActivity {
                         intent = new Intent(ActionBarList.this, ActionItem.class);
                         break;
                     case 2:
-                        intent = new Intent(ActionBarList.this, Button.class);
+                        intent = new Intent(ActionBarList.this, ActionHome.class);
                         break;
                     case 3:
                         intent = new Intent(ActionBarList.this, RadioButton.class);

@@ -73,8 +73,8 @@ public class ActionBarAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("ActionBar");
-        listItem.add("ActionItem");
-        listItem.add("Button");
+        listItem.add("带菜单的活动条 ActionBar");
+        listItem.add("ActionHome");
         listItem.add("RadioButton 和 CheckBox");
         listItem.add("ToggleButton 和 Switch");
         listItem.add("AnalogClock 和 TextClock");
