@@ -72,6 +72,8 @@ public class UIListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
+        listItem.add("活动条 ActionBar");
+        listItem.add("菜单 Menu");
         listItem.add("布局 Layout");
         listItem.add("TextView 和 Button");
         listItem.add("ImageView");
@@ -80,8 +82,6 @@ public class UIListAdapter extends BaseAdapter {
         listItem.add("切换控件 ViewAnimator");
         listItem.add("各种杂项组件 Toast");
         listItem.add("对话框 Dialog");
-        listItem.add("菜单 Menu");
-        listItem.add("活动条 ActionBar");
         listItem.add("WebView");
         return listItem;
     }

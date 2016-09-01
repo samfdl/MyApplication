@@ -16,6 +16,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.UIList" />
+        <activity android:name=".ui.actionbar.ActionBarList" />
+        <activity android:name=".ui.actionbar.ActionBar1" />
+        <activity android:name=".ui.actionbar.ActionItem" />
+        <activity android:name=".ui.actionbar.ActionHome" />
+        <activity android:name=".ui.actionbar.ActionView" />
+        <activity android:name=".ui.menu.MenuList" />
+        <activity android:name=".ui.menu.Menu1" />
+        <activity android:name=".ui.menu.ActivityMenu" />
+        <activity android:name=".ui.menu.ContextMenu1" />
+        <activity android:name=".ui.menu.MenuRes" />
+        <activity android:name=".ui.menu.PopupMenu1" />
         <activity android:name=".ui.layout.Layout" />
         <activity android:name=".ui.layout.LinearLayout" />
         <activity android:name=".ui.layout.RelativeLayout" />
@@ -79,17 +90,6 @@
             android:theme="@android:style/Theme.Material.Dialog" />
         <activity android:name=".ui.dialog.DatePickerDialog1" />
         <activity android:name=".ui.dialog.ProgressDialog1" />
-        <activity android:name=".ui.menu.MenuList" />
-        <activity android:name=".ui.menu.Menu1" />
-        <activity android:name=".ui.menu.ActivityMenu" />
-        <activity android:name=".ui.menu.ContextMenu1" />
-        <activity android:name=".ui.menu.MenuRes" />
-        <activity android:name=".ui.menu.PopupMenu1" />
-        <activity android:name=".ui.actionbar.ActionBarList" />
-        <activity android:name=".ui.actionbar.ActionBar1" />
-        <activity android:name=".ui.actionbar.ActionItem" />
-        <activity android:name=".ui.actionbar.ActionHome" />
-        <activity android:name=".ui.actionbar.ActionView" />
         <activity android:name=".ui.webview.WebView" />
     </application>
 

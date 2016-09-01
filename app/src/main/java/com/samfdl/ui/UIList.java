@@ -39,34 +39,34 @@ public class UIList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(UIList.this, Layout.class);
+                        intent = new Intent(UIList.this, ActionBarList.class);
                         break;
                     case 1:
-                        intent = new Intent(UIList.this, TextViewList.class);
-                        break;
-                    case 2:
-                        intent = new Intent(UIList.this, ImageViewList.class);
-                        break;
-                    case 3:
-                        intent = new Intent(UIList.this, ListViewList.class);
-                        break;
-                    case 4:
-                        intent = new Intent(UIList.this, ProgressBarList.class);
-                        break;
-                    case 5:
-                        intent = new Intent(UIList.this, ViewAnimatorList.class);
-                        break;
-                    case 6:
-                        intent = new Intent(UIList.this, ToastList.class);
-                        break;
-                    case 7:
-                        intent = new Intent(UIList.this, DialogList.class);
-                        break;
-                    case 8:
                         intent = new Intent(UIList.this, MenuList.class);
                         break;
+                    case 2:
+                        intent = new Intent(UIList.this, Layout.class);
+                        break;
+                    case 3:
+                        intent = new Intent(UIList.this, TextViewList.class);
+                        break;
+                    case 4:
+                        intent = new Intent(UIList.this, ImageViewList.class);
+                        break;
+                    case 5:
+                        intent = new Intent(UIList.this, ListViewList.class);
+                        break;
+                    case 6:
+                        intent = new Intent(UIList.this, ProgressBarList.class);
+                        break;
+                    case 7:
+                        intent = new Intent(UIList.this, ViewAnimatorList.class);
+                        break;
+                    case 8:
+                        intent = new Intent(UIList.this, ToastList.class);
+                        break;
                     case 9:
-                        intent = new Intent(UIList.this, ActionBarList.class);
+                        intent = new Intent(UIList.this, DialogList.class);
                         break;
                     case 10:
                         intent = new Intent(UIList.this, WebView.class);
