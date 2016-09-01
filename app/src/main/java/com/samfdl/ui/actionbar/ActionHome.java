@@ -13,6 +13,7 @@ import android.widget.Toast;
 
 import com.samfdl.R;
 
+// 待完善
 public class ActionHome extends AppCompatActivity {
     private TextView txt;
     ActionBar actionBar;
