@@ -89,6 +89,7 @@
         <activity android:name=".ui.actionbar.ActionBar1" />
         <activity android:name=".ui.actionbar.ActionItem" />
         <activity android:name=".ui.actionbar.ActionHome" />
+        <activity android:name=".ui.actionbar.ActionView" />
         <activity android:name=".ui.webview.WebView" />
     </application>
 

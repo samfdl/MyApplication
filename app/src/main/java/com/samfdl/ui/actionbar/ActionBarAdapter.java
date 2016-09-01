@@ -75,7 +75,7 @@ public class ActionBarAdapter extends BaseAdapter {
         listItem.add("ActionBar");
         listItem.add("带菜单的活动条 ActionBar");
         listItem.add("ActionHome");
-        listItem.add("RadioButton 和 CheckBox");
+        listItem.add("带控件的活动条 时钟");
         listItem.add("ToggleButton 和 Switch");
         listItem.add("AnalogClock 和 TextClock");
         listItem.add("Chronometer");
