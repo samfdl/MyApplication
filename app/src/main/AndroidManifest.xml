@@ -38,10 +38,10 @@
         <activity android:name=".ui.layout.AbsoluteLayout1" />
         <activity android:name=".ui.layout.TableLayout1" />
         <activity android:name=".ui.textview.TextViewList" />
-        <activity android:name=".ui.textview.TextViewActivity" />
+        <activity android:name=".ui.textview.TextView1" />
         <activity android:name=".ui.textview.EditText1" />
         <activity android:name=".ui.textview.Button1" />
-        <activity android:name=".ui.textview.RadioButton" />
+        <activity android:name=".ui.textview.RadioButton1" />
         <activity android:name=".ui.textview.ToggleButton1" />
         <activity android:name=".ui.textview.Clock" />
         <activity android:name=".ui.textview.Chronometer1" />

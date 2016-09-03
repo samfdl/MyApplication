@@ -28,7 +28,7 @@ public class TextViewList extends AppCompatActivity {
                 Intent intent;
                 switch (arg2) {
                     case 0:
-                        intent = new Intent(TextViewList.this, TextViewActivity.class);
+                        intent = new Intent(TextViewList.this, TextView1.class);
                         break;
                     case 1:
                         intent = new Intent(TextViewList.this, EditText1.class);
@@ -37,7 +37,7 @@ public class TextViewList extends AppCompatActivity {
                         intent = new Intent(TextViewList.this, Button1.class);
                         break;
                     case 3:
-                        intent = new Intent(TextViewList.this, RadioButton.class);
+                        intent = new Intent(TextViewList.this, RadioButton1.class);
                         break;
                     case 4:
                         intent = new Intent(TextViewList.this, ToggleButton1.class);
@@ -49,7 +49,7 @@ public class TextViewList extends AppCompatActivity {
                         intent = new Intent(TextViewList.this, Chronometer1.class);
                         break;
                     default:
-                        intent = new Intent(TextViewList.this, TextViewActivity.class);
+                        intent = new Intent(TextViewList.this, TextView1.class);
                 }
                 startActivity(intent);
             }

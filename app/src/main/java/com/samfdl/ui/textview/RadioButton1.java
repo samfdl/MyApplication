@@ -7,7 +7,7 @@ import android.widget.TextView;
 
 import com.samfdl.R;
 
-public class RadioButton extends AppCompatActivity {
+public class RadioButton1 extends AppCompatActivity {
     RadioGroup rg;
     TextView show;
 

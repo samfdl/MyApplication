@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.samfdl.R;
 
-public class TextViewActivity extends AppCompatActivity {
+public class TextView1 extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
