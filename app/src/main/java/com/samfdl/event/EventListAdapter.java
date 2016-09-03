@@ -73,7 +73,7 @@ public class EventListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("事件处理");
-
+        listItem.add("控制飞机移动");
         return listItem;
     }
 }

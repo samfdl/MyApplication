@@ -42,7 +42,7 @@ public class EventList extends AppCompatActivity {
                         intent = new Intent(EventList.this, EventQs.class);
                         break;
                     case 1:
-                        intent = new Intent(EventList.this, MenuList.class);
+                        intent = new Intent(EventList.this, ControlPlane.class);
                         break;
                     case 2:
                         intent = new Intent(EventList.this, Layout.class);

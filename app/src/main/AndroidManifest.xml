@@ -96,6 +96,7 @@
         <activity android:name=".ui.webview.WebView" />
         <activity android:name=".event.EventList" />
         <activity android:name=".event.EventQs" />
+        <activity android:name=".event.ControlPlane" />
     </application>
 
 </manifest>
