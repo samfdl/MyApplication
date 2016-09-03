@@ -50,10 +50,10 @@ public class ActionBarList extends AppCompatActivity {
                         intent = new Intent(ActionBarList.this, TabNav.class);
                         break;
                     case 5:
-                        intent = new Intent(ActionBarList.this, Clock.class);
+                        intent = new Intent(ActionBarList.this, SwipeNav.class);
                         break;
                     case 6:
-                        intent = new Intent(ActionBarList.this, Chronometer1.class);
+                        intent = new Intent(ActionBarList.this, DropDownNav.class);
                         break;
                     default:
                         intent = new Intent(ActionBarList.this, ActionBar1.class);

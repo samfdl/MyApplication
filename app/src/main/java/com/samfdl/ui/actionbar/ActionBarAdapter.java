@@ -76,9 +76,9 @@ public class ActionBarAdapter extends BaseAdapter {
         listItem.add("带菜单的活动条 ActionBar");
         listItem.add("ActionHome");
         listItem.add("带控件的活动条 时钟");
-        listItem.add("Tab 导航");
-        listItem.add("AnalogClock 和 TextClock");
-        listItem.add("Chronometer");
+        listItem.add("Tab 导航 Fragment");
+        listItem.add("Tab 导航 ViewPager");
+        listItem.add("下拉式导航");
         return listItem;
     }
 }

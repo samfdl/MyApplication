@@ -22,6 +22,8 @@
         <activity android:name=".ui.actionbar.ActionHome" />
         <activity android:name=".ui.actionbar.ActionView" />
         <activity android:name=".ui.actionbar.TabNav" />
+        <activity android:name=".ui.actionbar.SwipeNav" />
+        <activity android:name=".ui.actionbar.DropDownNav" />
         <activity android:name=".ui.menu.MenuList" />
         <activity android:name=".ui.menu.Menu1" />
         <activity android:name=".ui.menu.ActivityMenu" />
