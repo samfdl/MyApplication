@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import com.samfdl.R;
 
-public class Button1 extends AppCompatActivity {
+public class Button1 extends AppCompatActivity implements View.OnClickListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,15 @@ public class Button1 extends AppCompatActivity {
         Button bn = (Button) findViewById(R.id.bn);
         // 为按钮绑定事件监听器
         bn.setOnClickListener(new MyClickListener()); // ①
+        Button shadow = (Button) findViewById(R.id.shadow);
+        // 为按钮绑定事件监听器
+        shadow.setOnClickListener(this); // ①
+    }
+
+    @Override
+    public void onClick(View v) {
+        TextView txt = (TextView) findViewById(R.id.txt);
+        txt.setText("文字带阴影的按钮被单击了！");
     }
 
     // 定义一个单击事件的监听器

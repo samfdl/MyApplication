@@ -39,10 +39,10 @@ public class EventList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(EventList.this, EventQs.class);
+                        intent = new Intent(EventList.this, ControlPlane.class);
                         break;
                     case 1:
-                        intent = new Intent(EventList.this, ControlPlane.class);
+                        intent = new Intent(EventList.this, SendSms.class);
                         break;
                     case 2:
                         intent = new Intent(EventList.this, SendSms.class);
@@ -72,7 +72,7 @@ public class EventList extends AppCompatActivity {
                         intent = new Intent(EventList.this, WebView.class);
                         break;
                     default:
-                        intent = new Intent(EventList.this, EventQs.class);
+                        intent = new Intent(EventList.this, ControlPlane.class);
                 }
                 startActivity(intent);
             }

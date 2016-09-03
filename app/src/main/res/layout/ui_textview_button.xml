@@ -5,6 +5,7 @@
     android:orientation="vertical">
     <!-- 文字带阴影的按钮 -->
     <Button
+        android:id="@+id/shadow"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:shadowColor="#aa5"
