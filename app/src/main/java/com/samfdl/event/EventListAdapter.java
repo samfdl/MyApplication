@@ -75,6 +75,7 @@ public class EventListAdapter extends BaseAdapter {
         listItem.add("事件处理");
         listItem.add("控制飞机移动");
         listItem.add("发送短信");
+        listItem.add("ActivityListener");
         return listItem;
     }
 }

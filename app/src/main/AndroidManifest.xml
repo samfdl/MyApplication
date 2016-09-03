@@ -100,6 +100,7 @@
         <activity android:name=".event.EventQs" />
         <activity android:name=".event.ControlPlane" />
         <activity android:name=".event.SendSms" />
+        <activity android:name=".event.ActivityListener" />
     </application>
 
 </manifest>

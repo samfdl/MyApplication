@@ -48,7 +48,7 @@ public class EventList extends AppCompatActivity {
                         intent = new Intent(EventList.this, SendSms.class);
                         break;
                     case 3:
-                        intent = new Intent(EventList.this, TextViewList.class);
+                        intent = new Intent(EventList.this, ActivityListener.class);
                         break;
                     case 4:
                         intent = new Intent(EventList.this, ImageViewList.class);
