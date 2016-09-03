@@ -101,6 +101,7 @@
         <activity android:name=".event.SendSms" />
         <activity android:name=".event.Ball" />
         <activity android:name=".event.SystemStatus" />
+        <activity android:name=".event.ChangeConfig" />
     </application>
 
 </manifest>

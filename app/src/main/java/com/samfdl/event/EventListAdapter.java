@@ -76,6 +76,7 @@ public class EventListAdapter extends BaseAdapter {
         listItem.add("发送短信");
         listItem.add("跟随手指的小球");
         listItem.add("获取系统设备状态");
+        listItem.add("监听屏幕方向");
         return listItem;
     }
 }
