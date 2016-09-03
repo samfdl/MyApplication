@@ -10,7 +10,7 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".MainActivity"/>
         <activity android:name=".AllList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -101,7 +101,10 @@
         <activity android:name=".event.SendSms" />
         <activity android:name=".event.Ball" />
         <activity android:name=".event.SystemStatus" />
-        <activity android:name=".event.ChangeConfig" />
+        <activity
+            android:name=".event.ChangeConfig"
+            android:configChanges="orientation|screenSize" />
+        <activity android:name=".event.Handler1" />
     </application>
 
 </manifest>

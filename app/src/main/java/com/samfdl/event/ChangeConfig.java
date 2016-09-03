@@ -17,22 +17,24 @@ public class ChangeConfig extends AppCompatActivity {
         setContentView(R.layout.event_changeconfig);
         Button bn = (Button) findViewById(R.id.bn);
         // 为按钮绑定事件监听器
-        bn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View source) {
-                Configuration config = getResources().getConfiguration();
-                // 如果当前是横屏
-                if (config.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                    // 设为竖屏
-                    ChangeConfig.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        if (bn != null) {
+            bn.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View source) {
+                    Configuration config = getResources().getConfiguration();
+                    // 如果当前是横屏
+                    if (config.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                        // 设为竖屏
+                        ChangeConfig.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+                    }
+                    // 如果当前是竖屏
+                    if (config.orientation == Configuration.ORIENTATION_PORTRAIT) {
+                        // 设为横屏
+                        ChangeConfig.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
+                    }
                 }
-                // 如果当前是竖屏
-                if (config.orientation == Configuration.ORIENTATION_PORTRAIT) {
-                    // 设为横屏
-                    ChangeConfig.this.setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_LANDSCAPE);
-                }
-            }
-        });
+            });
+        }
     }
 
     // 重写该方法，用于监听系统设置的更改，主要是监控屏幕方向的更改

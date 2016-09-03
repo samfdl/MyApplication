@@ -13,7 +13,7 @@ import com.samfdl.R;
 import java.util.ArrayList;
 
 /**
- * Created by samsung on 2016/8/24.
+ * Created by samfdl on 2016/9/3.
  */
 public class EventListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
@@ -77,6 +77,7 @@ public class EventListAdapter extends BaseAdapter {
         listItem.add("跟随手指的小球");
         listItem.add("获取系统设备状态");
         listItem.add("监听屏幕方向");
+        listItem.add("自动播放动画");
         return listItem;
     }
 }

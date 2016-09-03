@@ -9,14 +9,8 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.samfdl.R;
-import com.samfdl.ui.actionbar.ActionBarList;
 import com.samfdl.ui.dialog.DialogList;
-import com.samfdl.ui.imageview.ImageViewList;
-import com.samfdl.ui.layout.Layout;
-import com.samfdl.ui.listview.ListViewList;
-import com.samfdl.ui.menu.MenuList;
 import com.samfdl.ui.progressbar.ProgressBarList;
-import com.samfdl.ui.textview.TextViewList;
 import com.samfdl.ui.toast.ToastList;
 import com.samfdl.ui.viewanimator.ViewAnimatorList;
 import com.samfdl.ui.webview.WebView;
@@ -54,7 +48,7 @@ public class EventList extends AppCompatActivity {
                         intent = new Intent(EventList.this, ChangeConfig.class);
                         break;
                     case 5:
-                        intent = new Intent(EventList.this, ListViewList.class);
+                        intent = new Intent(EventList.this, Handler1.class);
                         break;
                     case 6:
                         intent = new Intent(EventList.this, ProgressBarList.class);
