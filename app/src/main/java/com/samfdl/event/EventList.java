@@ -45,7 +45,7 @@ public class EventList extends AppCompatActivity {
                         intent = new Intent(EventList.this, ControlPlane.class);
                         break;
                     case 2:
-                        intent = new Intent(EventList.this, Layout.class);
+                        intent = new Intent(EventList.this, SendSms.class);
                         break;
                     case 3:
                         intent = new Intent(EventList.this, TextViewList.class);

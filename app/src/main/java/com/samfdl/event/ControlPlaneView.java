@@ -9,12 +9,12 @@ import android.view.View;
 
 import com.samfdl.R;
 
-public class PlaneView extends View {
+public class ControlPlaneView extends View {
     public float currentX;
     public float currentY;
     Bitmap plane;
 
-    public PlaneView(Context context) {
+    public ControlPlaneView(Context context) {
         super(context);
         // 定义飞机图片
         plane = BitmapFactory.decodeResource(context.getResources(), R.drawable.event_controlplane_plane);

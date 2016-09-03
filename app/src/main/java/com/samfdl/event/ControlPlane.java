@@ -24,7 +24,7 @@ public class ControlPlane extends AppCompatActivity {
         // 全屏显示
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         // 创建PlaneView组件
-        final PlaneView planeView = new PlaneView(this);
+        final ControlPlaneView planeView = new ControlPlaneView(this);
         setContentView(planeView);
         planeView.setBackgroundResource(R.drawable.event_controlplane_back);
         // 获取窗口管理器
