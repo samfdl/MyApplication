@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="12pt" />
-    <!-- 显示页面的WebView组件 -->
+
     <Button
         android:id="@+id/bn"
         android:layout_width="wrap_content"
