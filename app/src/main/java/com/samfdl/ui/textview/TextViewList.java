@@ -31,10 +31,10 @@ public class TextViewList extends AppCompatActivity {
                         intent = new Intent(TextViewList.this, TextViewActivity.class);
                         break;
                     case 1:
-                        intent = new Intent(TextViewList.this, EditText.class);
+                        intent = new Intent(TextViewList.this, EditText1.class);
                         break;
                     case 2:
-                        intent = new Intent(TextViewList.this, Button.class);
+                        intent = new Intent(TextViewList.this, Button1.class);
                         break;
                     case 3:
                         intent = new Intent(TextViewList.this, RadioButton.class);

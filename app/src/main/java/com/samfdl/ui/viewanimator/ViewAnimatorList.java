@@ -9,14 +9,6 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.samfdl.R;
-import com.samfdl.ui.textview.Button;
-import com.samfdl.ui.textview.Chronometer1;
-import com.samfdl.ui.textview.Clock;
-import com.samfdl.ui.textview.EditText;
-import com.samfdl.ui.textview.RadioButton;
-import com.samfdl.ui.textview.TextViewActivity;
-import com.samfdl.ui.textview.TextViewAdapter;
-import com.samfdl.ui.textview.ToggleButton1;
 
 public class ViewAnimatorList extends AppCompatActivity {
     private ListView lv;

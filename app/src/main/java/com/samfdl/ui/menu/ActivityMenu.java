@@ -8,7 +8,7 @@ import android.view.MenuItem;
 import android.view.SubMenu;
 
 import com.samfdl.R;
-import com.samfdl.ui.textview.Button;
+import com.samfdl.ui.textview.Button1;
 
 public class ActivityMenu extends AppCompatActivity {
     @Override
@@ -27,7 +27,7 @@ public class ActivityMenu extends AppCompatActivity {
         // 添加菜单项
         MenuItem item = prog.add("查看Swift");
         //为菜单项设置关联的Activity
-        item.setIntent(new Intent(this, Button.class));
+        item.setIntent(new Intent(this, Button1.class));
         return super.onCreateOptionsMenu(menu);
     }
 }

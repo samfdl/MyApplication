@@ -39,8 +39,8 @@
         <activity android:name=".ui.layout.TableLayout" />
         <activity android:name=".ui.textview.TextViewList" />
         <activity android:name=".ui.textview.TextViewActivity" />
-        <activity android:name=".ui.textview.EditText" />
-        <activity android:name=".ui.textview.Button" />
+        <activity android:name=".ui.textview.EditText1" />
+        <activity android:name=".ui.textview.Button1" />
         <activity android:name=".ui.textview.RadioButton" />
         <activity android:name=".ui.textview.ToggleButton1" />
         <activity android:name=".ui.textview.Clock" />

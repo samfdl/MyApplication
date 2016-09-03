@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.samfdl.R;
 
-public class Button extends AppCompatActivity {
+public class EditText1 extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ui_textview_button);
+        setContentView(R.layout.ui_textview_edittext);
     }
 }
