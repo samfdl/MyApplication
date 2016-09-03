@@ -48,7 +48,7 @@ public class EventList extends AppCompatActivity {
                         intent = new Intent(EventList.this, Ball.class);
                         break;
                     case 3:
-                        intent = new Intent(EventList.this, ActivityListener.class);
+                        intent = new Intent(EventList.this, SystemStatus.class);
                         break;
                     case 4:
                         intent = new Intent(EventList.this, ImageViewList.class);

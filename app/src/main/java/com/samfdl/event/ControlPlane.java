@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.Display;
 import android.view.KeyEvent;
+import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -37,30 +38,15 @@ public class ControlPlane extends AppCompatActivity {
         planeView.currentX = metrics.widthPixels / 2;
         planeView.currentY = metrics.heightPixels / 2;
         // 为planeView组件的键盘事件绑定监听器
-        planeView.setOnKeyListener(new View.OnKeyListener() {
+        planeView.setOnTouchListener(new View.OnTouchListener() {
             @Override
-            public boolean onKey(View source, int keyCode, KeyEvent event) {
-                // 获取由哪个键触发的事件
-                switch (event.getKeyCode()) {
-                    // 控制飞机下移
-                    case KeyEvent.KEYCODE_VOLUME_DOWN:
-                        planeView.currentY += speed;
-                        break;
-                    // 控制飞机上移
-                    case KeyEvent.KEYCODE_VOLUME_UP:
-                        planeView.currentY -= speed;
-                        break;
-                    // 控制飞机左移
-                    case KeyEvent.KEYCODE_A:
-                        planeView.currentX -= speed;
-                        break;
-                    // 控制飞机右移
-                    case KeyEvent.KEYCODE_D:
-                        planeView.currentX += speed;
-                        break;
-                }
-                // 通知planeView组件重绘
+            public boolean onTouch(View v, MotionEvent event) {
+                // 当前组件的currentX、currentY两个属性
+                planeView.currentX = event.getX();
+                planeView.currentY = event.getY();
+                // 通知改组件重绘
                 planeView.invalidate();
+                // 返回true表明处理方法已经处理该事件
                 return true;
             }
         });

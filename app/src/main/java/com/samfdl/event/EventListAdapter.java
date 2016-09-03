@@ -75,6 +75,7 @@ public class EventListAdapter extends BaseAdapter {
         listItem.add("控制飞机移动");
         listItem.add("发送短信");
         listItem.add("跟随手指的小球");
+        listItem.add("获取系统设备状态");
         return listItem;
     }
 }
