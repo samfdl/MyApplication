@@ -1,7 +1,7 @@
 package com.samfdl.ui.actionbar;
 
+import android.app.Fragment;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -14,7 +14,7 @@ public class TabNav extends AppCompatActivity implements ActionBar.TabListener {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ui_textview_button);
+        setContentView(R.layout.ui_actionbar_tabnav);
         final ActionBar actionBar = getSupportActionBar();
         // 设置ActionBar的导航方式：Tab导航
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_TABS);
@@ -42,10 +42,10 @@ public class TabNav extends AppCompatActivity implements ActionBar.TabListener {
     @Override
     public void onTabSelected(ActionBar.Tab tab, FragmentTransaction fragmentTransaction) {
         // 创建一个新的Fragment对象
-        Fragment fragment = new DummyFragment();
+        Fragment fragment = new TabNavFragment();
         // 创建一个Bundle对象，用于向Fragment传入参数
         Bundle args = new Bundle();
-        args.putInt(DummyFragment.ARG_SECTION_NUMBER, tab.getPosition() + 1);
+        args.putInt(TabNavFragment.ARG_SECTION_NUMBER, tab.getPosition() + 1);
         // 向fragment传入参数
         fragment.setArguments(args);
         // 获取FragmentTransaction对象
