@@ -30,6 +30,11 @@
         android:onClick="clickHandler"
         android:text="带文字的图片按钮"
         android:textSize="11px" />
+    <!-- 使用自定义View时应使用全限定类名 -->
+    <com.samfdl.ui.textview.ButtonMine
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="自定义按钮" />
 
     <TextView
         android:id="@+id/txt"
