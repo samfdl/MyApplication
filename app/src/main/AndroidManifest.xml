@@ -99,7 +99,7 @@
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
         <activity android:name=".event.SendSms" />
-        <activity android:name=".event.ActivityListener" />
+        <activity android:name=".event.Ball" />
     </application>
 
 </manifest>
