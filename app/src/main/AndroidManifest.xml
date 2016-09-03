@@ -8,10 +8,10 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".AllList">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -94,6 +94,8 @@
         <activity android:name=".ui.dialog.DatePickerDialog1" />
         <activity android:name=".ui.dialog.ProgressDialog1" />
         <activity android:name=".ui.webview.WebView" />
+        <activity android:name=".event.EventList" />
+        <activity android:name=".event.EventQs" />
     </application>
 
 </manifest>
