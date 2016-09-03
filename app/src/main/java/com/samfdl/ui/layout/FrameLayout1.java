@@ -11,7 +11,7 @@ import com.samfdl.R;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class FrameLayout extends AppCompatActivity {
+public class FrameLayout1 extends AppCompatActivity {
     private int currentColor = 0;
     // 定义一个颜色数组
     final int[] colors = new int[]{

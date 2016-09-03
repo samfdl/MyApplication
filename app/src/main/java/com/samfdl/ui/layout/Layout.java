@@ -28,25 +28,25 @@ public class Layout extends AppCompatActivity {
                 Intent intent;
                 switch (arg2) {
                     case 0:
-                        intent = new Intent(Layout.this, LinearLayout.class);
+                        intent = new Intent(Layout.this, LinearLayout1.class);
                         break;
                     case 1:
-                        intent = new Intent(Layout.this, RelativeLayout.class);
+                        intent = new Intent(Layout.this, RelativeLayout1.class);
                         break;
                     case 2:
-                        intent = new Intent(Layout.this, FrameLayout.class);
+                        intent = new Intent(Layout.this, FrameLayout1.class);
                         break;
                     case 3:
-                        intent = new Intent(Layout.this, GridLayoutActivity.class);
+                        intent = new Intent(Layout.this, GridLayout1.class);
                         break;
                     case 4:
-                        intent = new Intent(Layout.this, AbsoluteLayout.class);
+                        intent = new Intent(Layout.this, AbsoluteLayout1.class);
                         break;
                     case 5:
-                        intent = new Intent(Layout.this, TableLayout.class);
+                        intent = new Intent(Layout.this, TableLayout1.class);
                         break;
                     default:
-                        intent = new Intent(Layout.this, LinearLayout.class);
+                        intent = new Intent(Layout.this, LinearLayout1.class);
                 }
                 startActivity(intent);
             }

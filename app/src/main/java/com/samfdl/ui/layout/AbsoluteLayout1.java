@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.samfdl.R;
 
-public class TableLayout extends AppCompatActivity {
+public class AbsoluteLayout1 extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ui_layout_tablelayout);
+        setContentView(R.layout.ui_layout_absolutelayout);
     }
 }

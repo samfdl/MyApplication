@@ -8,7 +8,7 @@ import android.widget.GridLayout;
 
 import com.samfdl.R;
 
-public class GridLayoutActivity extends AppCompatActivity {
+public class GridLayout1 extends AppCompatActivity {
     GridLayout gridLayout;
     // 定义16个按钮的文本
     String[] chars = new String[]{

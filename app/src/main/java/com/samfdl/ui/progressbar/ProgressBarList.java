@@ -9,13 +9,6 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.samfdl.R;
-import com.samfdl.ui.layout.AbsoluteLayout;
-import com.samfdl.ui.layout.FrameLayout;
-import com.samfdl.ui.layout.GridLayoutActivity;
-import com.samfdl.ui.layout.LayoutAdapter;
-import com.samfdl.ui.layout.LinearLayout;
-import com.samfdl.ui.layout.RelativeLayout;
-import com.samfdl.ui.layout.TableLayout;
 
 public class ProgressBarList extends AppCompatActivity {
     private ListView lv;

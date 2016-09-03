@@ -5,10 +5,10 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.samfdl.R;
 
-public class RelativeLayout extends AppCompatActivity {
+public class LinearLayout1 extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.ui_layout_relativelayout);
+        setContentView(R.layout.ui_layout_linearlayout);
     }
 }
