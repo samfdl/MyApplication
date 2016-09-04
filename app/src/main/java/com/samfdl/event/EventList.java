@@ -51,7 +51,7 @@ public class EventList extends AppCompatActivity {
                         intent = new Intent(EventList.this, Handler1.class);
                         break;
                     case 6:
-                        intent = new Intent(EventList.this, ProgressBarList.class);
+                        intent = new Intent(EventList.this, CalPrime.class);
                         break;
                     case 7:
                         intent = new Intent(EventList.this, ViewAnimatorList.class);

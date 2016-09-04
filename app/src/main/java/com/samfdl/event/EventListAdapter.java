@@ -78,6 +78,7 @@ public class EventListAdapter extends BaseAdapter {
         listItem.add("获取系统设备状态");
         listItem.add("监听屏幕方向");
         listItem.add("自动播放动画");
+        listItem.add("线程计算质数");
         return listItem;
     }
 }
