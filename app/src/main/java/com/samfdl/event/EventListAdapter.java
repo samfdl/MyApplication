@@ -79,6 +79,7 @@ public class EventListAdapter extends BaseAdapter {
         listItem.add("监听屏幕方向");
         listItem.add("自动播放动画");
         listItem.add("线程计算质数");
+        listItem.add("异步任务下载");
         return listItem;
     }
 }

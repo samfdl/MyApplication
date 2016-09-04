@@ -9,11 +9,6 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.samfdl.R;
-import com.samfdl.ui.dialog.DialogList;
-import com.samfdl.ui.progressbar.ProgressBarList;
-import com.samfdl.ui.toast.ToastList;
-import com.samfdl.ui.viewanimator.ViewAnimatorList;
-import com.samfdl.ui.webview.WebView;
 
 public class EventList extends AppCompatActivity {
     private ListView lv;
@@ -54,16 +49,7 @@ public class EventList extends AppCompatActivity {
                         intent = new Intent(EventList.this, CalPrime.class);
                         break;
                     case 7:
-                        intent = new Intent(EventList.this, ViewAnimatorList.class);
-                        break;
-                    case 8:
-                        intent = new Intent(EventList.this, ToastList.class);
-                        break;
-                    case 9:
-                        intent = new Intent(EventList.this, DialogList.class);
-                        break;
-                    case 10:
-                        intent = new Intent(EventList.this, WebView.class);
+                        intent = new Intent(EventList.this, AsyncTask1.class);
                         break;
                     default:
                         intent = new Intent(EventList.this, ControlPlane.class);

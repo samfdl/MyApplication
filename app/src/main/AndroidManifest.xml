@@ -3,6 +3,7 @@
     package="com.samfdl">
 
     <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -106,6 +107,7 @@
             android:configChanges="orientation|screenSize" />
         <activity android:name=".event.Handler1" />
         <activity android:name=".event.CalPrime" />
+        <activity android:name=".event.AsyncTask1" />
     </application>
 
 </manifest>
