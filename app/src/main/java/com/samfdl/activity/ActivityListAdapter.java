@@ -1,4 +1,4 @@
-package com.samfdl;
+package com.samfdl.activity;
 
 import android.content.Context;
 import android.util.Log;
@@ -8,15 +8,17 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.samfdl.R;
+
 import java.util.ArrayList;
 
 /**
  * Created by samsung on 2016/8/24.
  */
-public class AllListAdapter extends BaseAdapter {
+public class ActivityListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
 
-    public AllListAdapter(Context context) {
+    public ActivityListAdapter(Context context) {
         this.mInflater = LayoutInflater.from(context);
     }
 
@@ -72,7 +74,6 @@ public class AllListAdapter extends BaseAdapter {
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("界面 UI 控件");
         listItem.add("事件处理 Event");
-        listItem.add("Activity 和 Fragment");
         return listItem;
     }
 }

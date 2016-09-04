@@ -108,6 +108,7 @@
         <activity android:name=".event.Handler1" />
         <activity android:name=".event.CalPrime" />
         <activity android:name=".event.AsyncTask1" />
+        <activity android:name=".activity.ActivityList" />
     </application>
 
 </manifest>

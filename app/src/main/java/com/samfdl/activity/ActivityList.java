@@ -1,4 +1,4 @@
-package com.samfdl;
+package com.samfdl.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,12 +8,20 @@ import android.widget.AdapterView;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
 
-import com.samfdl.activity.ActivityList;
+import com.samfdl.R;
 import com.samfdl.event.EventList;
 import com.samfdl.ui.UIList;
+import com.samfdl.ui.dialog.DialogList;
+import com.samfdl.ui.imageview.ImageViewList;
+import com.samfdl.ui.layout.Layout;
+import com.samfdl.ui.listview.ListViewList;
+import com.samfdl.ui.progressbar.ProgressBarList;
 import com.samfdl.ui.textview.TextViewList;
+import com.samfdl.ui.toast.ToastList;
+import com.samfdl.ui.viewanimator.ViewAnimatorList;
+import com.samfdl.ui.webview.WebView;
 
-public class AllList extends AppCompatActivity {
+public class ActivityList extends AppCompatActivity {
     private ListView lv;
 
     @Override
@@ -22,7 +30,7 @@ public class AllList extends AppCompatActivity {
         setContentView(R.layout.ui_listview_baseadapter);
 
         lv = (ListView) findViewById(R.id.myList);
-        BaseAdapter mAdapter = new AllListAdapter(this);//得到一个MyAdapter对象
+        BaseAdapter mAdapter = new ActivityListAdapter(this);//得到一个MyAdapter对象
         lv.setAdapter(mAdapter);//为ListView绑定Adapter
         /**为ListView添加点击事件*/
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -31,19 +39,23 @@ public class AllList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(AllList.this, UIList.class);
+                        intent = new Intent(ActivityList.this, UIList.class);
                         break;
                     case 1:
-                        intent = new Intent(AllList.this, EventList.class);
+                        intent = new Intent(ActivityList.this, EventList.class);
                         break;
                     case 2:
-                        intent = new Intent(AllList.this, ActivityList.class);
+                        intent = new Intent(ActivityList.this, Layout.class);
                         break;
                     case 3:
-                        intent = new Intent(AllList.this, TextViewList.class);
+                        intent = new Intent(ActivityList.this, TextViewList.class);
                         break;
+                    case 4:
+                        intent = new Intent(ActivityList.this, ImageViewList.class);
+                        break;
+
                     default:
-                        intent = new Intent(AllList.this, UIList.class);
+                        intent = new Intent(ActivityList.this, UIList.class);
                 }
                 startActivity(intent);
             }
