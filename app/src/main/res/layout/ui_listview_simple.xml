@@ -10,6 +10,6 @@
         android:divider="#000000"
         android:minHeight="46dp"
         android:dividerHeight="2px"
-        android:entries="@array/books"
+        android:entries="@array/ui_listview_simple_books"
         android:headerDividersEnabled="false" />
 </LinearLayout>

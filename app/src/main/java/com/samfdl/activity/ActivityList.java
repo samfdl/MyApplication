@@ -10,16 +10,9 @@ import android.widget.ListView;
 
 import com.samfdl.R;
 import com.samfdl.event.EventList;
-import com.samfdl.ui.UIList;
-import com.samfdl.ui.dialog.DialogList;
 import com.samfdl.ui.imageview.ImageViewList;
 import com.samfdl.ui.layout.Layout;
-import com.samfdl.ui.listview.ListViewList;
-import com.samfdl.ui.progressbar.ProgressBarList;
 import com.samfdl.ui.textview.TextViewList;
-import com.samfdl.ui.toast.ToastList;
-import com.samfdl.ui.viewanimator.ViewAnimatorList;
-import com.samfdl.ui.webview.WebView;
 
 public class ActivityList extends AppCompatActivity {
     private ListView lv;
@@ -39,7 +32,7 @@ public class ActivityList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(ActivityList.this, UIList.class);
+                        intent = new Intent(ActivityList.this, LauncherActivity1.class);
                         break;
                     case 1:
                         intent = new Intent(ActivityList.this, EventList.class);
@@ -55,7 +48,7 @@ public class ActivityList extends AppCompatActivity {
                         break;
 
                     default:
-                        intent = new Intent(ActivityList.this, UIList.class);
+                        intent = new Intent(ActivityList.this, LauncherActivity1.class);
                 }
                 startActivity(intent);
             }

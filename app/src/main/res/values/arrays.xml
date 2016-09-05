@@ -1,9 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="books">
+    <string-array name="ui_listview_simple_books">
         <item>疯狂Java讲义</item>
         <item>疯狂Ajax讲义</item>
         <item>疯狂XML讲义</item>
         <item>疯狂Android讲义</item>
+    </string-array>
+    <string-array name="activity_launcheractivity_gender_name_list">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array name="activity_launcheractivity_gender_value_list">
+        <item>male</item>
+        <item>female</item>
+    </string-array>
+    <string-array name="activity_launcheractivity_light_strength_list">
+        <item>弱光</item>
+        <item>中等</item>
+        <item>强光</item>
+    </string-array>
+    <string-array name="activity_launcheractivity_light_value_list">
+        <item>weak</item>
+        <item>medium</item>
+        <item>strong</item>
     </string-array>
 </resources>
