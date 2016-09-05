@@ -35,10 +35,10 @@ public class ActivityList extends AppCompatActivity {
                         intent = new Intent(ActivityList.this, LauncherActivity1.class);
                         break;
                     case 1:
-                        intent = new Intent(ActivityList.this, EventList.class);
+                        intent = new Intent(ActivityList.this, ExpandableListActivity1.class);
                         break;
                     case 2:
-                        intent = new Intent(ActivityList.this, Layout.class);
+                        intent = new Intent(ActivityList.this, PreferenceActivity1.class);
                         break;
                     case 3:
                         intent = new Intent(ActivityList.this, TextViewList.class);

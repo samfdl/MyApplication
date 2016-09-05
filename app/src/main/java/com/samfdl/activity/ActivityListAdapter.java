@@ -73,7 +73,8 @@ public class ActivityListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("LauncherActivity");
-        listItem.add("事件处理 Event");
+        listItem.add("ExpandableListActivity");
+        listItem.add("PreferenceActivity");
         return listItem;
     }
 }
