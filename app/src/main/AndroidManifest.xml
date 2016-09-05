@@ -116,6 +116,8 @@
         <activity android:name=".activity.StartActivity2" />
         <activity android:name=".activity.Bundle1" />
         <activity android:name=".activity.BundleResult" />
+        <activity android:name=".activity.ActivityForResult" />
+        <activity android:name=".activity.ActivityForResultSelectCity" />
     </application>
 
 </manifest>

@@ -43,7 +43,7 @@ public class ActivityList extends AppCompatActivity {
                         intent = new Intent(ActivityList.this, Bundle1.class);
                         break;
                     case 5:
-                        intent = new Intent(ActivityList.this, Bundle1.class);
+                        intent = new Intent(ActivityList.this, ActivityForResult.class);
                         break;
                     default:
                         intent = new Intent(ActivityList.this, LauncherActivity1.class);

@@ -77,6 +77,7 @@ public class ActivityListAdapter extends BaseAdapter {
         listItem.add("PreferenceActivity");
         listItem.add("启动 Activity");
         listItem.add("Bundle 传递注册信息");
+        listItem.add("Start Activity for result");
         return listItem;
     }
 }
