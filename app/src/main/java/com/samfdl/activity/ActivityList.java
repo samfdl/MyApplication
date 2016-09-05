@@ -9,7 +9,6 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.samfdl.R;
-import com.samfdl.ui.imageview.ImageViewList;
 
 public class ActivityList extends AppCompatActivity {
     private ListView lv;
@@ -41,9 +40,11 @@ public class ActivityList extends AppCompatActivity {
                         intent = new Intent(ActivityList.this, StartActivity.class);
                         break;
                     case 4:
-                        intent = new Intent(ActivityList.this, ImageViewList.class);
+                        intent = new Intent(ActivityList.this, Bundle1.class);
                         break;
-
+                    case 5:
+                        intent = new Intent(ActivityList.this, Bundle1.class);
+                        break;
                     default:
                         intent = new Intent(ActivityList.this, LauncherActivity1.class);
                 }

@@ -114,6 +114,8 @@
         <activity android:name=".activity.PreferenceActivity1" />
         <activity android:name=".activity.StartActivity" />
         <activity android:name=".activity.StartActivity2" />
+        <activity android:name=".activity.Bundle1" />
+        <activity android:name=".activity.BundleResult" />
     </application>
 
 </manifest>
