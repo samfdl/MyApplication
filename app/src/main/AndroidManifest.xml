@@ -110,8 +110,10 @@
         <activity android:name=".event.AsyncTask1" />
         <activity android:name=".activity.ActivityList" />
         <activity android:name=".activity.LauncherActivity1" />
-        <activity android:name=".activity.PreferenceActivity1" />
         <activity android:name=".activity.ExpandableListActivity1" />
+        <activity android:name=".activity.PreferenceActivity1" />
+        <activity android:name=".activity.StartActivity" />
+        <activity android:name=".activity.StartActivity2" />
     </application>
 
 </manifest>

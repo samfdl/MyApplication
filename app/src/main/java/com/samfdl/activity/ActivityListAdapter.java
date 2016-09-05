@@ -75,6 +75,7 @@ public class ActivityListAdapter extends BaseAdapter {
         listItem.add("LauncherActivity");
         listItem.add("ExpandableListActivity");
         listItem.add("PreferenceActivity");
+        listItem.add("Start Activity");
         return listItem;
     }
 }
