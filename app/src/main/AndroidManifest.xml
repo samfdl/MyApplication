@@ -118,6 +118,8 @@
         <activity android:name=".activity.BundleResult" />
         <activity android:name=".activity.ActivityForResult" />
         <activity android:name=".activity.ActivityForResultSelectCity" />
+        <activity android:name=".activity.LifeCycle" />
+        <activity android:name=".activity.LifeCycle2" />
     </application>
 
 </manifest>
