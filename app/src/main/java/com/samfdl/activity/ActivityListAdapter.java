@@ -80,6 +80,7 @@ public class ActivityListAdapter extends BaseAdapter {
         listItem.add("Start Activity for result");
         listItem.add("生命周期");
         listItem.add("标准加载模式");
+        listItem.add("SingleTop 栈顶单例模式");
         return listItem;
     }
 }

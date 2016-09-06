@@ -52,7 +52,7 @@ public class ActivityList extends AppCompatActivity {
                         intent = new Intent(ActivityList.this, StandMode.class);
                         break;
                     case 8:
-                        intent = new Intent(ActivityList.this, LifeCycle.class);
+                        intent = new Intent(ActivityList.this, SingleTopMode.class);
                         break;
                     default:
                         intent = new Intent(ActivityList.this, LauncherActivity1.class);

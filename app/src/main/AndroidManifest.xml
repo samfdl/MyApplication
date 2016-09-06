@@ -123,6 +123,7 @@
             android:name=".activity.LifeCycle2"
             android:theme="@android:style/Theme.Material.Dialog" />
         <activity android:name=".activity.StandMode" />
+        <activity android:name=".activity.SingleTopMode" />
     </application>
 
 </manifest>
