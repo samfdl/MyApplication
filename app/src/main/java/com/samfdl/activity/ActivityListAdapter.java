@@ -83,6 +83,7 @@ public class ActivityListAdapter extends BaseAdapter {
         listItem.add("SingleTop 栈顶单例模式");
         listItem.add("SingleTask Task内单例模式");
         listItem.add("SingleInstance 全局单例模式");
+        listItem.add("隐式Intent");
         return listItem;
     }
 }
