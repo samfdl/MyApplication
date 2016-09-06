@@ -81,6 +81,8 @@ public class ActivityListAdapter extends BaseAdapter {
         listItem.add("生命周期");
         listItem.add("标准加载模式");
         listItem.add("SingleTop 栈顶单例模式");
+        listItem.add("SingleTask Task内单例模式");
+        listItem.add("SingleTask Task内单例模式");
         return listItem;
     }
 }

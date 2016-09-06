@@ -126,6 +126,10 @@
         <activity
             android:name=".activity.SingleTopMode"
             android:launchMode="singleTop" />
+        <activity android:name=".activity.SingleTaskMode" />
+        <activity
+            android:name=".activity.SingleTaskMode2"
+            android:launchMode="singleTask" />
     </application>
 
 </manifest>
