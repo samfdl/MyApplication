@@ -130,6 +130,10 @@
         <activity
             android:name=".activity.SingleTaskMode2"
             android:launchMode="singleTask" />
+        <activity android:name=".activity.SingleInstanceMode" />
+        <activity
+            android:name=".activity.SingleInstanceMode2"
+            android:launchMode="singleInstance" />
     </application>
 
 </manifest>
