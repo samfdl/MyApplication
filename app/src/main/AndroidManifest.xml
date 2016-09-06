@@ -119,7 +119,10 @@
         <activity android:name=".activity.ActivityForResult" />
         <activity android:name=".activity.ActivityForResultSelectCity" />
         <activity android:name=".activity.LifeCycle" />
-        <activity android:name=".activity.LifeCycle2" />
+        <activity
+            android:name=".activity.LifeCycle2"
+            android:theme="@android:style/Theme.Material.Dialog" />
+        <activity android:name=".activity.StandMode" />
     </application>
 
 </manifest>

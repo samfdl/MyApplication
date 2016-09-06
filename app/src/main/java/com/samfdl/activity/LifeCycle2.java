@@ -1,12 +1,10 @@
 package com.samfdl.activity;
 
+import android.app.Activity;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
-import com.samfdl.R;
-
-public class LifeCycle2 extends AppCompatActivity {
+public class LifeCycle2 extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

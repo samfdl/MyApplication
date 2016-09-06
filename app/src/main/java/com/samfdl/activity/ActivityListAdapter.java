@@ -79,6 +79,7 @@ public class ActivityListAdapter extends BaseAdapter {
         listItem.add("Bundle 传递注册信息");
         listItem.add("Start Activity for result");
         listItem.add("生命周期");
+        listItem.add("标准加载模式");
         return listItem;
     }
 }
