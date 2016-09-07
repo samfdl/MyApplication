@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">集大成者</string>
 
+    <string name="ui_list">界面 UI 控件</string>
+    <string name="ui_actionbar_list">活动条 ActionBar</string>
+
     <string name="ui_listview_spinner_tip">请选择您喜欢的人物</string>
 
     <string name="ui_menu_menures_font_size">字体大小</string>

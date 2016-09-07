@@ -78,7 +78,7 @@ public class ActivityListAdapter extends BaseAdapter {
         listItem.add("启动 Activity");
         listItem.add("Bundle 传递注册信息");
         listItem.add("Start Activity for result");
-        listItem.add("生命周期");
+        listItem.add("Activity 生命周期");
         listItem.add("标准加载模式");
         listItem.add("SingleTop 栈顶单例模式");
         listItem.add("SingleTask Task内单例模式");
@@ -86,6 +86,7 @@ public class ActivityListAdapter extends BaseAdapter {
         listItem.add("隐式Intent");
         listItem.add("Fragment");
         listItem.add("Fragment 兼顾屏幕分辨率");
+        listItem.add("Fragment 生命周期");
         return listItem;
     }
 }

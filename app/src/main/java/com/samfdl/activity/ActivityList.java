@@ -69,6 +69,9 @@ public class ActivityList extends AppCompatActivity {
                     case 13:
                         intent = new Intent(ActivityList.this, FragmentSenior.class);
                         break;
+                    case 14:
+                        intent = new Intent(ActivityList.this, FragmentLifeCycle.class);
+                        break;
                     default:
                         intent = new Intent(ActivityList.this, LauncherActivity1.class);
                 }

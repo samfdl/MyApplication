@@ -18,8 +18,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ui.UIList" />
-        <activity android:name=".ui.actionbar.ActionBarList" />
+        <activity
+            android:name=".ui.UIList"
+            android:label="@string/ui_list" />
+        <activity
+            android:name=".ui.actionbar.ActionBarList"
+            android:label="@string/ui_actionbar_list" />
         <activity android:name=".ui.actionbar.ActionBar1" />
         <activity android:name=".ui.actionbar.ActionItem" />
         <activity android:name=".ui.actionbar.ActionHome" />
@@ -148,6 +152,7 @@
         <activity
             android:name=".activity.FragmentActivityBookDetail"
             android:label="@string/activity_fragmentsenior_title_book_detail" />
+        <activity android:name=".activity.FragmentLifeCycle" />
     </application>
 
 </manifest>
