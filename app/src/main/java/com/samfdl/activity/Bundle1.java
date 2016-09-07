@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 
 import com.samfdl.R;
-import com.samfdl.activity.domain.Person;
+import com.samfdl.activity.model.Person;
 
 public class Bundle1 extends AppCompatActivity {
     @Override

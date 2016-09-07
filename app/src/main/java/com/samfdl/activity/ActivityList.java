@@ -63,6 +63,12 @@ public class ActivityList extends AppCompatActivity {
                     case 11:
                         intent = new Intent(ActivityList.this, HiddenIntent.class);
                         break;
+                    case 12:
+                        intent = new Intent(ActivityList.this, Fragment1.class);
+                        break;
+                    case 13:
+                        intent = new Intent(ActivityList.this, HiddenIntent.class);
+                        break;
                     default:
                         intent = new Intent(ActivityList.this, LauncherActivity1.class);
                 }

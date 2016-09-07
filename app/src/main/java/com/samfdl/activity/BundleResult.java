@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
 import com.samfdl.R;
-import com.samfdl.activity.domain.Person;
+import com.samfdl.activity.model.Person;
 
 public class BundleResult extends AppCompatActivity {
     @Override

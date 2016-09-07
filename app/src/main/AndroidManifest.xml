@@ -141,6 +141,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.HiddenIntent" />
+        <activity android:name=".activity.Fragment1" />
     </application>
 
 </manifest>
