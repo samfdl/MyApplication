@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.samfdl.R;
 
-public class SingleInstanceMode extends AppCompatActivity {
+public class HiddenIntent extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,13 +22,16 @@ public class SingleInstanceMode extends AppCompatActivity {
         tv.setText("Activity为：" + this.toString() + "\n" + "，Task ID为:" + this.getTaskId());
         Button button = new Button(this);
         button.setText("启动SingleInstanceMode2");
+        // 添加TextView和Button
         layout.addView(tv);
         layout.addView(button);
-        // 为button添加事件监听器，当单击该按钮时启动SecondActivity
+        // 为button添加事件监听器，使用隐式Intent启动目标Activity
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SingleInstanceMode.this, SingleInstanceMode2.class);
+                // 使用隐式Intent启动SingleInstanceMode2
+                Intent intent = new Intent();
+                intent.setAction("org.crazyit.intent.action.CRAZYIT_ACTION");
                 startActivity(intent);
             }
         });
