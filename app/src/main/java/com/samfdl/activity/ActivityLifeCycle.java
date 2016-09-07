@@ -9,7 +9,7 @@ import android.widget.Button;
 
 import com.samfdl.R;
 
-public class LifeCycle extends AppCompatActivity {
+public class ActivityLifeCycle extends AppCompatActivity {
     final String TAG = "--CrazyIt--";
     Button finish, startActivity;
 
@@ -25,7 +25,7 @@ public class LifeCycle extends AppCompatActivity {
         startActivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View source) {
-                Intent intent = new Intent(LifeCycle.this, LifeCycle2.class);
+                Intent intent = new Intent(ActivityLifeCycle.this, ActivityLifeCycle2.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,7 @@ public class LifeCycle extends AppCompatActivity {
             @Override
             public void onClick(View source) {
                 // 结束该Activity
-                LifeCycle.this.finish();
+                finish();
             }
         });
     }

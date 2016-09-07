@@ -85,7 +85,7 @@ public class ActivityListAdapter extends BaseAdapter {
         listItem.add("SingleInstance 全局单例模式");
         listItem.add("隐式Intent");
         listItem.add("Fragment");
-        listItem.add("隐式Intent");
+        listItem.add("Fragment 兼顾屏幕分辨率");
         return listItem;
     }
 }

@@ -14,4 +14,7 @@
     <string name="ui_menu_menures_red_title">红色</string>
     <string name="ui_menu_menures_blue_title">蓝色</string>
     <string name="ui_menu_menures_green_title">绿色</string>
+
+    <string name="activity_fragmentsenior_name">图书列表</string>
+    <string name="activity_fragmentsenior_title_book_detail">图书详情</string>
 </resources>

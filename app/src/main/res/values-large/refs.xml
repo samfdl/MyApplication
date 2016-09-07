@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 定义activity_book_list实际引用@layout/activity_book_twopane资源 -->
+    <item name="activity_book_list" type="layout">
+        @layout/activity_fragment_book_twopane
+    </item>
+</resources>

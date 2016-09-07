@@ -118,9 +118,9 @@
         <activity android:name=".activity.BundleResult" />
         <activity android:name=".activity.ActivityForResult" />
         <activity android:name=".activity.ActivityForResultSelectCity" />
-        <activity android:name=".activity.LifeCycle" />
+        <activity android:name=".activity.ActivityLifeCycle" />
         <activity
-            android:name=".activity.LifeCycle2"
+            android:name=".activity.ActivityLifeCycle2"
             android:theme="@android:style/Theme.Material.Dialog" />
         <activity android:name=".activity.StandMode" />
         <activity
@@ -142,6 +142,12 @@
         </activity>
         <activity android:name=".activity.HiddenIntent" />
         <activity android:name=".activity.Fragment1" />
+        <activity
+            android:name=".activity.FragmentSenior"
+            android:label="@string/activity_fragmentsenior_name" />
+        <activity
+            android:name=".activity.FragmentActivityBookDetail"
+            android:label="@string/activity_fragmentsenior_title_book_detail" />
     </application>
 
 </manifest>

@@ -46,7 +46,7 @@ public class ActivityList extends AppCompatActivity {
                         intent = new Intent(ActivityList.this, ActivityForResult.class);
                         break;
                     case 6:
-                        intent = new Intent(ActivityList.this, LifeCycle.class);
+                        intent = new Intent(ActivityList.this, ActivityLifeCycle.class);
                         break;
                     case 7:
                         intent = new Intent(ActivityList.this, StandMode.class);
@@ -67,7 +67,7 @@ public class ActivityList extends AppCompatActivity {
                         intent = new Intent(ActivityList.this, Fragment1.class);
                         break;
                     case 13:
-                        intent = new Intent(ActivityList.this, HiddenIntent.class);
+                        intent = new Intent(ActivityList.this, FragmentSenior.class);
                         break;
                     default:
                         intent = new Intent(ActivityList.this, LauncherActivity1.class);
