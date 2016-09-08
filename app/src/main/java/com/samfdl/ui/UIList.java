@@ -21,7 +21,6 @@ import com.samfdl.ui.progressbar.ProgressBarList;
 import com.samfdl.ui.textview.TextViewList;
 import com.samfdl.ui.toast.ToastList;
 import com.samfdl.ui.viewanimator.ViewAnimatorList;
-import com.samfdl.ui.webview.WebView;
 
 public class UIList extends AppCompatActivity {
     private ListView lv;
@@ -69,9 +68,6 @@ public class UIList extends AppCompatActivity {
                         break;
                     case 9:
                         intent = new Intent(UIList.this, DialogList.class);
-                        break;
-                    case 10:
-                        intent = new Intent(UIList.this, WebView.class);
                         break;
                     default:
                         intent = new Intent(UIList.this, Layout.class);

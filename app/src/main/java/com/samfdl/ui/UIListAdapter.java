@@ -82,7 +82,6 @@ public class UIListAdapter extends BaseAdapter {
         listItem.add("切换控件 ViewAnimator");
         listItem.add("各种杂项组件 Toast");
         listItem.add("对话框 Dialog");
-        listItem.add("WebView");
         return listItem;
     }
 }

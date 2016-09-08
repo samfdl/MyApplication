@@ -141,7 +141,6 @@
             android:theme="@android:style/Theme.Material.Dialog" />
         <activity android:name=".ui.dialog.DatePickerDialog1" />
         <activity android:name=".ui.dialog.ProgressDialog1" />
-        <activity android:name=".ui.webview.WebView" />
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
         <activity android:name=".event.SendSms" />
@@ -158,6 +157,9 @@
         <activity
             android:name=".intent.ComponentAttribute2"
             android:label="第二个Activity" />
+        <activity android:name=".web.WebList" />
+        <activity android:name=".web.URL1" />
+        <activity android:name=".web.WebView1" />
     </application>
 
 </manifest>

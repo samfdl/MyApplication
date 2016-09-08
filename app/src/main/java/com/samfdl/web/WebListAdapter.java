@@ -1,4 +1,4 @@
-package com.samfdl;
+package com.samfdl.web;
 
 import android.content.Context;
 import android.util.Log;
@@ -8,15 +8,17 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.samfdl.R;
+
 import java.util.ArrayList;
 
 /**
- * Created by samsung on 2016/8/24.
+ * Created by samfdl on 2016/9/08.
  */
-public class AllListAdapter extends BaseAdapter {
+public class WebListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
 
-    public AllListAdapter(Context context) {
+    public WebListAdapter(Context context) {
         this.mInflater = LayoutInflater.from(context);
     }
 
@@ -70,11 +72,12 @@ public class AllListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("Activity 和 Fragment");
-        listItem.add("界面 UI 控件");
-        listItem.add("事件处理 Event");
-        listItem.add("Intent 通信");
-        listItem.add("网络相关");
+        listItem.add("使用 URL 读取网络资源");
+        listItem.add("WebView");
+        listItem.add("PreferenceActivity");
+        listItem.add("启动 Activity");
+        listItem.add("Bundle 传递注册信息");
+        listItem.add("Start Activity for result");
         return listItem;
     }
 }
