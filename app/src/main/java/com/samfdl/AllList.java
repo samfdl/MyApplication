@@ -3,7 +3,6 @@ package com.samfdl;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.BaseAdapter;
@@ -11,8 +10,8 @@ import android.widget.ListView;
 
 import com.samfdl.activity.ActivityList;
 import com.samfdl.event.EventList;
+import com.samfdl.intent.IntentList;
 import com.samfdl.ui.UIList;
-import com.samfdl.ui.textview.TextViewList;
 
 public class AllList extends AppCompatActivity {
     private ListView lv;
@@ -41,7 +40,7 @@ public class AllList extends AppCompatActivity {
                         intent = new Intent(AllList.this, EventList.class);
                         break;
                     case 3:
-                        intent = new Intent(AllList.this, TextViewList.class);
+                        intent = new Intent(AllList.this, IntentList.class);
                         break;
                     default:
                         intent = new Intent(AllList.this, ActivityList.class);
