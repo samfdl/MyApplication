@@ -32,32 +32,22 @@ public class AllList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(AllList.this, UIList.class);
+                        intent = new Intent(AllList.this, ActivityList.class);
                         break;
                     case 1:
-                        intent = new Intent(AllList.this, EventList.class);
+                        intent = new Intent(AllList.this, UIList.class);
                         break;
                     case 2:
-                        intent = new Intent(AllList.this, ActivityList.class);
+                        intent = new Intent(AllList.this, EventList.class);
                         break;
                     case 3:
                         intent = new Intent(AllList.this, TextViewList.class);
                         break;
                     default:
-                        intent = new Intent(AllList.this, UIList.class);
+                        intent = new Intent(AllList.this, ActivityList.class);
                 }
                 startActivity(intent);
             }
         });
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, UIList.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-        }
-        return true;
     }
 }

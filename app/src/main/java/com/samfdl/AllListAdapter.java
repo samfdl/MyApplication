@@ -70,9 +70,10 @@ public class AllListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
+        listItem.add("Activity 和 Fragment");
         listItem.add("界面 UI 控件");
         listItem.add("事件处理 Event");
-        listItem.add("Activity 和 Fragment");
+        listItem.add("Intent 通信");
         return listItem;
     }
 }

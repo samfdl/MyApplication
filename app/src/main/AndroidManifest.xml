@@ -18,6 +18,47 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.ActivityList" />
+        <activity android:name=".activity.LauncherActivity1" />
+        <activity android:name=".activity.ExpandableListActivity1" />
+        <activity android:name=".activity.PreferenceActivity1" />
+        <activity android:name=".activity.StartActivity" />
+        <activity android:name=".activity.StartActivity2" />
+        <activity android:name=".activity.Bundle1" />
+        <activity android:name=".activity.BundleResult" />
+        <activity android:name=".activity.ActivityForResult" />
+        <activity android:name=".activity.ActivityForResultSelectCity" />
+        <activity android:name=".activity.ActivityLifeCycle" />
+        <activity
+            android:name=".activity.ActivityLifeCycle2"
+            android:theme="@android:style/Theme.Material.Dialog" />
+        <activity android:name=".activity.StandMode" />
+        <activity
+            android:name=".activity.SingleTopMode"
+            android:launchMode="singleTop" />
+        <activity android:name=".activity.SingleTaskMode" />
+        <activity
+            android:name=".activity.SingleTaskMode2"
+            android:launchMode="singleTask" />
+        <activity android:name=".activity.SingleInstanceMode" />
+        <activity
+            android:name=".activity.SingleInstanceMode2"
+            android:launchMode="singleInstance">
+            <intent-filter>
+                <!-- 指定该Activity能响应Action为指定字符串的Intent -->
+                <action android:name="org.crazyit.intent.action.CRAZYIT_ACTION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.HiddenIntent" />
+        <activity android:name=".activity.Fragment1" />
+        <activity
+            android:name=".activity.FragmentSenior"
+            android:label="@string/activity_fragmentsenior_name" />
+        <activity
+            android:name=".activity.FragmentActivityBookDetail"
+            android:label="@string/activity_fragmentsenior_title_book_detail" />
+        <activity android:name=".activity.FragmentLifeCycle" />
         <activity
             android:name=".ui.UIList"
             android:label="@string/ui_list" />
@@ -112,47 +153,7 @@
         <activity android:name=".event.Handler1" />
         <activity android:name=".event.CalPrime" />
         <activity android:name=".event.AsyncTask1" />
-        <activity android:name=".activity.ActivityList" />
-        <activity android:name=".activity.LauncherActivity1" />
-        <activity android:name=".activity.ExpandableListActivity1" />
-        <activity android:name=".activity.PreferenceActivity1" />
-        <activity android:name=".activity.StartActivity" />
-        <activity android:name=".activity.StartActivity2" />
-        <activity android:name=".activity.Bundle1" />
-        <activity android:name=".activity.BundleResult" />
-        <activity android:name=".activity.ActivityForResult" />
-        <activity android:name=".activity.ActivityForResultSelectCity" />
-        <activity android:name=".activity.ActivityLifeCycle" />
-        <activity
-            android:name=".activity.ActivityLifeCycle2"
-            android:theme="@android:style/Theme.Material.Dialog" />
-        <activity android:name=".activity.StandMode" />
-        <activity
-            android:name=".activity.SingleTopMode"
-            android:launchMode="singleTop" />
-        <activity android:name=".activity.SingleTaskMode" />
-        <activity
-            android:name=".activity.SingleTaskMode2"
-            android:launchMode="singleTask" />
-        <activity android:name=".activity.SingleInstanceMode" />
-        <activity
-            android:name=".activity.SingleInstanceMode2"
-            android:launchMode="singleInstance">
-            <intent-filter>
-                <!-- 指定该Activity能响应Action为指定字符串的Intent -->
-                <action android:name="org.crazyit.intent.action.CRAZYIT_ACTION" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-        </activity>
-        <activity android:name=".activity.HiddenIntent" />
-        <activity android:name=".activity.Fragment1" />
-        <activity
-            android:name=".activity.FragmentSenior"
-            android:label="@string/activity_fragmentsenior_name" />
-        <activity
-            android:name=".activity.FragmentActivityBookDetail"
-            android:label="@string/activity_fragmentsenior_title_book_detail" />
-        <activity android:name=".activity.FragmentLifeCycle" />
+
     </application>
 
 </manifest>
