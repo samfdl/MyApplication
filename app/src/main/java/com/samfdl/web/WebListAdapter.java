@@ -74,10 +74,7 @@ public class WebListAdapter extends BaseAdapter {
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("使用 URL 读取网络资源");
         listItem.add("WebView");
-        listItem.add("PreferenceActivity");
-        listItem.add("启动 Activity");
-        listItem.add("Bundle 传递注册信息");
-        listItem.add("Start Activity for result");
+        listItem.add("GeckoView mozilla 浏览器内核");
         return listItem;
     }
 }

@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.activity.PreferenceActivity1;
 import com.samfdl.activity.StartActivity;
 
 public class WebList extends AppCompatActivity {
@@ -39,7 +38,7 @@ public class WebList extends AppCompatActivity {
                         intent = new Intent(WebList.this, WebView1.class);
                         break;
                     case 2:
-                        intent = new Intent(WebList.this, PreferenceActivity1.class);
+                        intent = new Intent(WebList.this, GeckoView1.class);
                         break;
                     case 3:
                         intent = new Intent(WebList.this, StartActivity.class);

@@ -160,6 +160,9 @@
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
         <activity android:name=".web.WebView1" />
+        <activity
+            android:name=".web.GeckoView1"
+            android:label="GeckoView mozilla 浏览器内核" />
     </application>
 
 </manifest>
