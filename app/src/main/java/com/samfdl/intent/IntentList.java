@@ -15,14 +15,7 @@ import com.samfdl.activity.ActivityForResult;
 import com.samfdl.activity.ActivityLifeCycle;
 import com.samfdl.activity.Bundle1;
 import com.samfdl.activity.ExpandableListActivity1;
-import com.samfdl.activity.Fragment1;
-import com.samfdl.activity.FragmentLifeCycle;
-import com.samfdl.activity.FragmentSenior;
-import com.samfdl.activity.HiddenIntent;
-import com.samfdl.activity.LauncherActivity1;
 import com.samfdl.activity.PreferenceActivity1;
-import com.samfdl.activity.SingleInstanceMode;
-import com.samfdl.activity.SingleTaskMode;
 import com.samfdl.activity.SingleTopMode;
 import com.samfdl.activity.StandMode;
 import com.samfdl.activity.StartActivity;
@@ -46,7 +39,7 @@ public class IntentList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(IntentList.this, LauncherActivity1.class);
+                        intent = new Intent(IntentList.this, ComponentAttribute.class);
                         break;
                     case 1:
                         intent = new Intent(IntentList.this, ExpandableListActivity1.class);
@@ -72,26 +65,8 @@ public class IntentList extends AppCompatActivity {
                     case 8:
                         intent = new Intent(IntentList.this, SingleTopMode.class);
                         break;
-                    case 9:
-                        intent = new Intent(IntentList.this, SingleTaskMode.class);
-                        break;
-                    case 10:
-                        intent = new Intent(IntentList.this, SingleInstanceMode.class);
-                        break;
-                    case 11:
-                        intent = new Intent(IntentList.this, HiddenIntent.class);
-                        break;
-                    case 12:
-                        intent = new Intent(IntentList.this, Fragment1.class);
-                        break;
-                    case 13:
-                        intent = new Intent(IntentList.this, FragmentSenior.class);
-                        break;
-                    case 14:
-                        intent = new Intent(IntentList.this, FragmentLifeCycle.class);
-                        break;
                     default:
-                        intent = new Intent(IntentList.this, LauncherActivity1.class);
+                        intent = new Intent(IntentList.this, ComponentAttribute.class);
                 }
                 startActivity(intent);
             }

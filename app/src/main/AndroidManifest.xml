@@ -154,6 +154,10 @@
         <activity android:name=".event.CalPrime" />
         <activity android:name=".event.AsyncTask1" />
         <activity android:name=".intent.IntentList" />
+        <activity android:name=".intent.ComponentAttribute" />
+        <activity
+            android:name=".intent.ComponentAttribute2"
+            android:label="第二个Activity" />
     </application>
 
 </manifest>

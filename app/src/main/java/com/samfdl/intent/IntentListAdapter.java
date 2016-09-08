@@ -72,7 +72,7 @@ public class IntentListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("LauncherActivity");
+        listItem.add("Component 属性");
         listItem.add("ExpandableListActivity");
         listItem.add("PreferenceActivity");
         listItem.add("启动 Activity");
