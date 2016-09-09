@@ -63,6 +63,9 @@ public class IntentList extends AppCompatActivity {
                     case 5:
                         intent = new Intent(IntentList.this, DataTypeOverride.class);
                         break;
+                    case 6:
+                        intent = new Intent(IntentList.this, DataTypeAttribute.class);
+                        break;
                     default:
                         intent = new Intent(IntentList.this, ComponentAttribute.class);
                 }

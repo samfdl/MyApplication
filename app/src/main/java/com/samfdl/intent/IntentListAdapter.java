@@ -78,6 +78,7 @@ public class IntentListAdapter extends BaseAdapter {
         listItem.add("获取联系人电话");
         listItem.add("返回系统 Home 桌面");
         listItem.add("Data Type 设置");
+        listItem.add("Data Type 属性");
         return listItem;
     }
 }

@@ -175,6 +175,82 @@
         </activity>
         <activity android:name=".intent.SystemAction" />
         <activity android:name=".intent.DataTypeOverride" />
+        <activity android:name=".intent.DataTypeAttribute" />
+        <activity
+            android:name=".intent.DataTypeAttributeScheme"
+            android:icon="@drawable/intent_datatypeattribute_scheme"
+            android:label="指定scheme的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 只要Intent的Data属性的scheme是lee，即可启动该Activity -->
+                <data android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intent.DataTypeAttributeSchemeHostPort"
+            android:icon="@drawable/intent_datatypeattribute_host"
+            android:label="指定scheme、host、port的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 只要Intent的Data属性的scheme是lee，且host是www.fkjava.org
+                port是8888即可启动该Activity -->
+                <data
+                    android:host="www.fkjava.org"
+                    android:port="8888"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intent.DataTypeAttributeSchemeHostPath"
+            android:icon="@drawable/intent_datatypeattribute_sp"
+            android:label="指定scheme、host、path的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 只要Intent的Data属性的scheme是lee，且host是www.fkjava.org
+                path是/mypath，即可启动该Activity -->
+                <data
+                    android:host="www.fkjava.org"
+                    android:path="/mypath"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intent.DataTypeAttributeSchemeHostPortPath"
+            android:icon="@drawable/intent_datatypeattribute_path"
+            android:label="指定scheme、host、port、path的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 需要Intent的Data属性的scheme是lee，且host是www.fkjava.org
+                port是8888，且path是/mypath，才可启动该Activity -->
+                <data
+                    android:host="www.fkjava.org"
+                    android:path="/mypath"
+                    android:port="8888"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".intent.DataTypeAttributeSchemeHostPortPathType"
+            android:icon="@drawable/intent_datatypeattribute_type"
+            android:label="指定scheme、host、port、path、type的Activity">
+            <intent-filter>
+                <action android:name="xx" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <!-- 需要Intent的Data属性的scheme是lee，且host是www.fkjava.org
+                port是8888，且path是/mypath
+                且type是abc/xyz，才可启动该Activity -->
+                <data
+                    android:host="www.fkjava.org"
+                    android:mimeType="abc/xyz"
+                    android:path="/mypath"
+                    android:port="8888"
+                    android:scheme="lee" />
+            </intent-filter>
+        </activity>
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
