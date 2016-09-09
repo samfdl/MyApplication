@@ -251,6 +251,7 @@
                     android:scheme="lee" />
             </intent-filter>
         </activity>
+        <activity android:name=".intent.ActionData" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
