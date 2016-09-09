@@ -61,7 +61,7 @@ public class IntentList extends AppCompatActivity {
                         intent.addCategory(Intent.CATEGORY_HOME);
                         break;
                     case 5:
-                        intent = new Intent(IntentList.this, SystemAction.class);
+                        intent = new Intent(IntentList.this, DataTypeOverride.class);
                         break;
                     default:
                         intent = new Intent(IntentList.this, ComponentAttribute.class);
