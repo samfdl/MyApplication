@@ -163,7 +163,16 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".intent.ActionCategoryAttribute">
+            <intent-filter>
+                <!-- 指定该Activity能响应action为指定字符串的Intent -->
+                <action android:name="com.samfdl.intent.action.CRAZYIT_ACTION" />
+                <!-- 指定该Activity能响应category为指定字符串的Intent -->
+                <category android:name="com.samfdl.intent.category.CRAZYIT_CATEGORY" />
+                <!-- 指定该Activity能响应category为android.intent.category.DEFAULT的Intent -->
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
         <activity android:name=".web.WebView1" />

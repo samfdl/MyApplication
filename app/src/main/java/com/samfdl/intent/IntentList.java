@@ -12,7 +12,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.activity.PreferenceActivity1;
 import com.samfdl.activity.StartActivity;
 
 public class IntentList extends AppCompatActivity {
@@ -46,7 +45,11 @@ public class IntentList extends AppCompatActivity {
                         intent.setAction(ActionAttribute.CRAZYIT_ACTION);
                         break;
                     case 2:
-                        intent = new Intent(IntentList.this, PreferenceActivity1.class);
+                        intent = new Intent();
+                        // 设置Action属性
+                        intent.setAction(ActionCategoryAttribute.CRAZYIT_ACTION);
+                        // 添加Category属性
+                        intent.addCategory(ActionCategoryAttribute.CRAZYIT_CATEGORY);
                         break;
                     case 3:
                         intent = new Intent(IntentList.this, StartActivity.class);

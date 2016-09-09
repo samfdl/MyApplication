@@ -12,4 +12,11 @@
         android:cursorVisible="false"
         android:editable="false"
         android:text="第二个Activity" />
+
+    <EditText
+        android:id="@+id/cate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:editable="false" />
 </LinearLayout>
