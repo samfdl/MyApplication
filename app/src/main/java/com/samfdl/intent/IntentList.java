@@ -42,28 +42,13 @@ public class IntentList extends AppCompatActivity {
                         intent = new Intent(IntentList.this, ComponentAttribute.class);
                         break;
                     case 1:
-                        intent = new Intent(IntentList.this, ExpandableListActivity1.class);
+                        intent = new Intent(IntentList.this, ActionAttribute.class);
                         break;
                     case 2:
                         intent = new Intent(IntentList.this, PreferenceActivity1.class);
                         break;
                     case 3:
                         intent = new Intent(IntentList.this, StartActivity.class);
-                        break;
-                    case 4:
-                        intent = new Intent(IntentList.this, Bundle1.class);
-                        break;
-                    case 5:
-                        intent = new Intent(IntentList.this, ActivityForResult.class);
-                        break;
-                    case 6:
-                        intent = new Intent(IntentList.this, ActivityLifeCycle.class);
-                        break;
-                    case 7:
-                        intent = new Intent(IntentList.this, StandMode.class);
-                        break;
-                    case 8:
-                        intent = new Intent(IntentList.this, SingleTopMode.class);
                         break;
                     default:
                         intent = new Intent(IntentList.this, ComponentAttribute.class);
