@@ -5,9 +5,11 @@
     android:gravity="center_horizontal"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/bn"
-        android:layout_width="wrap_content"
+    <EditText
+        android:id="@+id/show"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="使用Component启动组件" />
+        android:cursorVisible="false"
+        android:editable="false"
+        android:text="第二个Activity" />
 </LinearLayout>

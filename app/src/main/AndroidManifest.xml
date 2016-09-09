@@ -154,11 +154,7 @@
         <activity android:name=".event.AsyncTask1" />
         <activity android:name=".intent.IntentList" />
         <activity android:name=".intent.ComponentAttribute" />
-        <activity
-            android:name=".intent.ComponentAttribute2"
-            android:label="第二个Activity" />
-        <activity android:name=".intent.ActionAttribute" />
-        <activity android:name=".intent.ActionAttribute2">
+        <activity android:name=".intent.ActionAttribute">
             <intent-filter>
                 <!-- 指定该Activity能响应Action为指定字符串的Intent -->
                 <action android:name="com.samfdl.intent.action.CRAZYIT_ACTION" />

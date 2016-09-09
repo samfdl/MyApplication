@@ -5,8 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
+import android.widget.EditText;
 
 import com.samfdl.R;
 
@@ -18,22 +17,12 @@ public class ComponentAttribute extends AppCompatActivity {
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        Button bn = (Button) findViewById(R.id.bn);
-        // 为bn按钮绑定事件监听器
-        if (bn != null) {
-            bn.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View arg0) {
-                    // 创建一个ComponentName对象
-                    ComponentName comp = new ComponentName(ComponentAttribute.this,
-                            ComponentAttribute2.class);
-                    Intent intent = new Intent();
-                    // 为Intent设置Component属性
-                    intent.setComponent(comp);
-                    startActivity(intent);
-                }
-            });
-        }
+        EditText show = (EditText) findViewById(R.id.show);
+        // 获取该Activity对应的Intent的Component属性
+        ComponentName comp = getIntent().getComponent();
+        // 显示该ComponentName对象的包名、类名
+        show.setText("组件包名为：" + comp.getPackageName()
+                + "\n组件类名为：" + comp.getClassName());
     }
 
     @Override
