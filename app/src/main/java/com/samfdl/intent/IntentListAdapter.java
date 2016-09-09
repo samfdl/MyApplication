@@ -75,8 +75,9 @@ public class IntentListAdapter extends BaseAdapter {
         listItem.add("Component 属性");
         listItem.add("指定 Action 启动 Activity");
         listItem.add("指定 Action Category 启动");
-        listItem.add("启动 Activity");
-        listItem.add("Bundle 传递注册信息");
+        listItem.add("获取联系人电话");
+        listItem.add("返回系统 Home 桌面");
+        listItem.add("返回系统 Home 桌面");
         return listItem;
     }
 }

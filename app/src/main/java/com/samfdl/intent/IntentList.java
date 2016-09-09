@@ -12,7 +12,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.activity.StartActivity;
 
 public class IntentList extends AppCompatActivity {
     private ListView lv;
@@ -52,7 +51,17 @@ public class IntentList extends AppCompatActivity {
                         intent.addCategory(ActionCategoryAttribute.CRAZYIT_CATEGORY);
                         break;
                     case 3:
-                        intent = new Intent(IntentList.this, StartActivity.class);
+                        intent = new Intent(IntentList.this, SystemAction.class);
+                        break;
+                    case 4:
+                        // 创建Intent对象
+                        intent = new Intent();
+                        // 为Intent设置Action、Category属性
+                        intent.setAction(Intent.ACTION_MAIN);
+                        intent.addCategory(Intent.CATEGORY_HOME);
+                        break;
+                    case 5:
+                        intent = new Intent(IntentList.this, SystemAction.class);
                         break;
                     default:
                         intent = new Intent(IntentList.this, ComponentAttribute.class);
