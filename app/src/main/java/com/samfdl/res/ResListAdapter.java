@@ -1,4 +1,4 @@
-package com.samfdl.intent;
+package com.samfdl.res;
 
 import android.content.Context;
 import android.util.Log;
@@ -15,10 +15,10 @@ import java.util.ArrayList;
 /**
  * Created by samfdl on 2016/9/08.
  */
-public class IntentListAdapter extends BaseAdapter {
+public class ResListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
 
-    public IntentListAdapter(Context context) {
+    public ResListAdapter(Context context) {
         this.mInflater = LayoutInflater.from(context);
     }
 

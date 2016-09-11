@@ -74,6 +74,7 @@ public class AllListAdapter extends BaseAdapter {
         listItem.add("界面 UI 控件");
         listItem.add("事件处理 Event");
         listItem.add("Intent 通信");
+        listItem.add("资源 Res");
         listItem.add("网络相关");
         return listItem;
     }

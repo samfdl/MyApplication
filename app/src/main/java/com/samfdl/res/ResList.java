@@ -1,4 +1,4 @@
-package com.samfdl.intent;
+package com.samfdl.res;
 
 import android.content.ComponentName;
 import android.content.Intent;
@@ -12,8 +12,16 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
+import com.samfdl.intent.ActionAttribute;
+import com.samfdl.intent.ActionCategoryAttribute;
+import com.samfdl.intent.ActionData;
+import com.samfdl.intent.ComponentAttribute;
+import com.samfdl.intent.DataTypeAttribute;
+import com.samfdl.intent.DataTypeOverride;
+import com.samfdl.intent.IntentTab;
+import com.samfdl.intent.SystemAction;
 
-public class IntentList extends AppCompatActivity {
+public class ResList extends AppCompatActivity {
     private ListView lv;
 
     @Override
@@ -23,7 +31,7 @@ public class IntentList extends AppCompatActivity {
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         lv = (ListView) findViewById(R.id.myList);
-        BaseAdapter mAdapter = new IntentListAdapter(this);//得到一个MyAdapter对象
+        BaseAdapter mAdapter = new ResListAdapter(this);//得到一个MyAdapter对象
         lv.setAdapter(mAdapter);//为ListView绑定Adapter
         /**为ListView添加点击事件*/
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -34,7 +42,7 @@ public class IntentList extends AppCompatActivity {
                     case 0:
                         intent = new Intent();
                         // 创建一个ComponentName对象
-                        ComponentName comp = new ComponentName(IntentList.this, ComponentAttribute.class);
+                        ComponentName comp = new ComponentName(ResList.this, ComponentAttribute.class);
                         // 为Intent设置Component属性
                         intent.setComponent(comp);
                         break;
@@ -51,7 +59,7 @@ public class IntentList extends AppCompatActivity {
                         intent.addCategory(ActionCategoryAttribute.CRAZYIT_CATEGORY);
                         break;
                     case 3:
-                        intent = new Intent(IntentList.this, SystemAction.class);
+                        intent = new Intent(ResList.this, SystemAction.class);
                         break;
                     case 4:
                         // 创建Intent对象
@@ -61,19 +69,19 @@ public class IntentList extends AppCompatActivity {
                         intent.addCategory(Intent.CATEGORY_HOME);
                         break;
                     case 5:
-                        intent = new Intent(IntentList.this, DataTypeOverride.class);
+                        intent = new Intent(ResList.this, DataTypeOverride.class);
                         break;
                     case 6:
-                        intent = new Intent(IntentList.this, DataTypeAttribute.class);
+                        intent = new Intent(ResList.this, DataTypeAttribute.class);
                         break;
                     case 7:
-                        intent = new Intent(IntentList.this, ActionData.class);
+                        intent = new Intent(ResList.this, ActionData.class);
                         break;
                     case 8:
-                        intent = new Intent(IntentList.this, IntentTab.class);
+                        intent = new Intent(ResList.this, IntentTab.class);
                         break;
                     default:
-                        intent = new Intent(IntentList.this, ComponentAttribute.class);
+                        intent = new Intent(ResList.this, ComponentAttribute.class);
                 }
                 startActivity(intent);
             }

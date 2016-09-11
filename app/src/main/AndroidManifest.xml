@@ -252,6 +252,12 @@
             </intent-filter>
         </activity>
         <activity android:name=".intent.ActionData" />
+        <activity android:name=".intent.IntentTab" />
+        <activity android:name=".intent.IntentTabBeCalled" />
+        <activity android:name=".intent.IntentTabCalled" />
+        <activity android:name=".intent.IntentTabNoCall" />
+
+        <activity android:name=".res.ResList" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />

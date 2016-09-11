@@ -11,6 +11,7 @@ import android.widget.ListView;
 import com.samfdl.activity.ActivityList;
 import com.samfdl.event.EventList;
 import com.samfdl.intent.IntentList;
+import com.samfdl.res.ResList;
 import com.samfdl.ui.UIList;
 import com.samfdl.web.WebList;
 
@@ -44,6 +45,9 @@ public class AllList extends AppCompatActivity {
                         intent = new Intent(AllList.this, IntentList.class);
                         break;
                     case 4:
+                        intent = new Intent(AllList.this, ResList.class);
+                        break;
+                    case 5:
                         intent = new Intent(AllList.this, WebList.class);
                         break;
                     default:
