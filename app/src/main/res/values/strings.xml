@@ -20,4 +20,14 @@
 
     <string name="activity_fragmentsenior_name">图书列表</string>
     <string name="activity_fragmentsenior_title_book_detail">图书详情</string>
+
+    <string name="res_valuesres_c1">F00</string>
+    <string name="res_valuesres_c2">0F0</string>
+    <string name="res_valuesres_c3">00F</string>
+    <string name="res_valuesres_c4">FF0</string>
+    <string name="res_valuesres_c5">F0F</string>
+    <string name="res_valuesres_c6">0FF</string>
+    <string name="res_valuesres_c7">07F</string>
+    <string name="res_valuesres_c8">70F</string>
+    <string name="res_valuesres_c9">F70</string>
 </resources>

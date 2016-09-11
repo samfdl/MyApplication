@@ -4,10 +4,14 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="color1">#f00</color>
-    <color name="color2">#0f0</color>
-    <color name="color3">#00f</color>
-    <color name="color4">#ff0</color>
-    <color name="color5">#f0f</color>
-    <color name="color6">#0ff</color>
+    <color name="ui_layout_framelayout_color1">#f00</color>
+    <color name="ui_layout_framelayout_color2">#0f0</color>
+    <color name="ui_layout_framelayout_color3">#00f</color>
+    <color name="ui_layout_framelayout_color4">#ff0</color>
+    <color name="ui_layout_framelayout_color5">#f0f</color>
+    <color name="ui_layout_framelayout_color6">#0ff</color>
+
+    <color name="res_valuesres_c7">#07F</color>
+    <color name="res_valuesres_c8">#70F</color>
+    <color name="res_valuesres_c9">#F70</color>
 </resources>

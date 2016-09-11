@@ -2,4 +2,8 @@
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!-- 定义GridView组件中每个单元格的宽度、高度 -->
+    <dimen name="res_valuesres_cell_width">60dp</dimen>
+    <dimen name="res_valuesres_cell_height">66dp</dimen>
 </resources>

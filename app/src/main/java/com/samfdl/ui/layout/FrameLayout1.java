@@ -15,12 +15,12 @@ public class FrameLayout1 extends AppCompatActivity {
     private int currentColor = 0;
     // 定义一个颜色数组
     final int[] colors = new int[]{
-            R.color.color1,
-            R.color.color2,
-            R.color.color3,
-            R.color.color4,
-            R.color.color5,
-            R.color.color6
+            R.color.ui_layout_framelayout_color1,
+            R.color.ui_layout_framelayout_color2,
+            R.color.ui_layout_framelayout_color3,
+            R.color.ui_layout_framelayout_color4,
+            R.color.ui_layout_framelayout_color5,
+            R.color.ui_layout_framelayout_color6
     };
     final int[] names = new int[]{
             R.id.view01,

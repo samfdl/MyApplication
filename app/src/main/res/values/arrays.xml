@@ -24,4 +24,29 @@
         <item>medium</item>
         <item>strong</item>
     </string-array>
+
+    <!-- 定义一个Drawable数组 -->
+    <array name="res_valuesres_plain_arr">
+        <item>@color/ui_layout_framelayout_color1</item>
+        <item>@color/ui_layout_framelayout_color2</item>
+        <item>@color/ui_layout_framelayout_color3</item>
+        <item>@color/ui_layout_framelayout_color4</item>
+        <item>@color/ui_layout_framelayout_color5</item>
+        <item>@color/ui_layout_framelayout_color6</item>
+        <item>@color/res_valuesres_c7</item>
+        <item>@color/res_valuesres_c8</item>
+        <item>@color/res_valuesres_c9</item>
+    </array>
+    <!-- 定义字符串数组 -->
+    <string-array name="res_valuesres_string_arr">
+        <item>@string/res_valuesres_c1</item>
+        <item>@string/res_valuesres_c2</item>
+        <item>@string/res_valuesres_c3</item>
+        <item>@string/res_valuesres_c4</item>
+        <item>@string/res_valuesres_c5</item>
+        <item>@string/res_valuesres_c6</item>
+        <item>@string/res_valuesres_c7</item>
+        <item>@string/res_valuesres_c8</item>
+        <item>@string/res_valuesres_c9</item>
+    </string-array>
 </resources>

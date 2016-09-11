@@ -13,7 +13,7 @@ import com.samfdl.R;
 import java.util.ArrayList;
 
 /**
- * Created by samfdl on 2016/9/08.
+ * Created by samfdl on 2016/9/11.
  */
 public class ResListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
@@ -72,14 +72,9 @@ public class ResListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("Component 属性");
+        listItem.add("颜色、尺寸资源");
         listItem.add("指定 Action 启动 Activity");
-        listItem.add("指定 Action Category 启动");
-        listItem.add("获取联系人电话");
-        listItem.add("返回系统 Home 桌面");
-        listItem.add("Data Type 设置");
-        listItem.add("指定 Scheme 启动 Activity");
-        listItem.add("使用 Action 启动系统 Activity");
+
         listItem.add("使用 Intent 创建 Tab 页");
         return listItem;
     }
