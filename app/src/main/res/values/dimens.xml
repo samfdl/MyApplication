@@ -6,4 +6,11 @@
     <!-- 定义GridView组件中每个单元格的宽度、高度 -->
     <dimen name="res_valuesres_cell_width">60dp</dimen>
     <dimen name="res_valuesres_cell_height">66dp</dimen>
+
+    <dimen name="res_arrayres_spacing">8dp</dimen>
+    <!-- 定义GridView组件中每个单元格的宽度、高度 -->
+    <dimen name="res_arrayres_cell_width">60dp</dimen>
+    <dimen name="res_arrayres_cell_height">66dp</dimen>
+    <!-- 定义主程序的标题的字体大小 -->
+    <dimen name="res_arrayres_title_font_size">18sp</dimen>
 </resources>

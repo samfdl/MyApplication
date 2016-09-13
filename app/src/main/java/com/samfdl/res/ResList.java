@@ -40,7 +40,7 @@ public class ResList extends AppCompatActivity {
                         intent = new Intent(ResList.this, ValuesRes.class);
                         break;
                     case 1:
-                        intent = new Intent(ResList.this, DataTypeOverride.class);
+                        intent = new Intent(ResList.this, ArrayRes.class);
                         break;
                     case 2:
                         intent = new Intent(ResList.this, DataTypeOverride.class);

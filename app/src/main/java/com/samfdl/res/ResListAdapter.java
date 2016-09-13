@@ -73,7 +73,7 @@ public class ResListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("颜色、尺寸资源");
-        listItem.add("指定 Action 启动 Activity");
+        listItem.add("数组资源");
 
         listItem.add("使用 Intent 创建 Tab 页");
         return listItem;

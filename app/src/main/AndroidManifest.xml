@@ -259,6 +259,7 @@
 
         <activity android:name=".res.ResList" />
         <activity android:name=".res.ValuesRes" />
+        <activity android:name=".res.ArrayRes" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
