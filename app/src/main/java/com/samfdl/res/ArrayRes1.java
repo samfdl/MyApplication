@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.samfdl.R;
 
-public class ArrayRes extends AppCompatActivity {
+public class ArrayRes1 extends AppCompatActivity {
     // 获取系统定义的数组资源
     String[] texts;
 
@@ -48,8 +48,8 @@ public class ArrayRes extends AppCompatActivity {
             // 重写该方法，该方法返回的View将作为的GridView的每个格子
             @Override
             public View getView(int position, View convertView, ViewGroup parent) {
-                TextView text = new TextView(ArrayRes.this);
-                Resources res = ArrayRes.this.getResources();
+                TextView text = new TextView(ArrayRes1.this);
+                Resources res = ArrayRes1.this.getResources();
                 // 使用尺度资源来设置文本框的高度、宽度
                 text.setWidth((int) res.getDimension(R.dimen.res_arrayres_cell_width));
                 text.setHeight((int) res.getDimension(R.dimen.res_arrayres_cell_height));

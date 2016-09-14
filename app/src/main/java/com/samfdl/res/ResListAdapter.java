@@ -75,7 +75,7 @@ public class ResListAdapter extends BaseAdapter {
         listItem.add("颜色、尺寸资源");
         listItem.add("数组资源");
         listItem.add("颜色状态列表 selector");
-        listItem.add("使用 Intent 创建 Tab 页");
+        listItem.add("LayerDrawable");
         return listItem;
     }
 }

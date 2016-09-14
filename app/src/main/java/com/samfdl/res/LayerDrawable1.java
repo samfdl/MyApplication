@@ -7,11 +7,11 @@ import android.view.MenuItem;
 
 import com.samfdl.R;
 
-public class StateListDrawable extends AppCompatActivity {
+public class LayerDrawable1 extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.res_statelistdrawable);
+        setContentView(R.layout.res_layerdrawable);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }

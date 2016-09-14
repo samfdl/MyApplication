@@ -16,7 +16,6 @@ import com.samfdl.intent.ComponentAttribute;
 import com.samfdl.intent.DataTypeAttribute;
 import com.samfdl.intent.DataTypeOverride;
 import com.samfdl.intent.IntentTab;
-import com.samfdl.intent.SystemAction;
 
 public class ResList extends AppCompatActivity {
     private ListView lv;
@@ -40,13 +39,13 @@ public class ResList extends AppCompatActivity {
                         intent = new Intent(ResList.this, ValuesRes.class);
                         break;
                     case 1:
-                        intent = new Intent(ResList.this, ArrayRes.class);
+                        intent = new Intent(ResList.this, ArrayRes1.class);
                         break;
                     case 2:
-                        intent = new Intent(ResList.this, StateListDrawable.class);
+                        intent = new Intent(ResList.this, StateListDrawable1.class);
                         break;
                     case 3:
-                        intent = new Intent(ResList.this, SystemAction.class);
+                        intent = new Intent(ResList.this, LayerDrawable1.class);
                         break;
                     case 4:
                         intent = new Intent(ResList.this, DataTypeOverride.class);
