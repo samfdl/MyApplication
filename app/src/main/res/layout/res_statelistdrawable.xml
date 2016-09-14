@@ -14,5 +14,30 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@drawable/res_statelistdrawable_my_image" />
+    <!-- 定义一个拖动条，并改变轨道外观 -->
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progressDrawable="@drawable/res_layerdrawable_my_bar" />
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/res_layerdrawable_layout_logo" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/res_shapedrawable_my_shape_1" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/res_shapedrawable_my_shape_2" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/res_shapedrawable_my_shape_3" />
 </LinearLayout>

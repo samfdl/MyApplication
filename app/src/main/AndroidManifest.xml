@@ -261,7 +261,7 @@
         <activity android:name=".res.ValuesRes" />
         <activity android:name=".res.ArrayRes1" />
         <activity android:name=".res.StateListDrawable1" />
-        <activity android:name=".res.LayerDrawable1" />
+        <activity android:name=".res.ClipDrawable1" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />

@@ -45,7 +45,7 @@ public class ResList extends AppCompatActivity {
                         intent = new Intent(ResList.this, StateListDrawable1.class);
                         break;
                     case 3:
-                        intent = new Intent(ResList.this, LayerDrawable1.class);
+                        intent = new Intent(ResList.this, ClipDrawable1.class);
                         break;
                     case 4:
                         intent = new Intent(ResList.this, DataTypeOverride.class);
