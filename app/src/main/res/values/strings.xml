@@ -30,4 +30,7 @@
     <string name="res_valuesres_c7">07F</string>
     <string name="res_valuesres_c8">70F</string>
     <string name="res_valuesres_c9">F70</string>
+
+    <string name="res_styleres_style1">样式1的格式</string>
+    <string name="res_styleres_style2">样式2的格式</string>
 </resources>

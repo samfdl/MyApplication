@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.intent.ActionData;
 import com.samfdl.intent.ComponentAttribute;
 import com.samfdl.intent.IntentTab;
 
@@ -55,7 +54,7 @@ public class ResList extends AppCompatActivity {
                         intent = new Intent(ResList.this, XmlRes1.class);
                         break;
                     case 7:
-                        intent = new Intent(ResList.this, ActionData.class);
+                        intent = new Intent(ResList.this, StyleRes1.class);
                         break;
                     case 8:
                         intent = new Intent(ResList.this, IntentTab.class);

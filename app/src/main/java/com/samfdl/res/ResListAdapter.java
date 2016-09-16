@@ -79,6 +79,7 @@ public class ResListAdapter extends BaseAdapter {
         listItem.add("AnimationDrawable");
         listItem.add("属性动画");
         listItem.add("原始 XML 资源");
+        listItem.add("主题资源");
         return listItem;
     }
 }
