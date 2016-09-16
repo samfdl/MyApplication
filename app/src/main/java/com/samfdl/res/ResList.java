@@ -13,8 +13,6 @@ import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.intent.ActionData;
 import com.samfdl.intent.ComponentAttribute;
-import com.samfdl.intent.DataTypeAttribute;
-import com.samfdl.intent.DataTypeOverride;
 import com.samfdl.intent.IntentTab;
 
 public class ResList extends AppCompatActivity {
@@ -54,7 +52,7 @@ public class ResList extends AppCompatActivity {
                         intent = new Intent(ResList.this, PropertyAnimation.class);
                         break;
                     case 6:
-                        intent = new Intent(ResList.this, DataTypeAttribute.class);
+                        intent = new Intent(ResList.this, XmlRes1.class);
                         break;
                     case 7:
                         intent = new Intent(ResList.this, ActionData.class);
