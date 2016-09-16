@@ -75,7 +75,8 @@ public class ResListAdapter extends BaseAdapter {
         listItem.add("颜色、尺寸资源");
         listItem.add("数组资源");
         listItem.add("颜色状态列表 selector");
-        listItem.add("ClipDrawable");
+        listItem.add("卷轴 ClipDrawable");
+        listItem.add("AnimationDrawable");
         return listItem;
     }
 }
