@@ -263,6 +263,7 @@
         <activity android:name=".res.StateListDrawable1" />
         <activity android:name=".res.ClipDrawable1" />
         <activity android:name=".res.AnimationDrawable1" />
+        <activity android:name=".res.PropertyAnimation" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
