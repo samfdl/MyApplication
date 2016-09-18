@@ -266,6 +266,7 @@
         <activity android:name=".res.PropertyAnimation" />
         <activity android:name=".res.XmlRes1" />
         <activity android:name=".res.StyleRes1" />
+        <activity android:name=".res.AttributeRes" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />

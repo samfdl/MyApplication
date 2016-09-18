@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 定义一个属性 -->
+    <attr name="res_attributeres_duration"></attr>
+    <!-- 定义一个styleable对象来组合多个属性 -->
+    <declare-styleable name="AttributeResAlphaImageView">
+        <attr name="res_attributeres_duration" />
+    </declare-styleable>
+</resources>

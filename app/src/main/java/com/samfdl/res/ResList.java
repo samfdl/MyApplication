@@ -11,8 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.intent.ComponentAttribute;
-import com.samfdl.intent.IntentTab;
 
 public class ResList extends AppCompatActivity {
     private ListView lv;
@@ -57,10 +55,10 @@ public class ResList extends AppCompatActivity {
                         intent = new Intent(ResList.this, StyleRes1.class);
                         break;
                     case 8:
-                        intent = new Intent(ResList.this, IntentTab.class);
+                        intent = new Intent(ResList.this, AttributeRes.class);
                         break;
                     default:
-                        intent = new Intent(ResList.this, ComponentAttribute.class);
+                        intent = new Intent(ResList.this, ValuesRes.class);
                 }
                 startActivity(intent);
             }
