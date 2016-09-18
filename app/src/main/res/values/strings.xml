@@ -33,4 +33,7 @@
 
     <string name="res_styleres_style1">样式1的格式</string>
     <string name="res_styleres_style2">样式2的格式</string>
+
+    <string name="res_rawres_play_raw">播放Raw声音</string>
+    <string name="res_rawres_play_asset">播放Asset声音</string>
 </resources>

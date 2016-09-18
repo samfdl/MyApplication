@@ -267,6 +267,7 @@
         <activity android:name=".res.XmlRes1" />
         <activity android:name=".res.StyleRes1" />
         <activity android:name=".res.AttributeRes" />
+        <activity android:name=".res.RawRes1" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />

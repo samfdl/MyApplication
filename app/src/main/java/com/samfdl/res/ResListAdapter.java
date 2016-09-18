@@ -81,6 +81,7 @@ public class ResListAdapter extends BaseAdapter {
         listItem.add("原始 XML 资源");
         listItem.add("主题资源");
         listItem.add("属性资源");
+        listItem.add("使用原生资源 raw asserts");
         return listItem;
     }
 }

@@ -38,9 +38,10 @@ public class AttributeResAlphaImageView extends ImageView {
         TypedArray typedArray = context.obtainStyledAttributes(attrs,
                 R.styleable.AttributeResAlphaImageView);
         // 获取duration参数
+        // 原代码有点问题
 //        int duration = typedArray
 //                .getInt(R.styleable.AttributeResAlphaImageView, 0);
-        int duration = 12000;
+        int duration = 60000;
         // 计算图像透明度每次改变的大小
         alphaDelta = 255 * SPEED / duration;
     }
