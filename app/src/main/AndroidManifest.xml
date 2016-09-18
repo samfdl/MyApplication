@@ -272,6 +272,9 @@
         <activity android:name=".res.Dpi" />
         <activity android:name=".res.ScreenSize" />
 
+        <activity android:name=".graphics.GraphicsList" />
+        <activity android:name=".graphics.Bitmap1" />
+
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
         <activity android:name=".web.WebView1" />

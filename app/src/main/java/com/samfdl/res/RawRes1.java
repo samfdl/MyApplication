@@ -31,7 +31,7 @@ public class RawRes1 extends AppCompatActivity {
         AssetManager am = getAssets();
         try {
             // 获取指定文件对应的AssetFileDescriptor
-            AssetFileDescriptor afd = am.openFd("shot.mp3");
+            AssetFileDescriptor afd = am.openFd("res_rawres_shot.mp3");
             mediaPlayer2 = new MediaPlayer();
             // 使用MediaPlayer加载指定的声音文件
             mediaPlayer2.setDataSource(afd.getFileDescriptor());

@@ -36,4 +36,6 @@
 
     <string name="res_rawres_play_raw">播放Raw声音</string>
     <string name="res_rawres_play_asset">播放Asset声音</string>
+
+    <string name="graphics_bitmap_next">下一张</string>
 </resources>
