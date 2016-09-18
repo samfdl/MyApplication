@@ -1,0 +1,5 @@
+<resources>
+    <string name="res_i18n_ok">OK</string>
+    <string name="res_i18n_cancel">Cancel</string>
+    <string name="res_i18n_msg">Hello , Android!</string>
+</resources>
