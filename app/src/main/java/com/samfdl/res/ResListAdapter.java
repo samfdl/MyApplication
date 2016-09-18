@@ -83,6 +83,8 @@ public class ResListAdapter extends BaseAdapter {
         listItem.add("属性资源");
         listItem.add("使用原生资源 raw asserts");
         listItem.add("国际化资源");
+        listItem.add("Dpi");
+        listItem.add("Dpi");
         return listItem;
     }
 }

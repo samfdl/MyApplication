@@ -64,7 +64,10 @@ public class ResList extends AppCompatActivity {
                         intent = new Intent(ResList.this, I18N.class);
                         break;
                     case 11:
-                        intent = new Intent(ResList.this, RawRes1.class);
+                        intent = new Intent(ResList.this, Dpi.class);
+                        break;
+                    case 12:
+                        intent = new Intent(ResList.this, Dpi.class);
                         break;
                     default:
                         intent = new Intent(ResList.this, ValuesRes.class);
