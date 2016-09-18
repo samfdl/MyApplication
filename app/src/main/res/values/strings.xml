@@ -38,4 +38,12 @@
     <string name="res_rawres_play_asset">播放Asset声音</string>
 
     <string name="graphics_bitmap_next">下一张</string>
+
+    <string name="graphics_canvas_circle">圆形</string>
+    <string name="graphics_canvas_square">正方形</string>
+    <string name="graphics_canvas_rect">长方形</string>
+    <string name="graphics_canvas_round_rect">圆角矩形</string>
+    <string name="graphics_canvas_oval">椭圆形</string>
+    <string name="graphics_canvas_triangle">三角形</string>
+    <string name="graphics_canvas_pentagon">五角形</string>
 </resources>

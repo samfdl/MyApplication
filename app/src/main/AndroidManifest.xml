@@ -274,6 +274,8 @@
 
         <activity android:name=".graphics.GraphicsList" />
         <activity android:name=".graphics.Bitmap1" />
+        <activity android:name=".graphics.Canvas1" />
+        <activity android:name=".graphics.Path1" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />

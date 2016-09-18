@@ -73,8 +73,8 @@ public class GraphicsListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("Bitmap");
-        listItem.add("WebView");
-        listItem.add("GeckoView mozilla 浏览器内核");
+        listItem.add("Canvas");
+        listItem.add("Path");
         return listItem;
     }
 }

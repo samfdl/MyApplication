@@ -12,8 +12,6 @@ import android.widget.ListView;
 import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.activity.StartActivity;
-import com.samfdl.web.GeckoView1;
-import com.samfdl.web.WebView1;
 
 public class GraphicsList extends AppCompatActivity {
     private ListView lv;
@@ -37,10 +35,10 @@ public class GraphicsList extends AppCompatActivity {
                         intent = new Intent(GraphicsList.this, Bitmap1.class);
                         break;
                     case 1:
-                        intent = new Intent(GraphicsList.this, WebView1.class);
+                        intent = new Intent(GraphicsList.this, Canvas1.class);
                         break;
                     case 2:
-                        intent = new Intent(GraphicsList.this, GeckoView1.class);
+                        intent = new Intent(GraphicsList.this, Path1.class);
                         break;
                     case 3:
                         intent = new Intent(GraphicsList.this, StartActivity.class);
