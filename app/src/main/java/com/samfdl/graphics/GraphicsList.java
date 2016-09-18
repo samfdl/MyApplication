@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.activity.StartActivity;
 
 public class GraphicsList extends AppCompatActivity {
     private ListView lv;
@@ -41,7 +40,7 @@ public class GraphicsList extends AppCompatActivity {
                         intent = new Intent(GraphicsList.this, Path1.class);
                         break;
                     case 3:
-                        intent = new Intent(GraphicsList.this, StartActivity.class);
+                        intent = new Intent(GraphicsList.this, PathText.class);
                         break;
                     default:
                         intent = new Intent(GraphicsList.this, Bitmap1.class);
