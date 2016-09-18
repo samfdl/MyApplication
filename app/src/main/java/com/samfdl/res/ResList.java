@@ -67,7 +67,7 @@ public class ResList extends AppCompatActivity {
                         intent = new Intent(ResList.this, Dpi.class);
                         break;
                     case 12:
-                        intent = new Intent(ResList.this, Dpi.class);
+                        intent = new Intent(ResList.this, ScreenSize.class);
                         break;
                     default:
                         intent = new Intent(ResList.this, ValuesRes.class);
