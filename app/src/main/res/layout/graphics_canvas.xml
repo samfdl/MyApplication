@@ -4,6 +4,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <com.samfdl.graphics.CanvasMyView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <com.samfdl.graphics.CanvasMyView2
         android:layout_width="wrap_content"
@@ -12,8 +15,5 @@
     <com.samfdl.graphics.CanvasSector
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
-
-    <com.samfdl.graphics.CanvasMyView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    
 </LinearLayout>
