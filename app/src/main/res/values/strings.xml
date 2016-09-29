@@ -46,4 +46,12 @@
     <string name="graphics_canvas_oval">椭圆形</string>
     <string name="graphics_canvas_triangle">三角形</string>
     <string name="graphics_canvas_pentagon">五角形</string>
+
+    <string name="graphics_handdraw_width_1">1像素</string>
+    <string name="graphics_handdraw_width_3">3像素</string>
+    <string name="graphics_handdraw_width_5">5像素</string>
+    <string name="graphics_handdraw_color">画笔颜色</string>
+    <string name="graphics_handdraw_width">画笔宽度</string>
+    <string name="graphics_handdraw_blur">模糊效果</string>
+    <string name="graphics_handdraw_emboss">浮雕效果</string>
 </resources>

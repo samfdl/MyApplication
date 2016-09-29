@@ -277,6 +277,7 @@
         <activity android:name=".graphics.Canvas1" />
         <activity android:name=".graphics.Path1" />
         <activity android:name=".graphics.PathText" />
+        <activity android:name=".graphics.HandDraw" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />

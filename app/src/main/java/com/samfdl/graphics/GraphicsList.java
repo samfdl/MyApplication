@@ -42,6 +42,9 @@ public class GraphicsList extends AppCompatActivity {
                     case 3:
                         intent = new Intent(GraphicsList.this, PathText.class);
                         break;
+                    case 4:
+                        intent = new Intent(GraphicsList.this, HandDraw.class);
+                        break;
                     default:
                         intent = new Intent(GraphicsList.this, Bitmap1.class);
                 }

@@ -76,6 +76,7 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("Canvas");
         listItem.add("Path");
         listItem.add("PathText");
+        listItem.add("Handdraw");
         return listItem;
     }
 }
