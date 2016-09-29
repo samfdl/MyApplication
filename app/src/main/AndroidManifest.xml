@@ -278,6 +278,7 @@
         <activity android:name=".graphics.Path1" />
         <activity android:name=".graphics.PathText" />
         <activity android:name=".graphics.HandDraw" />
+        <activity android:name=".graphics.PinBall" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />

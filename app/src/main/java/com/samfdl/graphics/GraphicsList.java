@@ -45,6 +45,9 @@ public class GraphicsList extends AppCompatActivity {
                     case 4:
                         intent = new Intent(GraphicsList.this, HandDraw.class);
                         break;
+                    case 5:
+                        intent = new Intent(GraphicsList.this, PinBall.class);
+                        break;
                     default:
                         intent = new Intent(GraphicsList.this, Bitmap1.class);
                 }

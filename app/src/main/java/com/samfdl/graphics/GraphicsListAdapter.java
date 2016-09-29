@@ -76,7 +76,8 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("Canvas");
         listItem.add("Path");
         listItem.add("PathText");
-        listItem.add("Handdraw");
+        listItem.add("画图板");
+        listItem.add("弹球游戏");
         return listItem;
     }
 }
