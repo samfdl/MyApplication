@@ -7,6 +7,7 @@ import android.view.MenuItem;
 
 import com.samfdl.R;
 
+// 有点问题
 public class Matrix1 extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {

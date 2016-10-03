@@ -79,6 +79,7 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("画图板");
         listItem.add("弹球游戏");
         listItem.add("Matrix");
+        listItem.add("Mesh");
         return listItem;
     }
 }

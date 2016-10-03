@@ -29,7 +29,7 @@ public class MatrixView extends View {
         super(context, set);
         // 获得位图
         bitmap = ((BitmapDrawable) context.getResources().getDrawable(
-                R.drawable.graphics_matrix)).getBitmap();
+                R.drawable.graphics_matrix_a)).getBitmap();
         // 获得位图宽
         width = bitmap.getWidth();
         // 获得位图高

@@ -280,6 +280,7 @@
         <activity android:name=".graphics.HandDraw" />
         <activity android:name=".graphics.PinBall" />
         <activity android:name=".graphics.Matrix1" />
+        <activity android:name=".graphics.Mesh" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
