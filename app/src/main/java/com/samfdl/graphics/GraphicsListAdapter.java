@@ -78,6 +78,7 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("PathText");
         listItem.add("画图板");
         listItem.add("弹球游戏");
+        listItem.add("Matrix");
         return listItem;
     }
 }
