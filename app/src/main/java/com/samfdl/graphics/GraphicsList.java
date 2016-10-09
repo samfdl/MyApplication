@@ -48,6 +48,13 @@ public class GraphicsList extends AppCompatActivity {
                     case 5:
                         intent = new Intent(GraphicsList.this, PinBall.class);
                         break;
+                    case 6:
+                        intent = new Intent(GraphicsList.this, Matrix1.class);
+                        break;
+                    case 7:
+                        intent = new Intent(GraphicsList.this, Matrix1.class);
+//                        intent = new Intent(GraphicsList.this, Mesh.class);
+                        break;
                     default:
                         intent = new Intent(GraphicsList.this, Bitmap1.class);
                 }
