@@ -282,6 +282,7 @@
         <activity android:name=".graphics.Matrix1" />
         <activity android:name=".graphics.MoveBack" />
         <activity android:name=".graphics.Mesh" />
+        <activity android:name=".graphics.Shader1" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />

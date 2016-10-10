@@ -81,6 +81,7 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("图片倾斜");
         listItem.add("移动游戏背景");
         listItem.add("可揉动的图片");
+        listItem.add("使用 Shader 填充图形");
         return listItem;
     }
 }

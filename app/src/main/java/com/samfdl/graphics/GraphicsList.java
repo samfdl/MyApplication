@@ -57,6 +57,9 @@ public class GraphicsList extends AppCompatActivity {
                     case 8:
                         intent = new Intent(GraphicsList.this, Mesh.class);
                         break;
+                    case 9:
+                        intent = new Intent(GraphicsList.this, Shader1.class);
+                        break;
                     default:
                         intent = new Intent(GraphicsList.this, Bitmap1.class);
                 }

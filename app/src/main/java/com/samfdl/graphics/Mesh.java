@@ -15,7 +15,6 @@ import android.widget.Toast;
 
 import com.samfdl.R;
 
-// 有点问题
 public class Mesh extends AppCompatActivity {
     private Bitmap bitmap;
 

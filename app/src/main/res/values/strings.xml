@@ -54,4 +54,10 @@
     <string name="graphics_handdraw_width">画笔宽度</string>
     <string name="graphics_handdraw_blur">模糊效果</string>
     <string name="graphics_handdraw_emboss">浮雕效果</string>
+
+    <string name="graphics_shader_bitmap">位图</string>
+    <string name="graphics_shader_line">线性渐变</string>
+    <string name="graphics_shader_radial">圆形渐变</string>
+    <string name="graphics_shader_sweep">角度渐变</string>
+    <string name="graphics_shader_composite">混合</string>
 </resources>
