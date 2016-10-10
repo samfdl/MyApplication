@@ -79,7 +79,8 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("画图板");
         listItem.add("弹球游戏");
         listItem.add("图片倾斜");
-        listItem.add("Mesh");
+        listItem.add("移动游戏背景");
+        listItem.add("可揉动的图片");
         return listItem;
     }
 }
