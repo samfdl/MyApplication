@@ -22,8 +22,7 @@ public class Mesh extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(new MyView(this, R.drawable.graphics_mesh_jinta));
-        Toast.makeText(this,"dddd",Toast.LENGTH_SHORT).show();
+        setContentView(new MyView(this, R.drawable.ui_listview_adapterviewflipper_juxie));
     }
 
     private class MyView extends View {

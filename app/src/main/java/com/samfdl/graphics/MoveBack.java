@@ -21,7 +21,6 @@ import com.samfdl.R;
 import java.util.Timer;
 import java.util.TimerTask;
 
-// 有点问题
 public class MoveBack extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
