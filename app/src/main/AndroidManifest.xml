@@ -286,6 +286,7 @@
         <activity android:name=".graphics.FatPo" />
         <activity android:name=".graphics.Blast" />
         <activity android:name=".graphics.TweenAnim" />
+        <activity android:name=".graphics.Butterfly" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />

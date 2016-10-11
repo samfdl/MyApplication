@@ -84,7 +84,8 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("使用 Shader 填充图形");
         listItem.add("逐帧动画 熊猫");
         listItem.add("逐帧动画 在指定点爆炸");
-        listItem.add("补间动画");
+        listItem.add("补间动画 旋转的花");
+        listItem.add("蝴蝶飞舞");
         return listItem;
     }
 }

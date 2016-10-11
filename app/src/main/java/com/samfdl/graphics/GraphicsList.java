@@ -69,6 +69,9 @@ public class GraphicsList extends AppCompatActivity {
                     case 12:
                         intent = new Intent(GraphicsList.this, TweenAnim.class);
                         break;
+                    case 13:
+                        intent = new Intent(GraphicsList.this, Butterfly.class);
+                        break;
                     default:
                         intent = new Intent(GraphicsList.this, Bitmap1.class);
                 }

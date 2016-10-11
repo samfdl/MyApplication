@@ -11,7 +11,6 @@ import android.widget.ImageView;
 
 import com.samfdl.R;
 
-// 有点问题
 public class FatPo extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
