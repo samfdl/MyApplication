@@ -83,6 +83,7 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("可揉动的图片");
         listItem.add("使用 Shader 填充图形");
         listItem.add("逐帧动画 熊猫");
+        listItem.add("逐帧动画 在指定点爆炸");
         return listItem;
     }
 }

@@ -284,6 +284,8 @@
         <activity android:name=".graphics.Mesh" />
         <activity android:name=".graphics.Shader1" />
         <activity android:name=".graphics.FatPo" />
+        <activity android:name=".graphics.Blast" />
+        <activity android:name=".graphics.TweenAnim" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
