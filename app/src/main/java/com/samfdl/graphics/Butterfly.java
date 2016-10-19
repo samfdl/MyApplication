@@ -27,7 +27,7 @@ public class Butterfly extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.graphics_matrix);
+        setContentView(R.layout.graphics_butterfly);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

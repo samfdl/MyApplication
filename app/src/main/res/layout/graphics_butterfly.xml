@@ -9,6 +9,6 @@
         android:id="@+id/butterfly"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@anim/butterfly" />
+        android:background="@anim/graphics_butterfly" />
 
 </LinearLayout>
