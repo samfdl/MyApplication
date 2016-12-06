@@ -87,6 +87,7 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("补间动画 旋转的花");
         listItem.add("蝴蝶飞舞");
         listItem.add("自定义补间动画");
+        listItem.add("ObjectAnimator属性动画");
         return listItem;
     }
 }
