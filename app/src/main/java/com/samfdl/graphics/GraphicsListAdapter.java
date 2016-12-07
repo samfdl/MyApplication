@@ -90,6 +90,7 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("ObjectAnimator属性动画");
         listItem.add("大珠小珠落玉盘");
         listItem.add("鱼儿水中游");
+        listItem.add("示波器");
         return listItem;
     }
 }

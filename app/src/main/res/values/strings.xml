@@ -63,4 +63,7 @@
 
     <string name="graphics_fatpo_play">播放</string>
     <string name="graphics_fatpo_stop">停止</string>
+
+    <string name="graphics_showwave_sin">正弦曲线</string>
+    <string name="graphics_showwave_cos">余弦曲线</string>
 </resources>

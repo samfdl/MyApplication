@@ -291,6 +291,7 @@
         <activity android:name=".graphics.ObjectAnimator1" />
         <activity android:name=".graphics.BouncingBalls" />
         <activity android:name=".graphics.SurfaceView1" />
+        <activity android:name=".graphics.ShowWave" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
