@@ -3,6 +3,7 @@ package com.samfdl.graphics;
 import android.graphics.Paint;
 import android.graphics.RadialGradient;
 import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.Shape;
 
 public class ObjectAnimatorShapeHolder {
     private float x = 0, y = 0;
@@ -14,6 +15,24 @@ public class ObjectAnimatorShapeHolder {
 
     public ObjectAnimatorShapeHolder(ShapeDrawable s) {
         shape = s;
+    }
+
+    public float getWidth() {
+        return shape.getShape().getWidth();
+    }
+
+    public void setWidth(float width) {
+        Shape s = shape.getShape();
+        s.resize(width, s.getHeight());
+    }
+
+    public float getHeight() {
+        return shape.getShape().getHeight();
+    }
+
+    public void setHeight(float height) {
+        Shape s = shape.getShape();
+        s.resize(s.getWidth(), height);
     }
 
     public float getX() {

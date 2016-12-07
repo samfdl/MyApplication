@@ -88,6 +88,7 @@ public class GraphicsListAdapter extends BaseAdapter {
         listItem.add("蝴蝶飞舞");
         listItem.add("自定义补间动画");
         listItem.add("ObjectAnimator属性动画");
+        listItem.add("大珠小珠落玉盘");
         return listItem;
     }
 }
