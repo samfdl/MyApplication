@@ -141,6 +141,7 @@
             android:theme="@android:style/Theme.Material.Dialog" />
         <activity android:name=".ui.dialog.DatePickerDialog1" />
         <activity android:name=".ui.dialog.ProgressDialog1" />
+
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
         <activity android:name=".event.SendSms" />
@@ -152,6 +153,7 @@
         <activity android:name=".event.Handler1" />
         <activity android:name=".event.CalPrime" />
         <activity android:name=".event.AsyncTask1" />
+
         <activity android:name=".intent.IntentList" />
         <activity android:name=".intent.ComponentAttribute" />
         <activity android:name=".intent.ActionAttribute">
@@ -271,6 +273,8 @@
         <activity android:name=".res.I18N" />
         <activity android:name=".res.Dpi" />
         <activity android:name=".res.ScreenSize" />
+
+        <activity android:name=".io.IOList" />
 
         <activity android:name=".graphics.GraphicsList" />
         <activity android:name=".graphics.Bitmap1" />
