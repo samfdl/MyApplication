@@ -82,7 +82,7 @@ public class GraphicsList extends AppCompatActivity {
                         intent = new Intent(GraphicsList.this, BouncingBalls.class);
                         break;
                     case 17:
-                        intent = new Intent(GraphicsList.this, BouncingBalls.class);
+                        intent = new Intent(GraphicsList.this, SurfaceView1.class);
                         break;
                     case 18:
                         intent = new Intent(GraphicsList.this, BouncingBalls.class);
