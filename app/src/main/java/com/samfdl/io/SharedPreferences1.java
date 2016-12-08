@@ -10,7 +10,6 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.samfdl.R;
-import com.samfdl.graphics.GraphicsList;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -27,7 +26,7 @@ public class SharedPreferences1 extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         // 获取只能被本应用程序读、写的SharedPreferences对象
-        preferences = getSharedPreferences("crazyit", MODE_PRIVATE);
+        preferences = getSharedPreferences("count", MODE_PRIVATE);
         editor = preferences.edit();
         Button read = (Button) findViewById(R.id.read);
         Button write = (Button) findViewById(R.id.write);
@@ -58,12 +57,25 @@ public class SharedPreferences1 extends AppCompatActivity {
                 editor.commit();
             }
         });
+
+        preferences = getSharedPreferences("count"
+                , MODE_PRIVATE);
+        // 读取SharedPreferences里的count数据
+        int count = preferences.getInt("count", 0);
+        // 显示程序以前使用的次数
+        Toast.makeText(this, "程序以前被使用了" + count + "次。"
+                , Toast.LENGTH_LONG).show();
+        SharedPreferences.Editor editor = preferences.edit();
+        // 存入数据
+        editor.putInt("count", ++count);
+        // 提交修改
+        editor.commit();
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, GraphicsList.class);
+            Intent intent = new Intent(this, IOList.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

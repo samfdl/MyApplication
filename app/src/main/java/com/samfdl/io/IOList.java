@@ -42,7 +42,7 @@ public class IOList extends AppCompatActivity {
                         intent = new Intent(IOList.this, SharedPreferences1.class);
                         break;
                     case 1:
-                        intent = new Intent(IOList.this, SendSms.class);
+                        intent = new Intent(IOList.this, File1.class);
                         break;
                     case 2:
                         intent = new Intent(IOList.this, Ball.class);

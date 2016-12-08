@@ -276,6 +276,7 @@
 
         <activity android:name=".io.IOList" />
         <activity android:name=".io.SharedPreferences1" />
+        <activity android:name=".io.File1" />
 
         <activity android:name=".graphics.GraphicsList" />
         <activity android:name=".graphics.Bitmap1" />
