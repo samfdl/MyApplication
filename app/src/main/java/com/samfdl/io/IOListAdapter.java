@@ -72,13 +72,7 @@ public class IOListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("控制飞机移动1");
-        listItem.add("发送短信");
-        listItem.add("跟随手指的小球");
-        listItem.add("获取系统设备状态");
-        listItem.add("监听屏幕方向");
-        listItem.add("自动播放动画");
-        listItem.add("线程计算质数");
+        listItem.add("SharedPreferences");
         listItem.add("异步任务下载");
         return listItem;
     }

@@ -39,7 +39,7 @@ public class IOList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(IOList.this, ControlPlane.class);
+                        intent = new Intent(IOList.this, SharedPreferences1.class);
                         break;
                     case 1:
                         intent = new Intent(IOList.this, SendSms.class);
@@ -63,7 +63,7 @@ public class IOList extends AppCompatActivity {
                         intent = new Intent(IOList.this, AsyncTask1.class);
                         break;
                     default:
-                        intent = new Intent(IOList.this, ControlPlane.class);
+                        intent = new Intent(IOList.this, SharedPreferences1.class);
                 }
                 startActivity(intent);
             }
