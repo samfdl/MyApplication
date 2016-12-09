@@ -76,6 +76,7 @@ public class IOListAdapter extends BaseAdapter {
         listItem.add("文件 File");
         listItem.add("SD卡存储");
         listItem.add("SD卡文件浏览器");
+        listItem.add("DataBase 数据库");
         return listItem;
     }
 }
