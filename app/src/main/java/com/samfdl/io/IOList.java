@@ -47,10 +47,10 @@ public class IOList extends AppCompatActivity {
                         intent = new Intent(IOList.this, SDFileExplorer.class);
                         break;
                     case 4:
-                        intent = new Intent(IOList.this, DataBase.class);
+                        intent = new Intent(IOList.this, Database.class);
                         break;
                     case 5:
-                        intent = new Intent(IOList.this, Handler1.class);
+                        intent = new Intent(IOList.this, DatabaseHelper.class);
                         break;
                     case 6:
                         intent = new Intent(IOList.this, CalPrime.class);

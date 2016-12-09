@@ -42,6 +42,10 @@
 
     <string name="io_database_insert">插入</string>
 
+    <string name="io_databasehelper_insert">添加生词</string>
+    <string name="io_databasehelper_search">查找</string>
+    <string name="io_databasehelper_detail">解释</string>
+
     <string name="graphics_bitmap_next">下一张</string>
 
     <string name="graphics_canvas_circle">圆形</string>
