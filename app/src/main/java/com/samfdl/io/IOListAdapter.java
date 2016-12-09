@@ -74,8 +74,8 @@ public class IOListAdapter extends BaseAdapter {
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("参数存储 SharedPreferences");
         listItem.add("文件 File");
-        listItem.add("SDCard 存储");
-        listItem.add("SDCard 存储");
+        listItem.add("SD卡存储");
+        listItem.add("SD卡文件浏览器");
         return listItem;
     }
 }

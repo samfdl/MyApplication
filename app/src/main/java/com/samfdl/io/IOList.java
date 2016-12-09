@@ -12,13 +12,9 @@ import android.widget.ListView;
 import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.event.AsyncTask1;
-import com.samfdl.event.Ball;
 import com.samfdl.event.CalPrime;
 import com.samfdl.event.ChangeConfig;
-import com.samfdl.event.ControlPlane;
 import com.samfdl.event.Handler1;
-import com.samfdl.event.SendSms;
-import com.samfdl.event.SystemStatus;
 
 public class IOList extends AppCompatActivity {
     private ListView lv;
@@ -48,7 +44,7 @@ public class IOList extends AppCompatActivity {
                         intent = new Intent(IOList.this, SDCard.class);
                         break;
                     case 3:
-                        intent = new Intent(IOList.this, SystemStatus.class);
+                        intent = new Intent(IOList.this, SDFileExplorer.class);
                         break;
                     case 4:
                         intent = new Intent(IOList.this, ChangeConfig.class);

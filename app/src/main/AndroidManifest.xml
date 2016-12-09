@@ -282,6 +282,7 @@
         <activity android:name=".io.SharedPreferences1" />
         <activity android:name=".io.File1" />
         <activity android:name=".io.SDCard" />
+        <activity android:name=".io.SDFileExplorer" />
 
         <activity android:name=".graphics.GraphicsList" />
         <activity android:name=".graphics.Bitmap1" />
