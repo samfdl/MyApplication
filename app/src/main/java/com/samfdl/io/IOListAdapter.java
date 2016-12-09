@@ -72,8 +72,10 @@ public class IOListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("SharedPreferences");
-        listItem.add("File");
+        listItem.add("参数存储 SharedPreferences");
+        listItem.add("文件 File");
+        listItem.add("SDCard 存储");
+        listItem.add("SDCard 存储");
         return listItem;
     }
 }

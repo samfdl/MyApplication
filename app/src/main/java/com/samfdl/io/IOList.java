@@ -45,7 +45,7 @@ public class IOList extends AppCompatActivity {
                         intent = new Intent(IOList.this, File1.class);
                         break;
                     case 2:
-                        intent = new Intent(IOList.this, Ball.class);
+                        intent = new Intent(IOList.this, SDCard.class);
                         break;
                     case 3:
                         intent = new Intent(IOList.this, SystemStatus.class);
