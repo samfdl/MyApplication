@@ -53,7 +53,6 @@ public class DatabaseHelper extends AppCompatActivity {
         search.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View source) {
-                Toast.makeText(DatabaseHelper.this, "onClick", Toast.LENGTH_SHORT).show();
                 // 获取用户输入
                 String key = ((EditText) findViewById(R.id.key)).getText()
                         .toString();
@@ -75,8 +74,7 @@ public class DatabaseHelper extends AppCompatActivity {
         });
     }
 
-    protected ArrayList<Map<String, String>>
-    converCursorToList(Cursor cursor) {
+    protected ArrayList<Map<String, String>> converCursorToList(Cursor cursor) {
         ArrayList<Map<String, String>> result =
                 new ArrayList<Map<String, String>>();
         // 遍历Cursor结果集

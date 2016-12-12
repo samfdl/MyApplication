@@ -9,6 +9,7 @@ import android.widget.BaseAdapter;
 import android.widget.ListView;
 
 import com.samfdl.activity.ActivityList;
+import com.samfdl.diy.DIYList;
 import com.samfdl.event.EventList;
 import com.samfdl.graphics.GraphicsList;
 import com.samfdl.intent.IntentList;
@@ -57,6 +58,9 @@ public class AllList extends AppCompatActivity {
                         break;
                     case 7:
                         intent = new Intent(AllList.this, WebList.class);
+                        break;
+                    case 8:
+                        intent = new Intent(AllList.this, DIYList.class);
                         break;
                     default:
                         intent = new Intent(AllList.this, ActivityList.class);

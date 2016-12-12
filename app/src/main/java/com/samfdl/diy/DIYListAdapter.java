@@ -1,4 +1,4 @@
-package com.samfdl;
+package com.samfdl.diy;
 
 import android.content.Context;
 import android.util.Log;
@@ -8,15 +8,17 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.samfdl.R;
+
 import java.util.ArrayList;
 
 /**
- * Created by samsung on 2016/8/24.
+ * Created by samfdl on 2016/12/7.
  */
-public class AllListAdapter extends BaseAdapter {
+public class DIYListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
 
-    public AllListAdapter(Context context) {
+    public DIYListAdapter(Context context) {
         this.mInflater = LayoutInflater.from(context);
     }
 
@@ -70,15 +72,13 @@ public class AllListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("Activity 和 Fragment");
-        listItem.add("界面 UI 控件");
-        listItem.add("事件处理 Event");
-        listItem.add("Intent 通信");
-        listItem.add("资源 Res");
-        listItem.add("数据存储");
-        listItem.add("图形和动画");
-        listItem.add("网络相关");
-        listItem.add("自定义控件");
+        listItem.add("悬浮窗");
+        listItem.add("文件 File");
+        listItem.add("SD卡存储");
+        listItem.add("SD卡文件浏览器");
+        listItem.add("Database 数据库");
+        listItem.add("英文生词本 DatabaseHelper");
+        listItem.add("手势");
         return listItem;
     }
 }
