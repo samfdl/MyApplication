@@ -13,7 +13,6 @@ import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import com.samfdl.R;
-import com.samfdl.io.IOList;
 
 public class GestureFlip extends AppCompatActivity implements GestureDetector.OnGestureListener {
     // ViewFlipper实例
@@ -28,7 +27,7 @@ public class GestureFlip extends AppCompatActivity implements GestureDetector.On
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.io_gestureflip);
+        setContentView(R.layout.event_gestureflip);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -41,17 +40,17 @@ public class GestureFlip extends AppCompatActivity implements GestureDetector.On
         flipper.addView(addImageView(R.drawable.ui_viewanimator_viewflipper_javaee));
         flipper.addView(addImageView(R.drawable.event_handler_ajax));
         flipper.addView(addImageView(R.drawable.ui_viewanimator_viewflipper_android));
-        flipper.addView(addImageView(R.drawable.io_gestureflip_html));
+        flipper.addView(addImageView(R.drawable.event_gestureflip_html));
         flipper.addView(addImageView(R.drawable.ui_toast_notification_swift));
         // 初始化Animation数组
         animations[0] = AnimationUtils.loadAnimation(
-                this, R.anim.io_gestureflip_left_in);
+                this, R.anim.event_gestureflip_left_in);
         animations[1] = AnimationUtils.loadAnimation(
-                this, R.anim.io_gestureflip_left_out);
+                this, R.anim.event_gestureflip_left_out);
         animations[2] = AnimationUtils.loadAnimation(
-                this, R.anim.io_gestureflip_right_in);
+                this, R.anim.event_gestureflip_right_in);
         animations[3] = AnimationUtils.loadAnimation(
-                this, R.anim.io_gestureflip_right_out);
+                this, R.anim.event_gestureflip_right_out);
     }
 
     // 定义添加ImageView的工具方法
@@ -119,7 +118,7 @@ public class GestureFlip extends AppCompatActivity implements GestureDetector.On
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, IOList.class);
+            Intent intent = new Intent(this, EventList.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

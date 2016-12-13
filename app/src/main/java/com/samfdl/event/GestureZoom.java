@@ -13,7 +13,6 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 
 import com.samfdl.R;
-import com.samfdl.io.IOList;
 
 public class GestureZoom extends AppCompatActivity implements GestureDetector.OnGestureListener {
     // 定义手势检测器实例
@@ -31,7 +30,7 @@ public class GestureZoom extends AppCompatActivity implements GestureDetector.On
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.io_gesturezoom);
+        setContentView(R.layout.event_gesturezoom);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -113,7 +112,7 @@ public class GestureZoom extends AppCompatActivity implements GestureDetector.On
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, IOList.class);
+            Intent intent = new Intent(this, EventList.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
