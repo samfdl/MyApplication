@@ -67,7 +67,7 @@ public class EventList extends AppCompatActivity {
                         intent = new Intent(EventList.this, GestureAdd.class);
                         break;
                     case 12:
-                        intent = new Intent(EventList.this, GestureAdd.class);
+                        intent = new Intent(EventList.this, GestureRecognize.class);
                         break;
                     case 13:
                         intent = new Intent(EventList.this, GestureAdd.class);
