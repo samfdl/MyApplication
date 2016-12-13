@@ -1,4 +1,4 @@
-package com.samfdl.io;
+package com.samfdl.event;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.ViewFlipper;
 
 import com.samfdl.R;
+import com.samfdl.io.IOList;
 
 public class GestureFlip extends AppCompatActivity implements GestureDetector.OnGestureListener {
     // ViewFlipper实例

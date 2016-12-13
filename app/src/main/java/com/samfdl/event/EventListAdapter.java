@@ -80,6 +80,9 @@ public class EventListAdapter extends BaseAdapter {
         listItem.add("自动播放动画");
         listItem.add("线程计算质数");
         listItem.add("异步任务下载");
+        listItem.add("手势监测");
+        listItem.add("手势缩放图片");
+        listItem.add("手势实现翻页");
         return listItem;
     }
 }

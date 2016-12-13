@@ -1,4 +1,4 @@
-package com.samfdl.io;
+package com.samfdl.event;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -13,6 +13,7 @@ import android.view.MotionEvent;
 import android.widget.ImageView;
 
 import com.samfdl.R;
+import com.samfdl.io.IOList;
 
 public class GestureZoom extends AppCompatActivity implements GestureDetector.OnGestureListener {
     // 定义手势检测器实例

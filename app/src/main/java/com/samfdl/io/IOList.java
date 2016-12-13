@@ -48,15 +48,7 @@ public class IOList extends AppCompatActivity {
                     case 5:
                         intent = new Intent(IOList.this, DatabaseHelper.class);
                         break;
-                    case 6:
-                        intent = new Intent(IOList.this, Gesture1.class);
-                        break;
-                    case 7:
-                        intent = new Intent(IOList.this, GestureZoom.class);
-                        break;
-                    case 8:
-                        intent = new Intent(IOList.this, GestureFlip.class);
-                        break;
+
                     default:
                         intent = new Intent(IOList.this, SharedPreferences1.class);
                 }

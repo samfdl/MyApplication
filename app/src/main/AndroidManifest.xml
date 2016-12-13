@@ -157,6 +157,9 @@
         <activity android:name=".event.Handler1" />
         <activity android:name=".event.CalPrime" />
         <activity android:name=".event.AsyncTask1" />
+        <activity android:name=".event.Gesture1" />
+        <activity android:name=".event.GestureZoom" />
+        <activity android:name=".event.GestureFlip" />
 
         <activity android:name=".intent.IntentList" />
         <activity android:name=".intent.ComponentAttribute" />
@@ -286,9 +289,6 @@
         <activity android:name=".io.Database" />
         <activity android:name=".io.DatabaseHelper" />
         <activity android:name=".io.DatabaseHelperResult" />
-        <activity android:name=".io.Gesture1" />
-        <activity android:name=".io.GestureZoom" />
-        <activity android:name=".io.GestureFlip" />
 
         <activity android:name=".graphics.GraphicsList" />
         <activity android:name=".graphics.Bitmap1" />

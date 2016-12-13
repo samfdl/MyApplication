@@ -1,4 +1,4 @@
-package com.samfdl.io;
+package com.samfdl.event;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,8 +7,6 @@ import android.view.GestureDetector;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.widget.Toast;
-
-import com.samfdl.R;
 
 public class Gesture1 extends AppCompatActivity implements GestureDetector.OnGestureListener {
     // 定义手势检测器实例
@@ -75,7 +73,7 @@ public class Gesture1 extends AppCompatActivity implements GestureDetector.OnGes
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, IOList.class);
+            Intent intent = new Intent(this, EventList.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

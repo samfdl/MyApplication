@@ -54,6 +54,15 @@ public class EventList extends AppCompatActivity {
                     case 7:
                         intent = new Intent(EventList.this, AsyncTask1.class);
                         break;
+                    case 8:
+                        intent = new Intent(EventList.this, Gesture1.class);
+                        break;
+                    case 9:
+                        intent = new Intent(EventList.this, GestureZoom.class);
+                        break;
+                    case 10:
+                        intent = new Intent(EventList.this, GestureFlip.class);
+                        break;
                     default:
                         intent = new Intent(EventList.this, ControlPlane.class);
                 }
