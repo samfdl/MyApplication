@@ -12,9 +12,6 @@ import android.widget.ListView;
 import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.event.AsyncTask1;
-import com.samfdl.event.CalPrime;
-import com.samfdl.event.ChangeConfig;
-import com.samfdl.event.Handler1;
 
 public class IOList extends AppCompatActivity {
     private ListView lv;
@@ -53,7 +50,7 @@ public class IOList extends AppCompatActivity {
                         intent = new Intent(IOList.this, DatabaseHelper.class);
                         break;
                     case 6:
-                        intent = new Intent(IOList.this, CalPrime.class);
+                        intent = new Intent(IOList.this, Gesture1.class);
                         break;
                     case 7:
                         intent = new Intent(IOList.this, AsyncTask1.class);
