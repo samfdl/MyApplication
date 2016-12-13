@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.event.AsyncTask1;
 
 public class IOList extends AppCompatActivity {
     private ListView lv;
@@ -53,7 +52,7 @@ public class IOList extends AppCompatActivity {
                         intent = new Intent(IOList.this, Gesture1.class);
                         break;
                     case 7:
-                        intent = new Intent(IOList.this, AsyncTask1.class);
+                        intent = new Intent(IOList.this, GestureZoom.class);
                         break;
                     default:
                         intent = new Intent(IOList.this, SharedPreferences1.class);
