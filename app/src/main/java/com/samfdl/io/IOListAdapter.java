@@ -80,6 +80,7 @@ public class IOListAdapter extends BaseAdapter {
         listItem.add("英文生词本 DatabaseHelper");
         listItem.add("手势监测");
         listItem.add("手势缩放图片");
+        listItem.add("手势实现翻页");
         return listItem;
     }
 }

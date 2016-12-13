@@ -54,6 +54,9 @@ public class IOList extends AppCompatActivity {
                     case 7:
                         intent = new Intent(IOList.this, GestureZoom.class);
                         break;
+                    case 8:
+                        intent = new Intent(IOList.this, GestureFlip.class);
+                        break;
                     default:
                         intent = new Intent(IOList.this, SharedPreferences1.class);
                 }

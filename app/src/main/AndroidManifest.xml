@@ -288,6 +288,7 @@
         <activity android:name=".io.DatabaseHelperResult" />
         <activity android:name=".io.Gesture1" />
         <activity android:name=".io.GestureZoom" />
+        <activity android:name=".io.GestureFlip" />
 
         <activity android:name=".graphics.GraphicsList" />
         <activity android:name=".graphics.Bitmap1" />
