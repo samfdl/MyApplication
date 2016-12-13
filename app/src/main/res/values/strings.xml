@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">集大成者</string>
 
+    <string name="activity_fragmentsenior_name">图书列表</string>
+    <string name="activity_fragmentsenior_title_book_detail">图书详情</string>
+
     <string name="ui_list">界面 UI 控件</string>
     <string name="ui_actionbar_list">活动条 ActionBar</string>
 
@@ -18,8 +21,7 @@
     <string name="ui_menu_menures_blue_title">蓝色</string>
     <string name="ui_menu_menures_green_title">绿色</string>
 
-    <string name="activity_fragmentsenior_name">图书列表</string>
-    <string name="activity_fragmentsenior_title_book_detail">图书详情</string>
+    <string name="event_addgesture_name">请填手势名</string>
 
     <string name="res_valuesres_c1">F00</string>
     <string name="res_valuesres_c2">0F0</string>

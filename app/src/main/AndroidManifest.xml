@@ -160,6 +160,7 @@
         <activity android:name=".event.Gesture1" />
         <activity android:name=".event.GestureZoom" />
         <activity android:name=".event.GestureFlip" />
+        <activity android:name=".event.AddGesture" />
 
         <activity android:name=".intent.IntentList" />
         <activity android:name=".intent.ComponentAttribute" />
