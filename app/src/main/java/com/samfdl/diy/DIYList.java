@@ -39,7 +39,7 @@ public class DIYList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(DIYList.this, SharedPreferences1.class);
+                        intent = new Intent(DIYList.this, FloatingWindow.class);
                         break;
                     case 1:
                         intent = new Intent(DIYList.this, File1.class);
@@ -63,7 +63,7 @@ public class DIYList extends AppCompatActivity {
                         intent = new Intent(DIYList.this, AsyncTask1.class);
                         break;
                     default:
-                        intent = new Intent(DIYList.this, SharedPreferences1.class);
+                        intent = new Intent(DIYList.this, FloatingWindow.class);
                 }
                 startActivity(intent);
             }

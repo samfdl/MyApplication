@@ -17,7 +17,6 @@ public class DatabaseHelperResult extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        System.out.print("dfldjfldfjdlj");
         setContentView(R.layout.io_databasehelper_popup);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);

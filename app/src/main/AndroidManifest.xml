@@ -316,6 +316,7 @@
             android:label="GeckoView mozilla 浏览器内核" />
 
         <activity android:name=".diy.DIYList" />
+        <activity android:name=".diy.FloatingWindow" />
     </application>
 
 </manifest>
