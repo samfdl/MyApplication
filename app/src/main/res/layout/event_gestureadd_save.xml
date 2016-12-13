@@ -13,7 +13,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="8dip"
-            android:text="@string/event_addgesture_name" />
+            android:text="@string/event_gestureadd_name" />
         <!-- 定义一个文本框来让用户输入手势名 -->
         <EditText
             android:id="@+id/gesture_name"

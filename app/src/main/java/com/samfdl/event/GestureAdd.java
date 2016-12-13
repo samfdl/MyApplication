@@ -18,14 +18,14 @@ import android.widget.ImageView;
 
 import com.samfdl.R;
 
-public class AddGesture extends AppCompatActivity {
+public class GestureAdd extends AppCompatActivity {
     EditText editText;
     GestureOverlayView gestureView;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.event_addgesture);
+        setContentView(R.layout.event_gestureadd);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -46,7 +46,7 @@ public class AddGesture extends AppCompatActivity {
                                                    final Gesture gesture) {
                         // 加载save.xml界面布局代表的视图
                         View saveDialog = getLayoutInflater().inflate(
-                                R.layout.event_addgesture_save, null);
+                                R.layout.event_gestureadd_save, null);
                         // 获取saveDialog里的show组件
                         ImageView imageView = (ImageView) saveDialog
                                 .findViewById(R.id.show);
@@ -58,7 +58,7 @@ public class AddGesture extends AppCompatActivity {
                                 128, 10, 0xffff0000);
                         imageView.setImageBitmap(bitmap);
                         // 使用对话框显示saveDialog组件
-                        new AlertDialog.Builder(AddGesture.this)
+                        new AlertDialog.Builder(GestureAdd.this)
                                 .setView(saveDialog)
                                 .setPositiveButton("保存", new DialogInterface.OnClickListener() {
                                     @Override
