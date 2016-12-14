@@ -85,6 +85,7 @@ public class EventListAdapter extends BaseAdapter {
         listItem.add("手势实现翻页");
         listItem.add("添加手势");
         listItem.add("手势识别");
+        listItem.add("自动朗读");
         return listItem;
     }
 }

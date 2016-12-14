@@ -23,6 +23,9 @@
 
     <string name="event_gestureadd_name">请填手势名</string>
 
+    <string name="event_speech_speech">朗读</string>
+    <string name="event_speech_record">记录声音</string>
+
     <string name="res_valuesres_c1">F00</string>
     <string name="res_valuesres_c2">0F0</string>
     <string name="res_valuesres_c3">00F</string>
