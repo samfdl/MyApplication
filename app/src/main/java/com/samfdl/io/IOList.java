@@ -48,7 +48,9 @@ public class IOList extends AppCompatActivity {
                     case 5:
                         intent = new Intent(IOList.this, DatabaseHelper.class);
                         break;
-
+                    case 6:
+                        intent = new Intent(IOList.this, FirstResolver.class);
+                        break;
                     default:
                         intent = new Intent(IOList.this, SharedPreferences1.class);
                 }

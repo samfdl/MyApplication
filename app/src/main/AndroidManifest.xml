@@ -292,6 +292,13 @@
         <activity android:name=".io.Database" />
         <activity android:name=".io.DatabaseHelper" />
         <activity android:name=".io.DatabaseHelperResult" />
+        <!-- 注册一个ContentProvider -->
+        <provider
+            android:name=".io.FirstProvider"
+            android:authorities="com.samfdl.providers.firstprovider"
+            android:exported="true" />
+
+        <activity android:name=".io.FirstResolver" />
 
         <activity android:name=".graphics.GraphicsList" />
         <activity android:name=".graphics.Bitmap1" />
