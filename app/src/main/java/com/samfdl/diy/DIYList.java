@@ -11,14 +11,10 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.event.AsyncTask1;
-import com.samfdl.event.CalPrime;
 import com.samfdl.io.Database;
-import com.samfdl.io.DatabaseHelper;
 import com.samfdl.io.File1;
 import com.samfdl.io.SDCard;
 import com.samfdl.io.SDFileExplorer;
-import com.samfdl.io.SharedPreferences1;
 
 public class DIYList extends AppCompatActivity {
     private ListView lv;
@@ -52,15 +48,6 @@ public class DIYList extends AppCompatActivity {
                         break;
                     case 4:
                         intent = new Intent(DIYList.this, Database.class);
-                        break;
-                    case 5:
-                        intent = new Intent(DIYList.this, DatabaseHelper.class);
-                        break;
-                    case 6:
-                        intent = new Intent(DIYList.this, CalPrime.class);
-                        break;
-                    case 7:
-                        intent = new Intent(DIYList.this, AsyncTask1.class);
                         break;
                     default:
                         intent = new Intent(DIYList.this, FloatingWindow.class);

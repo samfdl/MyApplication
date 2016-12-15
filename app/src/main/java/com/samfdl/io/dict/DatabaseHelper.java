@@ -1,15 +1,15 @@
-package com.samfdl.io;
+package com.samfdl.io.dict;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class DatabaseHelperHelper extends SQLiteOpenHelper {
+public class DatabaseHelper extends SQLiteOpenHelper {
     final String CREATE_TABLE_SQL =
             "create table dict(_id integer primary " +
                     "key autoincrement , word , detail)";
 
-    public DatabaseHelperHelper(Context context, String name, int version) {
+    public DatabaseHelper(Context context, String name, int version) {
         super(context, name, null, version);
     }
 

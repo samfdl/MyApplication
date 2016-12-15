@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
+import com.samfdl.io.dict.DictActivity;
 
 public class IOList extends AppCompatActivity {
     private ListView lv;
@@ -46,10 +47,13 @@ public class IOList extends AppCompatActivity {
                         intent = new Intent(IOList.this, Database.class);
                         break;
                     case 5:
-                        intent = new Intent(IOList.this, DatabaseHelper.class);
+                        intent = new Intent(IOList.this, DictActivity.class);
                         break;
                     case 6:
                         intent = new Intent(IOList.this, FirstResolver.class);
+                        break;
+                    case 7:
+                        intent = new Intent(IOList.this, DictActivity.class);
                         break;
                     default:
                         intent = new Intent(IOList.this, SharedPreferences1.class);

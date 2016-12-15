@@ -15,7 +15,6 @@ import android.widget.ListView;
 import android.widget.SimpleCursorAdapter;
 
 import com.samfdl.R;
-import com.samfdl.graphics.GraphicsList;
 
 public class Database extends AppCompatActivity {
     SQLiteDatabase db;

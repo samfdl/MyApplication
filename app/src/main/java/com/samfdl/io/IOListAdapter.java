@@ -79,6 +79,7 @@ public class IOListAdapter extends BaseAdapter {
         listItem.add("Database 数据库");
         listItem.add("英文生词本 DatabaseHelper");
         listItem.add("第一个 Resolver");
+        listItem.add("英文生词本 ContentProvider");
         return listItem;
     }
 }

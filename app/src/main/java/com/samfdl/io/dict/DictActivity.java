@@ -1,4 +1,4 @@
-package com.samfdl.io;
+package com.samfdl.io.dict;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -12,14 +12,14 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.samfdl.R;
-import com.samfdl.graphics.GraphicsList;
+import com.samfdl.io.IOList;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class DatabaseHelper extends AppCompatActivity {
-    DatabaseHelperHelper dbHelper;
+public class DictActivity extends AppCompatActivity {
+    DatabaseHelper dbHelper;
     Button insert = null;
     Button search = null;
 
@@ -32,7 +32,7 @@ public class DatabaseHelper extends AppCompatActivity {
 
         // 创建MyDatabaseHelper对象，指定数据库版本为1，此处使用相对路径即可
         // 数据库文件自动会保存在程序的数据文件夹的databases目录下
-        dbHelper = new DatabaseHelperHelper(this, "myDict.db3", 1);
+        dbHelper = new DatabaseHelper(this, "myDict.db3", 1);
         insert = (Button) findViewById(R.id.insert);
         search = (Button) findViewById(R.id.search);
         insert.setOnClickListener(new View.OnClickListener() {
@@ -46,7 +46,7 @@ public class DatabaseHelper extends AppCompatActivity {
                 // 插入生词记录
                 insertData(dbHelper.getReadableDatabase(), word, detail);
                 // 显示提示信息
-                Toast.makeText(DatabaseHelper.this, "添加生词成功！"
+                Toast.makeText(DictActivity.this, "添加生词成功！"
                         , Toast.LENGTH_LONG).show();
             }
         });
@@ -62,11 +62,10 @@ public class DatabaseHelper extends AppCompatActivity {
                         new String[]{"%" + key + "%", "%" + key + "%"});
                 // 创建一个Bundle对象
                 Bundle data = new Bundle();
-                Toast.makeText(DatabaseHelper.this, "putSerializable", Toast.LENGTH_SHORT).show();
                 data.putSerializable("data", converCursorToList(cursor));
                 // 创建一个Intent
-                Intent intent = new Intent(DatabaseHelper.this
-                        , DatabaseHelperResult.class);
+                Intent intent = new Intent(DictActivity.this
+                        , DictActivityResult.class);
                 intent.putExtras(data);
                 // 启动Activity
                 startActivity(intent);
@@ -108,7 +107,7 @@ public class DatabaseHelper extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, GraphicsList.class);
+            Intent intent = new Intent(this, IOList.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

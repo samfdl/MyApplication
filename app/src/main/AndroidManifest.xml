@@ -290,8 +290,8 @@
         <activity android:name=".io.SDCard" />
         <activity android:name=".io.SDFileExplorer" />
         <activity android:name=".io.Database" />
-        <activity android:name=".io.DatabaseHelper" />
-        <activity android:name=".io.DatabaseHelperResult" />
+        <activity android:name=".io.dict.DictActivity" />
+        <activity android:name=".io.dict.DictActivityResult" />
         <!-- 注册一个ContentProvider -->
         <provider
             android:name=".io.FirstProvider"

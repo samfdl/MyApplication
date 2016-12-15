@@ -1,4 +1,4 @@
-package com.samfdl.io;
+package com.samfdl.io.dict;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,12 +8,11 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.samfdl.R;
-import com.samfdl.graphics.GraphicsList;
 
 import java.util.List;
 import java.util.Map;
 
-public class DatabaseHelperResult extends AppCompatActivity {
+public class DictActivityResult extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -41,7 +40,7 @@ public class DatabaseHelperResult extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, DatabaseHelper.class);
+            Intent intent = new Intent(this, DictActivity.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }
