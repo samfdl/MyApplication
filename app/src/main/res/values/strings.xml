@@ -47,9 +47,9 @@
 
     <string name="io_database_insert">插入</string>
 
-    <string name="io_databasehelper_insert">添加生词</string>
-    <string name="io_databasehelper_search">查找</string>
-    <string name="io_databasehelper_detail">解释</string>
+    <string name="io_dict_dictactivity_insert">添加生词</string>
+    <string name="io_dict_dictactivity_search">查找</string>
+    <string name="io_dict_dictactivity_detail">解释</string>
 
     <string name="io_firstresolver_query">查询</string>
     <string name="io_firstresolver_update">更新</string>

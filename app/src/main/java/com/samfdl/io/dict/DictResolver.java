@@ -27,7 +27,7 @@ public class DictResolver extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.io_databasehelper);
+        setContentView(R.layout.io_dict_dictactivity);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

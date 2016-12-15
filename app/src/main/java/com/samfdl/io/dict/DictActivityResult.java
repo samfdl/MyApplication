@@ -15,7 +15,7 @@ public class DictActivityResult extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.io_databasehelper_popup);
+        setContentView(R.layout.io_dict_dictactivityresult_popup);
 
         ListView listView = (ListView) findViewById(R.id.show);
         Intent intent = getIntent();
@@ -28,7 +28,7 @@ public class DictActivityResult extends Activity {
         // 将List封装成SimpleAdapter
         SimpleAdapter adapter = new SimpleAdapter(this
                 , list,
-                R.layout.io_databasehelper_item, new String[]{"word", "detail"}
+                R.layout.io_dict_dictactivityresult_item, new String[]{"word", "detail"}
                 , new int[]{R.id.word, R.id.detail});
         // 填充ListView
         listView.setAdapter(adapter);
