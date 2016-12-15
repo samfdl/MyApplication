@@ -291,7 +291,10 @@
         <activity android:name=".io.SDFileExplorer" />
         <activity android:name=".io.Database" />
         <activity android:name=".io.dict.DictActivity" />
-        <activity android:name=".io.dict.DictActivityResult" />
+        <activity
+            android:name=".io.dict.DictActivityResult"
+            android:label="找到的单词"
+            android:theme="@android:style/Theme.Material.Dialog" />
         <!-- 注册一个ContentProvider -->
         <provider
             android:name=".io.FirstProvider"
@@ -299,6 +302,13 @@
             android:exported="true" />
 
         <activity android:name=".io.FirstResolver" />
+        <!-- 注册一个ContentProvider -->
+        <provider
+            android:name=".io.dict.DictProvider"
+            android:authorities="com.samfdl.providers.dictprovider"
+            android:exported="true" />
+
+        <activity android:name=".io.dict.DictResolver" />
 
         <activity android:name=".graphics.GraphicsList" />
         <activity android:name=".graphics.Bitmap1" />
