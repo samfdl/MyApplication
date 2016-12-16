@@ -152,6 +152,8 @@
         <activity android:name=".ui.dialog.DatePickerDialog1" />
         <activity android:name=".ui.dialog.ProgressDialog1" />
 
+        <activity android:name=".service.ServiceList" />
+
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
         <activity android:name=".event.SendSms" />

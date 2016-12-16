@@ -15,6 +15,7 @@ import com.samfdl.graphics.GraphicsList;
 import com.samfdl.intent.IntentList;
 import com.samfdl.io.IOList;
 import com.samfdl.res.ResList;
+import com.samfdl.service.ServiceList;
 import com.samfdl.ui.UIList;
 import com.samfdl.web.WebList;
 
@@ -42,24 +43,27 @@ public class AllList extends AppCompatActivity {
                         intent = new Intent(AllList.this, UIList.class);
                         break;
                     case 2:
-                        intent = new Intent(AllList.this, EventList.class);
+                        intent = new Intent(AllList.this, ServiceList.class);
                         break;
                     case 3:
-                        intent = new Intent(AllList.this, IntentList.class);
+                        intent = new Intent(AllList.this, EventList.class);
                         break;
                     case 4:
-                        intent = new Intent(AllList.this, ResList.class);
+                        intent = new Intent(AllList.this, IntentList.class);
                         break;
                     case 5:
-                        intent = new Intent(AllList.this, IOList.class);
+                        intent = new Intent(AllList.this, ResList.class);
                         break;
                     case 6:
-                        intent = new Intent(AllList.this, GraphicsList.class);
+                        intent = new Intent(AllList.this, IOList.class);
                         break;
                     case 7:
-                        intent = new Intent(AllList.this, WebList.class);
+                        intent = new Intent(AllList.this, GraphicsList.class);
                         break;
                     case 8:
+                        intent = new Intent(AllList.this, WebList.class);
+                        break;
+                    case 9:
                         intent = new Intent(AllList.this, DIYList.class);
                         break;
                     default:
