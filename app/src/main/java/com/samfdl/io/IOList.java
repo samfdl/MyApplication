@@ -56,6 +56,9 @@ public class IOList extends AppCompatActivity {
                     case 7:
                         intent = new Intent(IOList.this, DictResolver.class);
                         break;
+                    case 8:
+                        intent = new Intent(IOList.this, ContactProvider.class);
+                        break;
                     default:
                         intent = new Intent(IOList.this, SharedPreferences1.class);
                 }

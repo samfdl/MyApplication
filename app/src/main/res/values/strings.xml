@@ -55,6 +55,11 @@
     <string name="io_firstresolver_update">更新</string>
     <string name="io_firstresolver_delete">删除</string>
 
+    <string name="io_contactprovider_add">添加</string>
+    <string name="io_contactprovider_name">联系人姓名</string>
+    <string name="io_contactprovider_phone">电话</string>
+    <string name="io_contactprovider_email">Email</string>
+
     <string name="graphics_bitmap_next">下一张</string>
 
     <string name="graphics_canvas_circle">圆形</string>
