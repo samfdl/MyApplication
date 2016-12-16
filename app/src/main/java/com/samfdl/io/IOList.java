@@ -63,7 +63,7 @@ public class IOList extends AppCompatActivity {
                         intent = new Intent(IOList.this, MediaProvider.class);
                         break;
                     case 10:
-                        intent = new Intent(IOList.this, ContactProvider.class);
+                        intent = new Intent(IOList.this, MonitorSms.class);
                         break;
                     default:
                         intent = new Intent(IOList.this, SharedPreferences1.class);

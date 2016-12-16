@@ -82,6 +82,7 @@ public class IOListAdapter extends BaseAdapter {
         listItem.add("英文生词本 ContentProvider");
         listItem.add("访问系统联系人");
         listItem.add("访问系统多媒体内容");
+        listItem.add("监听短信变化");
         return listItem;
     }
 }
