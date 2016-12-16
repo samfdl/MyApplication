@@ -314,6 +314,7 @@
 
         <activity android:name=".io.dict.DictResolver" />
         <activity android:name=".io.ContactProvider" />
+        <activity android:name=".io.MediaProvider" />
 
         <activity android:name=".graphics.GraphicsList" />
         <activity android:name=".graphics.Bitmap1" />

@@ -60,6 +60,8 @@
     <string name="io_contactprovider_phone">电话</string>
     <string name="io_contactprovider_email">Email</string>
 
+    <string name="io_mediaprovider_view">查看</string>
+
     <string name="graphics_bitmap_next">下一张</string>
 
     <string name="graphics_canvas_circle">圆形</string>

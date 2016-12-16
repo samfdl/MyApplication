@@ -122,7 +122,7 @@ public class ContactProvider extends AppCompatActivity {
                             private TextView getTextView() {
                                 AbsListView.LayoutParams lp = new AbsListView
                                         .LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT
-                                        , 64);
+                                        , 160);
                                 TextView textView = new TextView(
                                         ContactProvider.this);
                                 textView.setLayoutParams(lp);

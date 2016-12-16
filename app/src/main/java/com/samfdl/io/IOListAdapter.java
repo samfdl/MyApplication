@@ -81,6 +81,7 @@ public class IOListAdapter extends BaseAdapter {
         listItem.add("第一个 Resolver");
         listItem.add("英文生词本 ContentProvider");
         listItem.add("访问系统联系人");
+        listItem.add("访问系统多媒体内容");
         return listItem;
     }
 }
