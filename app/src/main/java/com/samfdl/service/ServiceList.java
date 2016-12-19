@@ -42,7 +42,7 @@ public class ServiceList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(ServiceList.this, SharedPreferences1.class);
+                        intent = new Intent(ServiceList.this, FirstService.class);
                         break;
                     case 1:
                         intent = new Intent(ServiceList.this, File1.class);
@@ -75,7 +75,7 @@ public class ServiceList extends AppCompatActivity {
                         intent = new Intent(ServiceList.this, MonitorSms.class);
                         break;
                     default:
-                        intent = new Intent(ServiceList.this, SharedPreferences1.class);
+                        intent = new Intent(ServiceList.this, FirstService.class);
                 }
                 startActivity(intent);
             }

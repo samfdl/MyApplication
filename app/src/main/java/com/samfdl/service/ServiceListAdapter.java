@@ -72,7 +72,7 @@ public class ServiceListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("参数存储 SharedPreferences");
+        listItem.add("第一个 Service");
         listItem.add("文件 File");
         listItem.add("SD卡存储");
         return listItem;

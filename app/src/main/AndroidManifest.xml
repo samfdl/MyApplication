@@ -153,6 +153,9 @@
         <activity android:name=".ui.dialog.ProgressDialog1" />
 
         <activity android:name=".service.ServiceList" />
+        <activity android:name=".service.FirstService" />
+        <!-- 配置一个Service组件 -->
+        <service android:name=".service.FirstService1" />
 
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />

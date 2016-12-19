@@ -21,6 +21,9 @@
     <string name="ui_menu_menures_blue_title">蓝色</string>
     <string name="ui_menu_menures_green_title">绿色</string>
 
+    <string name="service_firstservice_start">启动Service</string>
+    <string name="service_firstservice_stop">关闭Service</string>
+
     <string name="event_gestureadd_name">请填手势名</string>
 
     <string name="event_speech_speech">朗读</string>
