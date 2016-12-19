@@ -157,6 +157,9 @@
         <!-- 配置一个Service组件 -->
         <service android:name=".service.FirstService1" />
 
+        <activity android:name=".service.BindService" />
+        <service android:name=".service.BindService1" />
+
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
         <activity android:name=".event.SendSms" />

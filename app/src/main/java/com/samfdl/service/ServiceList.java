@@ -45,7 +45,7 @@ public class ServiceList extends AppCompatActivity {
                         intent = new Intent(ServiceList.this, FirstService.class);
                         break;
                     case 1:
-                        intent = new Intent(ServiceList.this, File1.class);
+                        intent = new Intent(ServiceList.this, BindService.class);
                         break;
                     case 2:
                         intent = new Intent(ServiceList.this, SDCard.class);

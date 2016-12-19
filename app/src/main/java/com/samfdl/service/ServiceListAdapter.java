@@ -73,7 +73,7 @@ public class ServiceListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("第一个 Service");
-        listItem.add("文件 File");
+        listItem.add("Bind Service");
         listItem.add("SD卡存储");
         return listItem;
     }
