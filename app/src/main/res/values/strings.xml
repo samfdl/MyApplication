@@ -28,6 +28,9 @@
     <string name="service_bindservice_unbind">解除绑定</string>
     <string name="service_bindservice_getServiceStatus">获取Service状态</string>
 
+    <string name="service_intentservice_start_service">启动普通Service</string>
+    <string name="service_intentservice_start_intent_service">启动IntentService</string>
+
     <string name="event_gestureadd_name">请填手势名</string>
 
     <string name="event_speech_speech">朗读</string>

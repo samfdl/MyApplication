@@ -159,6 +159,10 @@
 
         <activity android:name=".service.BindService" />
         <service android:name=".service.BindService1" />
+        <activity android:name=".service.IntentService1" />
+
+        <service android:name=".service.IntentService2" />
+        <service android:name=".service.IntentServiceNo" />
 
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
