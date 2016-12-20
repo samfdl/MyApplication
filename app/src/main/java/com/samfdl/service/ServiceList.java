@@ -54,7 +54,7 @@ public class ServiceList extends AppCompatActivity {
                         intent = new Intent(ServiceList.this, IntentService1.class);
                         break;
                     case 4:
-                        intent = new Intent(ServiceList.this, Database.class);
+                        intent = new Intent(ServiceList.this, TelephonyStatus.class);
                         break;
                     case 5:
                         intent = new Intent(ServiceList.this, DictActivity.class);

@@ -14,6 +14,10 @@
     <uses-permission android:name="android.permission.READ_CONTACTS" />
     <!-- 授予写联系人ContentProvider的权限 -->
     <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <!-- 添加访问手机位置的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 添加访问手机状态的权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
     <application
         android:allowBackup="true"
@@ -165,6 +169,8 @@
 
         <service android:name=".service.IntentService2" />
         <service android:name=".service.IntentServiceNo" />
+
+        <activity android:name=".service.TelephonyStatus" />
 
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
