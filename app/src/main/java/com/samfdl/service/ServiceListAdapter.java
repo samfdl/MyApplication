@@ -74,6 +74,7 @@ public class ServiceListAdapter extends BaseAdapter {
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("第一个 Service");
         listItem.add("绑定 Service");
+        listItem.add("再次绑定 Service");
         listItem.add("IntentService");
         return listItem;
     }

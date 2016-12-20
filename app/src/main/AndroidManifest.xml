@@ -159,6 +159,8 @@
 
         <activity android:name=".service.BindService" />
         <service android:name=".service.BindService1" />
+        <activity android:name=".service.ReBindService" />
+        <service android:name=".service.ReBindService1" />
         <activity android:name=".service.IntentService1" />
 
         <service android:name=".service.IntentService2" />
