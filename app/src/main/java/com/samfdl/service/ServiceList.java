@@ -12,14 +12,9 @@ import android.widget.ListView;
 import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.io.ContactProvider;
-import com.samfdl.io.Database;
-import com.samfdl.io.File1;
 import com.samfdl.io.FirstResolver;
 import com.samfdl.io.MediaProvider;
 import com.samfdl.io.MonitorSms;
-import com.samfdl.io.SDCard;
-import com.samfdl.io.SDFileExplorer;
-import com.samfdl.io.SharedPreferences1;
 import com.samfdl.io.dict.DictActivity;
 import com.samfdl.io.dict.DictResolver;
 
@@ -57,7 +52,7 @@ public class ServiceList extends AppCompatActivity {
                         intent = new Intent(ServiceList.this, TelephonyStatus.class);
                         break;
                     case 5:
-                        intent = new Intent(ServiceList.this, DictActivity.class);
+                        intent = new Intent(ServiceList.this, MonitorPhone.class);
                         break;
                     case 6:
                         intent = new Intent(ServiceList.this, FirstResolver.class);

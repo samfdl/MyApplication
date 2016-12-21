@@ -77,6 +77,7 @@ public class ServiceListAdapter extends BaseAdapter {
         listItem.add("再次绑定 Service");
         listItem.add("IntentService");
         listItem.add("获取网络和 SIM 卡信息");
+        listItem.add("监听手机来电");
         return listItem;
     }
 }

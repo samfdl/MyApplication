@@ -171,6 +171,7 @@
         <service android:name=".service.IntentServiceNo" />
 
         <activity android:name=".service.TelephonyStatus" />
+        <activity android:name=".service.MonitorPhone" />
 
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
