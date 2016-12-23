@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.diy.FloatingWindow;
 import com.samfdl.io.Database;
 import com.samfdl.io.File1;
 import com.samfdl.io.SDCard;

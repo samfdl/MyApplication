@@ -21,7 +21,7 @@ public class SendSms extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.service_sendsms);
+        setContentView(R.layout.phone_sendsms);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 

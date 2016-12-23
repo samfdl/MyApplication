@@ -10,7 +10,6 @@ import android.widget.ListView;
 import android.widget.SimpleAdapter;
 
 import com.samfdl.R;
-import com.samfdl.service.ServiceList;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -26,7 +25,7 @@ public class TelephonyStatus extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.service_telephonystatus);
+        setContentView(R.layout.phone_telephonystatus);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
@@ -34,13 +33,13 @@ public class TelephonyStatus extends AppCompatActivity {
         TelephonyManager tManager = (TelephonyManager)
                 getSystemService(Context.TELEPHONY_SERVICE);
         // 获取各种状态名称的数组
-        statusNames = getResources().getStringArray(R.array.service_telephonystatus_statusNames);
+        statusNames = getResources().getStringArray(R.array.phone_telephonystatus_statusNames);
         // 获取代表SIM卡状态的数组
         String[] simState = getResources()
-                .getStringArray(R.array.service_telephonystatus_simState);
+                .getStringArray(R.array.phone_telephonystatus_simState);
         // 获取代表电话网络类型的数组
         String[] phoneType = getResources().getStringArray(
-                R.array.service_telephonystatus_phoneType);
+                R.array.phone_telephonystatus_phoneType);
         // 获取设备编号
         statusValues.add(tManager.getDeviceId());
         // 获取系统平台的版本
@@ -74,7 +73,7 @@ public class TelephonyStatus extends AppCompatActivity {
         }
         // 使用SimpleAdapter封装List数据
         SimpleAdapter adapter = new SimpleAdapter(this, status,
-                R.layout.service_telephonystatus_item, new String[]{"name", "value"}
+                R.layout.phone_telephonystatus_item, new String[]{"name", "value"}
                 , new int[]{R.id.name, R.id.value});
         // 为ListView设置Adapter
         showView.setAdapter(adapter);

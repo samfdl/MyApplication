@@ -31,12 +31,6 @@
     <string name="service_intentservice_start_service">启动普通Service</string>
     <string name="service_intentservice_start_intent_service">启动IntentService</string>
 
-    <string name="service_blocklist_managerBlock">管理黑名单</string>
-
-    <string name="service_sendsms_number">收件人号码：</string>
-    <string name="service_sendsms_content">短信内容：</string>
-    <string name="service_sendsms_send">发送</string>
-
     <string name="event_gestureadd_name">请填手势名</string>
 
     <string name="event_speech_speech">朗读</string>
@@ -107,4 +101,10 @@
 
     <string name="graphics_showwave_sin">正弦曲线</string>
     <string name="graphics_showwave_cos">余弦曲线</string>
+
+    <string name="phone_blocklist_managerBlock">管理黑名单</string>
+
+    <string name="phone_sendsms_number">收件人号码：</string>
+    <string name="phone_sendsms_content">短信内容：</string>
+    <string name="phone_sendsms_send">发送</string>
 </resources>

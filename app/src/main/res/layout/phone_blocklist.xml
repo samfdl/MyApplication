@@ -10,5 +10,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:singleLine="true"
-        android:text="@string/service_blocklist_managerBlock" />
+        android:text="@string/phone_blocklist_managerBlock" />
 </LinearLayout>  

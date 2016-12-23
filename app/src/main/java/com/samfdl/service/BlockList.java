@@ -69,7 +69,7 @@ public class BlockList extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.service_blocklist);
+        setContentView(R.layout.phone_blocklist);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
