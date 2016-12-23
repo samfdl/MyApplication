@@ -12,10 +12,8 @@ import android.widget.ListView;
 import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.io.ContactProvider;
-import com.samfdl.io.FirstResolver;
 import com.samfdl.io.MediaProvider;
 import com.samfdl.io.MonitorSms;
-import com.samfdl.io.dict.DictActivity;
 import com.samfdl.io.dict.DictResolver;
 
 public class ServiceList extends AppCompatActivity {
@@ -55,7 +53,7 @@ public class ServiceList extends AppCompatActivity {
                         intent = new Intent(ServiceList.this, MonitorPhone.class);
                         break;
                     case 6:
-                        intent = new Intent(ServiceList.this, FirstResolver.class);
+                        intent = new Intent(ServiceList.this, BlockList.class);
                         break;
                     case 7:
                         intent = new Intent(ServiceList.this, DictResolver.class);

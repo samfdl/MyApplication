@@ -31,6 +31,8 @@
     <string name="service_intentservice_start_service">启动普通Service</string>
     <string name="service_intentservice_start_intent_service">启动IntentService</string>
 
+    <string name="service_blocklist_managerBlock">管理黑名单</string>
+
     <string name="event_gestureadd_name">请填手势名</string>
 
     <string name="event_speech_speech">朗读</string>
