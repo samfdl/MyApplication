@@ -36,7 +36,7 @@ public class PhoneList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(PhoneList.this, FloatingWindow.class);
+                        intent = new Intent(PhoneList.this, TelephonyStatus.class);
                         break;
                     case 1:
                         intent = new Intent(PhoneList.this, File1.class);
@@ -51,7 +51,7 @@ public class PhoneList extends AppCompatActivity {
                         intent = new Intent(PhoneList.this, Database.class);
                         break;
                     default:
-                        intent = new Intent(PhoneList.this, FloatingWindow.class);
+                        intent = new Intent(PhoneList.this, TelephonyStatus.class);
                 }
                 startActivity(intent);
             }
