@@ -11,10 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.io.Database;
-import com.samfdl.io.File1;
-import com.samfdl.io.SDCard;
-import com.samfdl.io.SDFileExplorer;
 
 public class PhoneList extends AppCompatActivity {
     private ListView lv;
@@ -38,16 +34,16 @@ public class PhoneList extends AppCompatActivity {
                         intent = new Intent(PhoneList.this, TelephonyStatus.class);
                         break;
                     case 1:
-                        intent = new Intent(PhoneList.this, File1.class);
+                        intent = new Intent(PhoneList.this, MonitorPhone.class);
                         break;
                     case 2:
-                        intent = new Intent(PhoneList.this, SDCard.class);
+                        intent = new Intent(PhoneList.this, BlockList.class);
                         break;
                     case 3:
-                        intent = new Intent(PhoneList.this, SDFileExplorer.class);
+                        intent = new Intent(PhoneList.this, SendSms.class);
                         break;
                     case 4:
-                        intent = new Intent(PhoneList.this, Database.class);
+                        intent = new Intent(PhoneList.this, GroupSend.class);
                         break;
                     default:
                         intent = new Intent(PhoneList.this, TelephonyStatus.class);

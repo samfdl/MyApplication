@@ -1,4 +1,4 @@
-package com.samfdl.service;
+package com.samfdl.phone;
 
 import android.content.Context;
 import android.content.Intent;
@@ -7,8 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.view.MenuItem;
-
-import com.samfdl.R;
 
 import java.io.FileNotFoundException;
 import java.io.OutputStream;
@@ -63,7 +61,7 @@ public class MonitorPhone extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, ServiceList.class);
+            Intent intent = new Intent(this, PhoneList.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

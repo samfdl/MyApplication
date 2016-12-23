@@ -367,9 +367,9 @@
 
         <activity android:name=".phone.PhoneList" />
         <activity android:name=".phone.TelephonyStatus" />
-        <activity android:name=".service.MonitorPhone" />
-        <activity android:name=".service.BlockList" />
-        <activity android:name=".service.SendSms" />
+        <activity android:name=".phone.MonitorPhone" />
+        <activity android:name=".phone.BlockList" />
+        <activity android:name=".phone.SendSms" />
 
         <activity android:name=".diy.DIYList" />
         <activity android:name=".diy.FloatingWindow" />
