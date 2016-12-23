@@ -14,6 +14,7 @@ import com.samfdl.event.EventList;
 import com.samfdl.graphics.GraphicsList;
 import com.samfdl.intent.IntentList;
 import com.samfdl.io.IOList;
+import com.samfdl.phone.PhoneList;
 import com.samfdl.res.ResList;
 import com.samfdl.service.ServiceList;
 import com.samfdl.ui.UIList;
@@ -64,6 +65,9 @@ public class AllList extends AppCompatActivity {
                         intent = new Intent(AllList.this, WebList.class);
                         break;
                     case 9:
+                        intent = new Intent(AllList.this, PhoneList.class);
+                        break;
+                    case 10:
                         intent = new Intent(AllList.this, DIYList.class);
                         break;
                     default:
