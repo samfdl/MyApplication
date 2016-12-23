@@ -78,7 +78,8 @@ public class ServiceListAdapter extends BaseAdapter {
         listItem.add("IntentService");
         listItem.add("获取网络和 SIM 卡信息");
         listItem.add("监听手机来电");
-        listItem.add("电话黑名单");
+        listItem.add("手机黑名单");
+        listItem.add("发送短信");
         return listItem;
     }
 }

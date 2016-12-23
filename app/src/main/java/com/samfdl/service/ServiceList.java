@@ -14,7 +14,6 @@ import com.samfdl.R;
 import com.samfdl.io.ContactProvider;
 import com.samfdl.io.MediaProvider;
 import com.samfdl.io.MonitorSms;
-import com.samfdl.io.dict.DictResolver;
 
 public class ServiceList extends AppCompatActivity {
     private ListView lv;
@@ -56,7 +55,7 @@ public class ServiceList extends AppCompatActivity {
                         intent = new Intent(ServiceList.this, BlockList.class);
                         break;
                     case 7:
-                        intent = new Intent(ServiceList.this, DictResolver.class);
+                        intent = new Intent(ServiceList.this, SendSms.class);
                         break;
                     case 8:
                         intent = new Intent(ServiceList.this, ContactProvider.class);

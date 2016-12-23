@@ -173,6 +173,7 @@
         <activity android:name=".service.TelephonyStatus" />
         <activity android:name=".service.MonitorPhone" />
         <activity android:name=".service.BlockList" />
+        <activity android:name=".service.SendSms" />
 
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
