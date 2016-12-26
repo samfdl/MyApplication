@@ -359,6 +359,8 @@
         <activity android:name=".media.MediaList" />
         <activity android:name=".media.Audio1" />
 
+        <activity android:name=".hardware.HardwareList" />
+
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
         <activity android:name=".web.WebView1" />
