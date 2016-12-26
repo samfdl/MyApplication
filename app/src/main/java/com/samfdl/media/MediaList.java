@@ -16,7 +16,6 @@ import com.samfdl.phone.GroupSend;
 import com.samfdl.phone.MonitorPhone;
 import com.samfdl.phone.MonitorSms;
 import com.samfdl.phone.SendSms;
-import com.samfdl.phone.TelephonyStatus;
 
 public class MediaList extends AppCompatActivity {
     private ListView lv;
@@ -37,7 +36,7 @@ public class MediaList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(MediaList.this, TelephonyStatus.class);
+                        intent = new Intent(MediaList.this, Audio1.class);
                         break;
                     case 1:
                         intent = new Intent(MediaList.this, MonitorPhone.class);
@@ -55,7 +54,7 @@ public class MediaList extends AppCompatActivity {
                         intent = new Intent(MediaList.this, MonitorSms.class);
                         break;
                     default:
-                        intent = new Intent(MediaList.this, TelephonyStatus.class);
+                        intent = new Intent(MediaList.this, Audio1.class);
                 }
                 startActivity(intent);
             }

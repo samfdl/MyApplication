@@ -102,6 +102,12 @@
     <string name="graphics_showwave_sin">正弦曲线</string>
     <string name="graphics_showwave_cos">余弦曲线</string>
 
+    <string name="media_audio_play">音频播放音乐</string>
+    <string name="media_audio_up">增大音量</string>
+    <string name="media_audio_down">降低音量</string>
+    <string name="media_audio_normal">静音</string>
+    <string name="media_audio_mute">正常</string>
+
     <string name="phone_blocklist_managerBlock">管理黑名单</string>
 
     <string name="phone_sendsms_number">收件人号码：</string>
