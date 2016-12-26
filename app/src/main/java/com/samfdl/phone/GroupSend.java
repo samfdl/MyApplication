@@ -33,15 +33,15 @@ public class GroupSend extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.graphics_canvas);
+        setContentView(R.layout.phone_groupsend);
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         sManager = SmsManager.getDefault();
         // 获取界面上的文本框、按钮组件
-//        numbers = (EditText) findViewById(R.id.numbers);
+        numbers = (EditText) findViewById(R.id.numbers);
         content = (EditText) findViewById(R.id.content);
-//        select = (Button) findViewById(R.id.select);
+        select = (Button) findViewById(R.id.select);
         send = (Button) findViewById(R.id.send);
         // 为send按钮的单击事件绑定监听器
         send.setOnClickListener(new View.OnClickListener() {
@@ -103,12 +103,12 @@ public class GroupSend extends AppCompatActivity {
                         return rb;
                     }
                 };
-                // 加载list.xml布局文件对应的View noonono
+                // 加载list.xml布局文件对应的View
                 View selectView = getLayoutInflater().inflate(
-                        R.layout.phone_telephonystatus_item, null);
+                        R.layout.ui_listview_arrayadapter, null);
                 // 获取selectView中的名为list的ListView组件
                 final ListView listView = (ListView) selectView
-                        .findViewById(R.id.list);
+                        .findViewById(R.id.list1);
                 listView.setAdapter(adapter);
                 new AlertDialog.Builder(GroupSend.this)
                         .setView(selectView)

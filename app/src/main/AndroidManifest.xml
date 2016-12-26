@@ -370,6 +370,7 @@
         <activity android:name=".phone.MonitorPhone" />
         <activity android:name=".phone.BlockList" />
         <activity android:name=".phone.SendSms" />
+        <activity android:name=".phone.GroupSend" />
 
         <activity android:name=".diy.DIYList" />
         <activity android:name=".diy.FloatingWindow" />
