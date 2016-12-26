@@ -1,4 +1,4 @@
-package com.samfdl.io;
+package com.samfdl.phone;
 
 import android.Manifest;
 import android.content.Intent;
@@ -90,7 +90,7 @@ public class MonitorSms extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, IOList.class);
+            Intent intent = new Intent(this, PhoneList.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

@@ -46,7 +46,7 @@ public class PhoneList extends AppCompatActivity {
                         intent = new Intent(PhoneList.this, GroupSend.class);
                         break;
                     case 5:
-                        intent = new Intent(PhoneList.this, GroupSend.class);
+                        intent = new Intent(PhoneList.this, MonitorSms.class);
                         break;
                     default:
                         intent = new Intent(PhoneList.this, TelephonyStatus.class);

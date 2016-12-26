@@ -12,7 +12,7 @@ import android.widget.ListView;
 import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.io.MediaProvider;
-import com.samfdl.io.MonitorSms;
+import com.samfdl.phone.MonitorSms;
 import com.samfdl.phone.BlockList;
 import com.samfdl.phone.GroupSend;
 import com.samfdl.phone.MonitorPhone;

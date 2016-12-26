@@ -334,7 +334,6 @@
         <activity android:name=".io.dict.DictResolver" />
         <activity android:name=".io.ContactProvider" />
         <activity android:name=".io.MediaProvider" />
-        <activity android:name=".io.MonitorSms" />
 
         <activity android:name=".graphics.GraphicsList" />
         <activity android:name=".graphics.Bitmap1" />
@@ -370,6 +369,7 @@
         <activity android:name=".phone.BlockList" />
         <activity android:name=".phone.SendSms" />
         <activity android:name=".phone.GroupSend" />
+        <activity android:name=".phone.MonitorSms" />
 
         <activity android:name=".diy.DIYList" />
         <activity android:name=".diy.FloatingWindow" />

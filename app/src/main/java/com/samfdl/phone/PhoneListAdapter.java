@@ -77,7 +77,7 @@ public class PhoneListAdapter extends BaseAdapter {
         listItem.add("手机黑名单");
         listItem.add("发送短信");
         listItem.add("群发短信");
-        listItem.add("发送短信");
+        listItem.add("监听短信变化");
         listItem.add("手势");
         return listItem;
     }
