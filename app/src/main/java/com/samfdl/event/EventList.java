@@ -34,42 +34,39 @@ public class EventList extends AppCompatActivity {
                         intent = new Intent(EventList.this, ControlPlane.class);
                         break;
                     case 1:
-                        intent = new Intent(EventList.this, SendSms.class);
-                        break;
-                    case 2:
                         intent = new Intent(EventList.this, Ball.class);
                         break;
-                    case 3:
+                    case 2:
                         intent = new Intent(EventList.this, SystemStatus.class);
                         break;
-                    case 4:
+                    case 3:
                         intent = new Intent(EventList.this, ChangeConfig.class);
                         break;
-                    case 5:
+                    case 4:
                         intent = new Intent(EventList.this, Handler1.class);
                         break;
-                    case 6:
+                    case 5:
                         intent = new Intent(EventList.this, CalPrime.class);
                         break;
-                    case 7:
+                    case 6:
                         intent = new Intent(EventList.this, AsyncTask1.class);
                         break;
-                    case 8:
+                    case 7:
                         intent = new Intent(EventList.this, Gesture1.class);
                         break;
-                    case 9:
+                    case 8:
                         intent = new Intent(EventList.this, GestureZoom.class);
                         break;
-                    case 10:
+                    case 9:
                         intent = new Intent(EventList.this, GestureFlip.class);
                         break;
-                    case 11:
+                    case 10:
                         intent = new Intent(EventList.this, GestureAdd.class);
                         break;
-                    case 12:
+                    case 11:
                         intent = new Intent(EventList.this, GestureRecognize.class);
                         break;
-                    case 13:
+                    case 12:
                         intent = new Intent(EventList.this, Speech.class);
                         break;
                     default:

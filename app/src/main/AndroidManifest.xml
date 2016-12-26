@@ -172,7 +172,6 @@
 
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
-        <activity android:name=".event.SendSms" />
         <activity android:name=".event.Ball" />
         <activity android:name=".event.SystemStatus" />
         <activity
