@@ -37,7 +37,7 @@ public class HardwareList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(HardwareList.this, Audio1.class);
+                        intent = new Intent(HardwareList.this, Vibrator1.class);
                         break;
                     case 1:
                         intent = new Intent(HardwareList.this, MonitorPhone.class);
@@ -55,7 +55,7 @@ public class HardwareList extends AppCompatActivity {
                         intent = new Intent(HardwareList.this, MonitorSms.class);
                         break;
                     default:
-                        intent = new Intent(HardwareList.this, Audio1.class);
+                        intent = new Intent(HardwareList.this, Vibrator1.class);
                 }
                 startActivity(intent);
             }

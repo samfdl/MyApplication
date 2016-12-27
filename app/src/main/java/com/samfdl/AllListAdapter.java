@@ -79,7 +79,7 @@ public class AllListAdapter extends BaseAdapter {
         listItem.add("数据存储");
         listItem.add("图形和动画");
         listItem.add("多媒体");
-        listItem.add("手机硬件");
+        listItem.add("硬件设备");
         listItem.add("网络");
         listItem.add("电话短信功能");
         listItem.add("自定义控件");

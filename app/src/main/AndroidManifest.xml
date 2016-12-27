@@ -18,6 +18,8 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <!-- 添加访问手机状态的权限 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 授予程序访问振动器的权限 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -360,6 +362,7 @@
         <activity android:name=".media.Audio1" />
 
         <activity android:name=".hardware.HardwareList" />
+        <activity android:name=".hardware.Vibrator1" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
