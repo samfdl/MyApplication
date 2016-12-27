@@ -72,7 +72,7 @@ public class HardwareListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("振动");
+        listItem.add("手机振动");
         listItem.add("监听手机来电");
         listItem.add("手机黑名单");
         listItem.add("发送短信");

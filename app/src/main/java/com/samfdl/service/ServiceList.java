@@ -17,7 +17,6 @@ import com.samfdl.phone.BlockList;
 import com.samfdl.phone.GroupSend;
 import com.samfdl.phone.MonitorPhone;
 import com.samfdl.phone.SendSms;
-import com.samfdl.phone.TelephonyStatus;
 
 public class ServiceList extends AppCompatActivity {
     private ListView lv;
@@ -50,7 +49,7 @@ public class ServiceList extends AppCompatActivity {
                         intent = new Intent(ServiceList.this, IntentService1.class);
                         break;
                     case 4:
-                        intent = new Intent(ServiceList.this, TelephonyStatus.class);
+                        intent = new Intent(ServiceList.this, Alarm.class);
                         break;
                     case 5:
                         intent = new Intent(ServiceList.this, MonitorPhone.class);
