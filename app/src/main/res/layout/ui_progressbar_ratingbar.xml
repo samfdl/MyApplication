@@ -8,7 +8,7 @@
         android:id="@+id/image"
         android:layout_width="match_parent"
         android:layout_height="240dp"
-        android:src="@drawable/ui_progressbar_seekbar_lijiang" />
+        android:src="@drawable/ui_imageview_imageview_lijiang" />
     <!-- 定义一个星级评分条 -->
     <RatingBar
         android:id="@+id/rating"

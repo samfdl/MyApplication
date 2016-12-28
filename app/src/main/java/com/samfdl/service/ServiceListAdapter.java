@@ -76,7 +76,8 @@ public class ServiceListAdapter extends BaseAdapter {
         listItem.add("绑定 Service");
         listItem.add("再次绑定 Service");
         listItem.add("IntentService");
-        listItem.add("闹钟服务");
+        listItem.add("闹钟服务 有点问题");
+        listItem.add("定时更换壁纸");
         return listItem;
     }
 }

@@ -52,7 +52,7 @@ public class ServiceList extends AppCompatActivity {
                         intent = new Intent(ServiceList.this, Alarm.class);
                         break;
                     case 5:
-                        intent = new Intent(ServiceList.this, MonitorPhone.class);
+                        intent = new Intent(ServiceList.this, AlarmChangeWallpaper.class);
                         break;
                     case 6:
                         intent = new Intent(ServiceList.this, BlockList.class);

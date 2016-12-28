@@ -20,6 +20,8 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <!-- 授予程序访问振动器的权限 -->
     <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- 授予用户修改壁纸的权限 -->
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
 
     <application
         android:allowBackup="true"
@@ -174,6 +176,9 @@
 
         <activity android:name=".service.Alarm" />
         <activity android:name=".service.Alarm1" />
+        <activity android:name=".service.AlarmChangeWallpaper" />
+
+        <service android:name=".service.AlarmChangeWallpaperService" />
 
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
