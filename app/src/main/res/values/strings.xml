@@ -34,6 +34,7 @@
     <string name="service_alarm_setTime">设置闹铃</string>
 
     <string name="service_broadcast_send">发送广播</string>
+    <string name="service_broadcast_sendOrdered">发送有序广播</string>
 
     <string name="event_gestureadd_name">请填手势名</string>
 

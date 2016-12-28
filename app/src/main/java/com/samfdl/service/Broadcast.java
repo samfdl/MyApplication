@@ -10,7 +10,7 @@ import android.widget.Button;
 import com.samfdl.R;
 
 public class Broadcast extends AppCompatActivity {
-    Button send;
+    Button send, sendOrdered;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -31,6 +31,19 @@ public class Broadcast extends AppCompatActivity {
                 intent.putExtra("msg", "简单的消息");
                 // 发送广播
                 sendBroadcast(intent);
+            }
+        });
+        sendOrdered = (Button) findViewById(R.id.sendOrdered);
+        sendOrdered.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                // 创建Intent对象
+                Intent intent = new Intent();
+                // 设置Intent的Action属性
+                intent.setAction("com.samfdl.action.SAMFDL_BROADCAST1");
+                intent.putExtra("msg", "简单的消息2");
+                // 发送有序广播
+                sendOrderedBroadcast(intent, null);
             }
         });
     }
