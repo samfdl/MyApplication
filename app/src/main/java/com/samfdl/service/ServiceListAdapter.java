@@ -78,6 +78,7 @@ public class ServiceListAdapter extends BaseAdapter {
         listItem.add("IntentService");
         listItem.add("闹钟服务 有点问题");
         listItem.add("定时更换壁纸");
+        listItem.add("发送广播");
         return listItem;
     }
 }

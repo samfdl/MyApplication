@@ -13,9 +13,7 @@ import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.io.MediaProvider;
 import com.samfdl.phone.MonitorSms;
-import com.samfdl.phone.BlockList;
 import com.samfdl.phone.GroupSend;
-import com.samfdl.phone.MonitorPhone;
 import com.samfdl.phone.SendSms;
 
 public class ServiceList extends AppCompatActivity {
@@ -55,7 +53,7 @@ public class ServiceList extends AppCompatActivity {
                         intent = new Intent(ServiceList.this, AlarmChangeWallpaper.class);
                         break;
                     case 6:
-                        intent = new Intent(ServiceList.this, BlockList.class);
+                        intent = new Intent(ServiceList.this, Broadcast.class);
                         break;
                     case 7:
                         intent = new Intent(ServiceList.this, SendSms.class);

@@ -180,6 +180,14 @@
 
         <service android:name=".service.AlarmChangeWallpaperService" />
 
+        <activity android:name=".service.Broadcast" />
+        <receiver android:name=".service.BroadcastReceiver1">
+            <intent-filter>
+                <!-- 指定该BroadcastReceiver所响应的Intent的Action -->
+                <action android:name="com.samfdl.action.SAMFDL_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />
         <activity android:name=".event.Ball" />
