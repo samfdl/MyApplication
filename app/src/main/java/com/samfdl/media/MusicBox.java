@@ -15,17 +15,19 @@ import com.samfdl.R;
 import com.samfdl.service.ServiceList;
 
 public class MusicBox extends AppCompatActivity implements View.OnClickListener {
+    public static final String CTL_ACTION = "com.samfdl.action.CTL_ACTION";
+    public static final String UPDATE_ACTION = "com.samfdl.action.UPDATE_ACTION";
+
+    // 定义音乐的播放状态，0x11代表没有播放；0x12代表正在播放；0x13代表暂停
+    int status = 0x11;
+    String[] titleStrs = new String[]{"心愿", "约定", "美丽新世界"};
+    String[] authorStrs = new String[]{"未知艺术家", "周蕙", "伍佰"};
+
     // 获取界面中显示歌曲标题、作者文本框
     TextView title, author;
     // 播放/暂停、停止按钮
     ImageButton play, stop;
     ActivityReceiver activityReceiver;
-    public static final String CTL_ACTION = "org.crazyit.action.CTL_ACTION";
-    public static final String UPDATE_ACTION = "org.crazyit.action.UPDATE_ACTION";
-    // 定义音乐的播放状态，0x11代表没有播放；0x12代表正在播放；0x13代表暂停
-    int status = 0x11;
-    String[] titleStrs = new String[]{"心愿", "约定", "美丽新世界"};
-    String[] authorStrs = new String[]{"未知艺术家", "周蕙", "伍佰"};
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -37,11 +39,13 @@ public class MusicBox extends AppCompatActivity implements View.OnClickListener 
         // 获取程序界面界面中的两个按钮
         play = (ImageButton) this.findViewById(R.id.play);
         stop = (ImageButton) this.findViewById(R.id.stop);
-        title = (TextView) findViewById(R.id.title);
-        author = (TextView) findViewById(R.id.author);
         // 为两个按钮的单击事件添加监听器
         play.setOnClickListener(this);
         stop.setOnClickListener(this);
+
+        title = (TextView) findViewById(R.id.title);
+        author = (TextView) findViewById(R.id.author);
+
         activityReceiver = new ActivityReceiver();
         // 创建IntentFilter
         IntentFilter filter = new IntentFilter();
@@ -92,7 +96,7 @@ public class MusicBox extends AppCompatActivity implements View.OnClickListener 
     @Override
     public void onClick(View source) {
         // 创建Intent
-        Intent intent = new Intent("org.crazyit.action.CTL_ACTION");
+        Intent intent = new Intent(CTL_ACTION);
         switch (source.getId()) {
             // 按下播放/暂停按钮
             case R.id.play:

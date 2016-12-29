@@ -73,7 +73,7 @@ public class MediaListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("AudioManager 控制手机音频");
-        listItem.add("音乐播放器");
+        listItem.add("音乐播放器 有点问题");
         listItem.add("手机黑名单");
         listItem.add("发送短信");
         listItem.add("群发短信");

@@ -56,7 +56,7 @@ public class ServiceList extends AppCompatActivity {
                         intent = new Intent(ServiceList.this, Broadcast.class);
                         break;
                     case 7:
-                        intent = new Intent(ServiceList.this, SendSms.class);
+                        intent = new Intent(ServiceList.this, Canvas1.class);
                         break;
                     case 8:
                         intent = new Intent(ServiceList.this, GroupSend.class);
