@@ -113,7 +113,7 @@
         <activity android:name=".ui.textview.Chronometer1" />
         <activity android:name=".ui.imageview.ImageViewList" />
         <activity android:name=".ui.imageview.ImageView1" />
-        <activity android:name=".ui.imageview.ImageButton" />
+        <activity android:name=".ui.imageview.ImageButton1" />
         <activity android:name=".ui.imageview.QuickContactBadge1" />
         <activity android:name=".ui.listview.ListViewList" />
         <activity android:name=".ui.listview.SimpleListView" />
@@ -387,6 +387,9 @@
 
         <activity android:name=".media.MediaList" />
         <activity android:name=".media.Audio1" />
+        <activity android:name=".media.MusicBox" />
+
+        <service android:name=".media.MusicBoxService" />
 
         <activity android:name=".hardware.HardwareList" />
         <activity android:name=".hardware.Vibrator1" />

@@ -31,7 +31,7 @@ public class ImageViewList extends AppCompatActivity {
                         intent = new Intent(ImageViewList.this, ImageView1.class);
                         break;
                     case 1:
-                        intent = new Intent(ImageViewList.this, ImageButton.class);
+                        intent = new Intent(ImageViewList.this, ImageButton1.class);
                         break;
                     case 2:
                         intent = new Intent(ImageViewList.this, QuickContactBadge1.class);

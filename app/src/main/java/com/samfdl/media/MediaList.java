@@ -13,7 +13,6 @@ import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.phone.BlockList;
 import com.samfdl.phone.GroupSend;
-import com.samfdl.phone.MonitorPhone;
 import com.samfdl.phone.MonitorSms;
 import com.samfdl.phone.SendSms;
 
@@ -39,7 +38,7 @@ public class MediaList extends AppCompatActivity {
                         intent = new Intent(MediaList.this, Audio1.class);
                         break;
                     case 1:
-                        intent = new Intent(MediaList.this, MonitorPhone.class);
+                        intent = new Intent(MediaList.this, MusicBox.class);
                         break;
                     case 2:
                         intent = new Intent(MediaList.this, BlockList.class);
