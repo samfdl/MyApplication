@@ -48,6 +48,9 @@ public class PhoneList extends AppCompatActivity {
                     case 5:
                         intent = new Intent(PhoneList.this, MonitorSms.class);
                         break;
+                    case 6:
+                        intent = new Intent(PhoneList.this, MonitorSms.class);
+                        break;
                     default:
                         intent = new Intent(PhoneList.this, TelephonyStatus.class);
                 }

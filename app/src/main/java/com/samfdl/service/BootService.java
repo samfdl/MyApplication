@@ -16,13 +16,13 @@ public class BootService extends Service {
 
     @Override
     public void onCreate() {
-        // 定义1秒执行一行输出
-        new Timer().schedule(new TimerTask() {
-            @Override
-            public void run() {
-                System.out.println("-----"
-                        + new Date() + "-----");
-            }
-        }, 0, 1000);
+        // 定义1秒执行一行输出 暂时屏蔽输出
+//        new Timer().schedule(new TimerTask() {
+//            @Override
+//            public void run() {
+//                System.out.println("-----"
+//                        + new Date() + "-----");
+//            }
+//        }, 0, 1000);
     }
 }
