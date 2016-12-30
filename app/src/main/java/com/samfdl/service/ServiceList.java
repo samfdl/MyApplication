@@ -11,10 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.io.MediaProvider;
-import com.samfdl.phone.MonitorSms;
-import com.samfdl.phone.GroupSend;
-import com.samfdl.phone.SendSms;
 
 public class ServiceList extends AppCompatActivity {
     private ListView lv;
@@ -55,17 +51,8 @@ public class ServiceList extends AppCompatActivity {
                     case 6:
                         intent = new Intent(ServiceList.this, Broadcast.class);
                         break;
-                    case 7:
-                        intent = new Intent(ServiceList.this, Canvas1.class);
-                        break;
                     case 8:
-                        intent = new Intent(ServiceList.this, GroupSend.class);
-                        break;
-                    case 9:
-                        intent = new Intent(ServiceList.this, MediaProvider.class);
-                        break;
-                    case 10:
-                        intent = new Intent(ServiceList.this, MonitorSms.class);
+                        intent = new Intent(ServiceList.this, AidlClient.class);
                         break;
                     default:
                         intent = new Intent(ServiceList.this, FirstService.class);

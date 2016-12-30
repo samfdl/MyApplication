@@ -211,6 +211,12 @@
                 <action android:name="android.intent.action.BOOT_COMPLETED" />
             </intent-filter>
         </receiver>
+        <activity android:name=".service.AidlClient" />
+        <service android:name=".service.AidlClientService">
+            <intent-filter>
+                <action android:name="com.samfdl.aidl.action.AIDL_SERVICE" />
+            </intent-filter>
+        </service>
 
         <activity android:name=".event.EventList" />
         <activity android:name=".event.ControlPlane" />

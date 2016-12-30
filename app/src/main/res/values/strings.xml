@@ -36,6 +36,8 @@
     <string name="service_broadcast_send">发送广播</string>
     <string name="service_broadcast_sendOrdered">发送有序广播</string>
 
+    <string name="service_aidlclient_get">获取远程Service的状态</string>
+
     <string name="event_gestureadd_name">请填手势名</string>
 
     <string name="event_speech_speech">朗读</string>

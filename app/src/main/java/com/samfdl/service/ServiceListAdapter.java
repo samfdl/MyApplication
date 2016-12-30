@@ -80,6 +80,7 @@ public class ServiceListAdapter extends BaseAdapter {
         listItem.add("定时更换壁纸");
         listItem.add("发送广播");
         listItem.add("开机自动运行的 Service...不要点，只是示意的");
+        listItem.add("AIDL 跨进程访问 有点问题");
         return listItem;
     }
 }
