@@ -73,12 +73,7 @@ public class HardwareListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("手机振动");
-        listItem.add("监听手机来电");
-        listItem.add("手机黑名单");
-        listItem.add("发送短信");
-        listItem.add("群发短信");
-        listItem.add("监听短信变化");
-        listItem.add("手势");
+        listItem.add("手机电量提醒 无法验证");
         return listItem;
     }
 }

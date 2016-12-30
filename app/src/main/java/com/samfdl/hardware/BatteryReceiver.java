@@ -1,4 +1,4 @@
-package com.samfdl.phone;
+package com.samfdl.hardware;
 
 import android.content.BroadcastReceiver;
 import android.content.Context;

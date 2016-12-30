@@ -407,6 +407,13 @@
         <activity android:name=".hardware.HardwareList" />
         <activity android:name=".hardware.Vibrator1" />
 
+        <receiver android:name=".hardware.BatteryReceiver">
+            <!-- 监听电池电量改变 -->
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
+
         <activity android:name=".web.WebList" />
         <activity android:name=".web.URL1" />
         <activity android:name=".web.WebView1" />
@@ -425,12 +432,6 @@
         <receiver android:name=".phone.SmsReceiver">
             <intent-filter android:priority="1000">
                 <action android:name="android.provider.Telephony.SMS_RECEIVED" />
-            </intent-filter>
-        </receiver>
-        <receiver android:name=".phone.BatteryReceiver">
-            <!-- 监听电池电量改变 -->
-            <intent-filter>
-                <action android:name="android.intent.action.BATTERY_CHANGED" />
             </intent-filter>
         </receiver>
 
