@@ -79,6 +79,7 @@ public class PhoneListAdapter extends BaseAdapter {
         listItem.add("群发短信");
         listItem.add("监听短信变化");
         listItem.add("短信提醒 有点问题");
+        listItem.add("手机电量提醒 无法验证");
         return listItem;
     }
 }
