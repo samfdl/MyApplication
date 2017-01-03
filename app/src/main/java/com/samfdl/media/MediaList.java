@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.phone.MonitorSms;
 
 public class MediaList extends AppCompatActivity {
     private ListView lv;
@@ -47,7 +46,7 @@ public class MediaList extends AppCompatActivity {
                         intent = new Intent(MediaList.this, VideoView1.class);
                         break;
                     case 5:
-                        intent = new Intent(MediaList.this, MonitorSms.class);
+                        intent = new Intent(MediaList.this, SurfaceViewPlayVideo.class);
                         break;
                     default:
                         intent = new Intent(MediaList.this, Audio1.class);
