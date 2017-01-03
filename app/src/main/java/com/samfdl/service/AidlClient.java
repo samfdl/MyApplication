@@ -25,6 +25,7 @@ public class AidlClient extends AppCompatActivity {
         public void onServiceConnected(ComponentName name
                 , IBinder service) {
             // 获取远程Service的onBind方法返回的对象的代理
+            System.out.println("onServiceConnected");
             catService = ICat.Stub.asInterface(service);
         }
 

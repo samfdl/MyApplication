@@ -74,11 +74,7 @@ public class MediaListAdapter extends BaseAdapter {
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("AudioManager 控制手机音频");
         listItem.add("音乐播放器 有点问题");
-        listItem.add("手机黑名单");
-        listItem.add("发送短信");
-        listItem.add("群发短信");
-        listItem.add("监听短信变化");
-        listItem.add("手势");
+        listItem.add("音乐示波器");
         return listItem;
     }
 }

@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.phone.BlockList;
 import com.samfdl.phone.GroupSend;
 import com.samfdl.phone.MonitorSms;
 import com.samfdl.phone.SendSms;
@@ -41,7 +40,7 @@ public class MediaList extends AppCompatActivity {
                         intent = new Intent(MediaList.this, MusicBox.class);
                         break;
                     case 2:
-                        intent = new Intent(MediaList.this, BlockList.class);
+                        intent = new Intent(MediaList.this, MediaPlayer1.class);
                         break;
                     case 3:
                         intent = new Intent(MediaList.this, SendSms.class);
