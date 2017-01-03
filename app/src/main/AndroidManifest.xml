@@ -414,6 +414,7 @@
 
         <activity android:name=".media.MediaPlayer1" />
         <activity android:name=".media.SoundPool1" />
+        <activity android:name=".media.VideoView1" />
 
         <activity android:name=".hardware.HardwareList" />
         <activity android:name=".hardware.Vibrator1" />

@@ -11,9 +11,7 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.phone.GroupSend;
 import com.samfdl.phone.MonitorSms;
-import com.samfdl.phone.SendSms;
 
 public class MediaList extends AppCompatActivity {
     private ListView lv;
@@ -46,7 +44,7 @@ public class MediaList extends AppCompatActivity {
                         intent = new Intent(MediaList.this, SoundPool1.class);
                         break;
                     case 4:
-                        intent = new Intent(MediaList.this, GroupSend.class);
+                        intent = new Intent(MediaList.this, VideoView1.class);
                         break;
                     case 5:
                         intent = new Intent(MediaList.this, MonitorSms.class);
