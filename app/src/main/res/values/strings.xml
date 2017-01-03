@@ -115,6 +115,10 @@
     <string name="media_audio_normal">静音</string>
     <string name="media_audio_mute">正常</string>
 
+    <string name="media_soundpool_bomb">爆炸声</string>
+    <string name="media_soundpool_shot">射击声</string>
+    <string name="media_soundpool_arrow">射箭声</string>
+
     <string name="phone_blocklist_managerBlock">管理黑名单</string>
 
     <string name="phone_sendsms_number">收件人号码：</string>

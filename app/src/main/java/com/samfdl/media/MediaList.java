@@ -43,7 +43,7 @@ public class MediaList extends AppCompatActivity {
                         intent = new Intent(MediaList.this, MediaPlayer1.class);
                         break;
                     case 3:
-                        intent = new Intent(MediaList.this, SendSms.class);
+                        intent = new Intent(MediaList.this, SoundPool1.class);
                         break;
                     case 4:
                         intent = new Intent(MediaList.this, GroupSend.class);

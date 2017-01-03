@@ -75,6 +75,7 @@ public class MediaListAdapter extends BaseAdapter {
         listItem.add("AudioManager 控制手机音频");
         listItem.add("音乐播放器 有点问题");
         listItem.add("音乐示波器");
+        listItem.add("SoundPool 播放音效");
         return listItem;
     }
 }
