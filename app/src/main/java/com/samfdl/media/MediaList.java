@@ -48,6 +48,9 @@ public class MediaList extends AppCompatActivity {
                     case 5:
                         intent = new Intent(MediaList.this, SurfaceViewPlayVideo.class);
                         break;
+                    case 6:
+                        intent = new Intent(MediaList.this, RecordSound.class);
+                        break;
                     default:
                         intent = new Intent(MediaList.this, Audio1.class);
                 }

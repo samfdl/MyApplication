@@ -78,6 +78,7 @@ public class MediaListAdapter extends BaseAdapter {
         listItem.add("SoundPool 播放音效");
         listItem.add("VideoView 播放视频");
         listItem.add("SurfaceView 播放视频");
+        listItem.add("录音");
         return listItem;
     }
 }
