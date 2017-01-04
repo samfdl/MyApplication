@@ -29,6 +29,8 @@
     <uses-permission android:name="android.permission.BATTERY_STATS" />
     <!-- 使用音场效果必要的权限 -->
     <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <!-- 授予该程序使用摄像头的权限 -->
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -417,6 +419,7 @@
         <activity android:name=".media.VideoView1" />
         <activity android:name=".media.SurfaceViewPlayVideo" />
         <activity android:name=".media.RecordSound" />
+        <activity android:name=".media.CameraV2" />
 
         <activity android:name=".hardware.HardwareList" />
         <activity android:name=".hardware.Vibrator1" />
