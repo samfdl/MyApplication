@@ -73,8 +73,7 @@ public class DIYListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("悬浮窗");
-
-        listItem.add("手势");
+        listItem.add("悬浮窗2");
         return listItem;
     }
 }

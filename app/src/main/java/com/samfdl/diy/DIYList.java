@@ -38,7 +38,7 @@ public class DIYList extends AppCompatActivity {
                         intent = new Intent(DIYList.this, FloatingWindow.class);
                         break;
                     case 1:
-                        intent = new Intent(DIYList.this, File1.class);
+                        intent = new Intent(DIYList.this, FloatingWindow1.class);
                         break;
                     case 2:
                         intent = new Intent(DIYList.this, SDCard.class);

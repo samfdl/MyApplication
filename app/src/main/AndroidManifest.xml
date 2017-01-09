@@ -454,6 +454,7 @@
 
         <activity android:name=".diy.DIYList" />
         <activity android:name=".diy.FloatingWindow" />
+        <activity android:name=".diy.FloatingWindow1" />
     </application>
 
 </manifest>

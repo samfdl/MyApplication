@@ -80,6 +80,7 @@ public class MediaListAdapter extends BaseAdapter {
         listItem.add("SurfaceView 播放视频");
         listItem.add("录音");
         listItem.add("拍照时自动对焦 有问题");
+        listItem.add("录制生活短片");
         return listItem;
     }
 }
