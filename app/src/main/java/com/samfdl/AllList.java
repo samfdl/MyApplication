@@ -16,6 +16,7 @@ import com.samfdl.hardware.HardwareList;
 import com.samfdl.intent.IntentList;
 import com.samfdl.io.IOList;
 import com.samfdl.media.MediaList;
+import com.samfdl.opengl.OpenGLList;
 import com.samfdl.phone.PhoneList;
 import com.samfdl.res.ResList;
 import com.samfdl.service.ServiceList;
@@ -64,18 +65,21 @@ public class AllList extends AppCompatActivity {
                         intent = new Intent(AllList.this, GraphicsList.class);
                         break;
                     case 8:
-                        intent = new Intent(AllList.this, MediaList.class);
+                        intent = new Intent(AllList.this, OpenGLList.class);
                         break;
                     case 9:
-                        intent = new Intent(AllList.this, HardwareList.class);
+                        intent = new Intent(AllList.this, MediaList.class);
                         break;
                     case 10:
-                        intent = new Intent(AllList.this, WebList.class);
+                        intent = new Intent(AllList.this, HardwareList.class);
                         break;
                     case 11:
-                        intent = new Intent(AllList.this, PhoneList.class);
+                        intent = new Intent(AllList.this, WebList.class);
                         break;
                     case 12:
+                        intent = new Intent(AllList.this, PhoneList.class);
+                        break;
+                    case 13:
                         intent = new Intent(AllList.this, DIYList.class);
                         break;
                     default:

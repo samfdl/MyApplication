@@ -1,4 +1,4 @@
-package com.samfdl;
+package com.samfdl.opengl;
 
 import android.content.Context;
 import android.util.Log;
@@ -8,15 +8,17 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.samfdl.R;
+
 import java.util.ArrayList;
 
 /**
- * Created by samsung on 2016/8/24.
+ * Created by samfdl on 2016/12/23.
  */
-public class AllListAdapter extends BaseAdapter {
+public class OpenGLListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
 
-    public AllListAdapter(Context context) {
+    public OpenGLListAdapter(Context context) {
         this.mInflater = LayoutInflater.from(context);
     }
 
@@ -70,20 +72,10 @@ public class AllListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("Activity 和 Fragment");
-        listItem.add("界面 UI 控件");
-        listItem.add("Service 后台进程");
-        listItem.add("事件处理 Event");
-        listItem.add("Intent 通信");
-        listItem.add("资源 Res");
-        listItem.add("数据存储");
-        listItem.add("图形和动画");
-        listItem.add("OpenGL");
-        listItem.add("多媒体");
-        listItem.add("硬件设备");
-        listItem.add("网络");
-        listItem.add("电话短信功能");
-        listItem.add("自定义控件");
+        listItem.add("绘制平面多边形");
+        listItem.add("音乐播放器 有点问题");
+        listItem.add("音乐示波器");
+        listItem.add("SoundPool 播放音效");
         return listItem;
     }
 }
