@@ -54,6 +54,9 @@ public class MediaList extends AppCompatActivity {
                     case 7:
                         intent = new Intent(MediaList.this, CameraV2.class);
                         break;
+                    case 8:
+                        intent = new Intent(MediaList.this, RecordVideo.class);
+                        break;
                     default:
                         intent = new Intent(MediaList.this, Audio1.class);
                 }
