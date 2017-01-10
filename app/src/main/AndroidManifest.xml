@@ -421,6 +421,7 @@
         <activity android:name=".media.RecordSound" />
         <activity android:name=".media.CameraV2" />
         <activity android:name=".media.RecordVideo" />
+        <activity android:name=".media.CaptureScreen" />
 
         <activity android:name=".hardware.HardwareList" />
         <activity android:name=".hardware.Vibrator1" />

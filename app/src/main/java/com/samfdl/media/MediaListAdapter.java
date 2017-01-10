@@ -81,6 +81,7 @@ public class MediaListAdapter extends BaseAdapter {
         listItem.add("录音");
         listItem.add("拍照时自动对焦 有问题");
         listItem.add("录制生活短片 有问题");
+        listItem.add("屏幕捕捉");
         return listItem;
     }
 }
