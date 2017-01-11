@@ -40,7 +40,7 @@ public class OpenGLList extends AppCompatActivity {
                         intent = new Intent(OpenGLList.this, RotatePolygon.class);
                         break;
                     case 2:
-                        intent = new Intent(OpenGLList.this, MediaPlayer1.class);
+                        intent = new Intent(OpenGLList.this, Simple3D.class);
                         break;
                     case 3:
                         intent = new Intent(OpenGLList.this, SoundPool1.class);
