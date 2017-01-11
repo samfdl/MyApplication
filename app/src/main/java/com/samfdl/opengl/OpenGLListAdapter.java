@@ -73,7 +73,7 @@ public class OpenGLListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("绘制平面多边形");
-        listItem.add("音乐播放器 有点问题");
+        listItem.add("控制图形变换");
         listItem.add("音乐示波器");
         listItem.add("SoundPool 播放音效");
         return listItem;
