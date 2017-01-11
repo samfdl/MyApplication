@@ -412,6 +412,7 @@
         <activity android:name=".opengl.Polygon" />
         <activity android:name=".opengl.RotatePolygon" />
         <activity android:name=".opengl.Simple3D" />
+        <activity android:name=".opengl.Texture3D" />
 
         <activity android:name=".media.MediaList" />
         <activity android:name=".media.Audio1" />

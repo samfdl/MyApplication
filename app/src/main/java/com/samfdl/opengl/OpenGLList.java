@@ -11,9 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.media.MediaPlayer1;
-import com.samfdl.media.MusicBox;
-import com.samfdl.media.SoundPool1;
 
 public class OpenGLList extends AppCompatActivity {
     private ListView lv;
@@ -43,7 +40,7 @@ public class OpenGLList extends AppCompatActivity {
                         intent = new Intent(OpenGLList.this, Simple3D.class);
                         break;
                     case 3:
-                        intent = new Intent(OpenGLList.this, SoundPool1.class);
+                        intent = new Intent(OpenGLList.this, Texture3D.class);
                         break;
                     default:
                         intent = new Intent(OpenGLList.this, Polygon.class);

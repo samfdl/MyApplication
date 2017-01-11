@@ -75,7 +75,7 @@ public class OpenGLListAdapter extends BaseAdapter {
         listItem.add("绘制平面多边形");
         listItem.add("控制图形变换");
         listItem.add("构建 3D 图形");
-        listItem.add("SoundPool 播放音效");
+        listItem.add("应用纹理贴图");
         return listItem;
     }
 }
