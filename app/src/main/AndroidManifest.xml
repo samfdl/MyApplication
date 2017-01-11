@@ -409,6 +409,7 @@
         <activity android:name=".graphics.ShowWave" />
 
         <activity android:name=".opengl.OpenGLList" />
+        <activity android:name=".opengl.Polygon" />
 
         <activity android:name=".media.MediaList" />
         <activity android:name=".media.Audio1" />

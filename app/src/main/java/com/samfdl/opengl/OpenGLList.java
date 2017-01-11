@@ -11,16 +11,9 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.media.Audio1;
-import com.samfdl.media.CameraV2;
-import com.samfdl.media.CaptureScreen;
 import com.samfdl.media.MediaPlayer1;
 import com.samfdl.media.MusicBox;
-import com.samfdl.media.RecordSound;
-import com.samfdl.media.RecordVideo;
 import com.samfdl.media.SoundPool1;
-import com.samfdl.media.SurfaceViewPlayVideo;
-import com.samfdl.media.VideoView1;
 
 public class OpenGLList extends AppCompatActivity {
     private ListView lv;
@@ -41,7 +34,7 @@ public class OpenGLList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(OpenGLList.this, Audio1.class);
+                        intent = new Intent(OpenGLList.this, Polygon.class);
                         break;
                     case 1:
                         intent = new Intent(OpenGLList.this, MusicBox.class);
@@ -52,26 +45,8 @@ public class OpenGLList extends AppCompatActivity {
                     case 3:
                         intent = new Intent(OpenGLList.this, SoundPool1.class);
                         break;
-                    case 4:
-                        intent = new Intent(OpenGLList.this, VideoView1.class);
-                        break;
-                    case 5:
-                        intent = new Intent(OpenGLList.this, SurfaceViewPlayVideo.class);
-                        break;
-                    case 6:
-                        intent = new Intent(OpenGLList.this, RecordSound.class);
-                        break;
-                    case 7:
-                        intent = new Intent(OpenGLList.this, CameraV2.class);
-                        break;
-                    case 8:
-                        intent = new Intent(OpenGLList.this, RecordVideo.class);
-                        break;
-                    case 9:
-                        intent = new Intent(OpenGLList.this, CaptureScreen.class);
-                        break;
                     default:
-                        intent = new Intent(OpenGLList.this, Audio1.class);
+                        intent = new Intent(OpenGLList.this, Polygon.class);
                 }
                 startActivity(intent);
             }
