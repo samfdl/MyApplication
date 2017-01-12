@@ -124,6 +124,11 @@
 
     <string name="web_multithreaddown_down">下载</string>
 
+    <string name="web_httpclient_get">访问页面</string>
+    <string name="web_httpclient_login">登录系统</string>
+    <string name="web_httpclient_name">用户名</string>
+    <string name="web_httpclient_pass">密   码</string>
+
     <string name="phone_blocklist_managerBlock">管理黑名单</string>
 
     <string name="phone_sendsms_number">收件人号码：</string>
