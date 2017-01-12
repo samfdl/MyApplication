@@ -40,6 +40,9 @@ public class WebList extends AppCompatActivity {
                     case 2:
                         intent = new Intent(WebList.this, URL1.class);
                         break;
+                    case 3:
+                        intent = new Intent(WebList.this, GetPost.class);
+                        break;
                     case 11:
                         intent = new Intent(WebList.this, WebView1.class);
                         break;
