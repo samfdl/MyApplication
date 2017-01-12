@@ -444,6 +444,7 @@
         <activity android:name=".web.MultiThreadClient" />
         <activity android:name=".web.URL1" />
         <activity android:name=".web.GetPost" />
+        <activity android:name=".web.MultiThreadDown" />
         <activity android:name=".web.WebView1" />
         <activity
             android:name=".web.GeckoView1"

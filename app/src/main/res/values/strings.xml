@@ -122,6 +122,8 @@
     <string name="web_getpost_get">发送GET请求</string>
     <string name="web_getpost_post">发送POST请求</string>
 
+    <string name="web_multithreaddown_down">下载</string>
+
     <string name="phone_blocklist_managerBlock">管理黑名单</string>
 
     <string name="phone_sendsms_number">收件人号码：</string>
