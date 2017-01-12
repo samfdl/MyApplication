@@ -13,7 +13,7 @@ import com.samfdl.R;
 import java.util.ArrayList;
 
 /**
- * Created by samfdl on 2016/12/23.
+ * Created by samfdl on 2017/01/10.
  */
 public class OpenGLListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局

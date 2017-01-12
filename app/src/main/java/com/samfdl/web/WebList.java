@@ -32,19 +32,22 @@ public class WebList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
+                        intent = new Intent(WebList.this, SimpleClient.class);
+                        break;
+                    case 10:
                         intent = new Intent(WebList.this, URL1.class);
                         break;
-                    case 1:
+                    case 11:
                         intent = new Intent(WebList.this, WebView1.class);
                         break;
-                    case 2:
+                    case 12:
                         intent = new Intent(WebList.this, GeckoView1.class);
                         break;
-                    case 3:
-                        intent = new Intent(WebList.this, StartActivity.class);
+                    case 13:
+                        intent = new Intent(WebList.this, GeckoView1.class);
                         break;
                     default:
-                        intent = new Intent(WebList.this, URL1.class);
+                        intent = new Intent(WebList.this, SimpleClient.class);
                 }
                 startActivity(intent);
             }

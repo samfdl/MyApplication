@@ -440,6 +440,7 @@
         </receiver>
 
         <activity android:name=".web.WebList" />
+        <activity android:name=".web.SimpleClient" />
         <activity android:name=".web.URL1" />
         <activity android:name=".web.WebView1" />
         <activity
