@@ -74,8 +74,9 @@ public class WebListAdapter extends BaseAdapter {
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("使用 Socket 通信 缺少服务器");
         listItem.add("多线程 TCP 客户端 缺少服务器");
-
         listItem.add("使用 URL 读取网络资源");
+
+
         listItem.add("WebView");
         listItem.add("GeckoView mozilla 浏览器内核");
         return listItem;

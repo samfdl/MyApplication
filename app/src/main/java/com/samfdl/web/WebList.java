@@ -37,7 +37,7 @@ public class WebList extends AppCompatActivity {
                     case 1:
                         intent = new Intent(WebList.this, MultiThreadClient.class);
                         break;
-                    case 10:
+                    case 2:
                         intent = new Intent(WebList.this, URL1.class);
                         break;
                     case 11:

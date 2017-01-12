@@ -17,7 +17,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.URL;
 
-// 有问题，待解决
 public class URL1 extends AppCompatActivity {
     ImageView show;
     // 代表从网络下载得到的图片
