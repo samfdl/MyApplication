@@ -52,6 +52,9 @@ public class WebList extends AppCompatActivity {
                     case 6:
                         intent = new Intent(WebList.this, MiniBrowser.class);
                         break;
+                    case 7:
+                        intent = new Intent(WebList.this, ViewHtml.class);
+                        break;
                     case 11:
                         intent = new Intent(WebList.this, WebView1.class);
                         break;
