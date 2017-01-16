@@ -448,6 +448,7 @@
         <activity android:name=".web.HttpClient1" />
         <activity android:name=".web.MiniBrowser" />
         <activity android:name=".web.ViewHtml" />
+        <activity android:name=".web.JsCallAndroid" />
         <activity android:name=".web.WebView1" />
         <activity
             android:name=".web.GeckoView1"

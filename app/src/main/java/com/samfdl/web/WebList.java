@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.activity.StartActivity;
 
 public class WebList extends AppCompatActivity {
     private ListView lv;
@@ -55,13 +54,13 @@ public class WebList extends AppCompatActivity {
                     case 7:
                         intent = new Intent(WebList.this, ViewHtml.class);
                         break;
+                    case 8:
+                        intent = new Intent(WebList.this, JsCallAndroid.class);
+                        break;
                     case 11:
                         intent = new Intent(WebList.this, WebView1.class);
                         break;
                     case 12:
-                        intent = new Intent(WebList.this, GeckoView1.class);
-                        break;
-                    case 13:
                         intent = new Intent(WebList.this, GeckoView1.class);
                         break;
                     default:
