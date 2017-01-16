@@ -80,7 +80,8 @@ public class WebListAdapter extends BaseAdapter {
         listItem.add("使用 Apache HttpClient 访问被保护资源 缺少服务器");
         listItem.add("迷你浏览器 有问题");
         listItem.add("使用 WebView 加载 HTML 代码");
-        listItem.add("使用 WebView 中的 JavaScript 调用 Android 方法");
+        listItem.add("使用 JavaScript 调用 Android");
+        listItem.add("调用基于 CXF 的 Web Service 缺少服务器");
         listItem.add("WebView");
         listItem.add("GeckoView mozilla 浏览器内核");
         return listItem;

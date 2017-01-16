@@ -57,10 +57,13 @@ public class WebList extends AppCompatActivity {
                     case 8:
                         intent = new Intent(WebList.this, JsCallAndroid.class);
                         break;
-                    case 11:
+                    case 9:
+                        intent = new Intent(WebList.this, CallWebService.class);
+                        break;
+                    case 10:
                         intent = new Intent(WebList.this, WebView1.class);
                         break;
-                    case 12:
+                    case 11:
                         intent = new Intent(WebList.this, GeckoView1.class);
                         break;
                     default:
