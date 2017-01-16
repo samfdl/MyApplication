@@ -1,4 +1,4 @@
-package com.samfdl.home;
+package com.samfdl.desktop;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,14 +11,13 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.hardware.Vibrator1;
 import com.samfdl.phone.BlockList;
 import com.samfdl.phone.GroupSend;
 import com.samfdl.phone.MonitorPhone;
 import com.samfdl.phone.MonitorSms;
 import com.samfdl.phone.SendSms;
 
-public class HomeList extends AppCompatActivity {
+public class DesktopList extends AppCompatActivity {
     private ListView lv;
 
     @Override
@@ -28,7 +27,7 @@ public class HomeList extends AppCompatActivity {
         // 添加返回按钮
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         lv = (ListView) findViewById(R.id.myList);
-        BaseAdapter mAdapter = new HomeListAdapter(this);//得到一个MyAdapter对象
+        BaseAdapter mAdapter = new DesktopListAdapter(this);//得到一个MyAdapter对象
         lv.setAdapter(mAdapter);//为ListView绑定Adapter
         /**为ListView添加点击事件*/
         lv.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -37,25 +36,25 @@ public class HomeList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(HomeList.this, Vibrator1.class);
+                        intent = new Intent(DesktopList.this, LiveWallPaperHelp.class);
                         break;
                     case 1:
-                        intent = new Intent(HomeList.this, MonitorPhone.class);
+                        intent = new Intent(DesktopList.this, MonitorPhone.class);
                         break;
                     case 2:
-                        intent = new Intent(HomeList.this, BlockList.class);
+                        intent = new Intent(DesktopList.this, BlockList.class);
                         break;
                     case 3:
-                        intent = new Intent(HomeList.this, SendSms.class);
+                        intent = new Intent(DesktopList.this, SendSms.class);
                         break;
                     case 4:
-                        intent = new Intent(HomeList.this, GroupSend.class);
+                        intent = new Intent(DesktopList.this, GroupSend.class);
                         break;
                     case 5:
-                        intent = new Intent(HomeList.this, MonitorSms.class);
+                        intent = new Intent(DesktopList.this, MonitorSms.class);
                         break;
                     default:
-                        intent = new Intent(HomeList.this, Vibrator1.class);
+                        intent = new Intent(DesktopList.this, LiveWallPaperHelp.class);
                 }
                 startActivity(intent);
             }

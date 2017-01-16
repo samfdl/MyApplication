@@ -1,4 +1,4 @@
-package com.samfdl.home;
+package com.samfdl.desktop;
 
 import android.content.Context;
 import android.util.Log;
@@ -15,10 +15,10 @@ import java.util.ArrayList;
 /**
  * Created by samfdl on 2016/12/23.
  */
-public class HomeListAdapter extends BaseAdapter {
+public class DesktopListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
 
-    public HomeListAdapter(Context context) {
+    public DesktopListAdapter(Context context) {
         this.mInflater = LayoutInflater.from(context);
     }
 
@@ -72,7 +72,7 @@ public class HomeListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("手机振动");
+        listItem.add("动态壁纸");
         listItem.add("手机电量提醒 无法验证");
         return listItem;
     }

@@ -469,7 +469,22 @@
             </intent-filter>
         </receiver>
 
-        <activity android:name=".home.HomeList" />
+        <activity android:name=".desktop.DesktopList" />
+        <activity android:name=".desktop.LiveWallPaperHelp" />
+        <!-- 配置动态壁纸Service -->
+        <service
+            android:name=".desktop.LiveWallPaper"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_WALLPAPER">
+            <!-- 为动态壁纸配置intent-filter -->
+            <intent-filter>
+                <action android:name="android.service.wallpaper.WallpaperService" />
+            </intent-filter>
+            <!-- 为动态壁纸配置meta-data -->
+            <meta-data
+                android:name="android.service.wallpaper"
+                android:resource="@xml/desktop_livewallpaper" />
+        </service>
 
         <activity android:name=".diy.DIYList" />
         <activity android:name=".diy.FloatingWindow" />
