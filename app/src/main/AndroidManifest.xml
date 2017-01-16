@@ -469,6 +469,8 @@
             </intent-filter>
         </receiver>
 
+        <activity android:name=".home.HomeList" />
+
         <activity android:name=".diy.DIYList" />
         <activity android:name=".diy.FloatingWindow" />
         <activity android:name=".diy.FloatingWindow1" />

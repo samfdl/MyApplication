@@ -13,6 +13,7 @@ import com.samfdl.diy.DIYList;
 import com.samfdl.event.EventList;
 import com.samfdl.graphics.GraphicsList;
 import com.samfdl.hardware.HardwareList;
+import com.samfdl.home.HomeList;
 import com.samfdl.intent.IntentList;
 import com.samfdl.io.IOList;
 import com.samfdl.media.MediaList;
@@ -80,6 +81,9 @@ public class AllList extends AppCompatActivity {
                         intent = new Intent(AllList.this, PhoneList.class);
                         break;
                     case 13:
+                        intent = new Intent(AllList.this, HomeList.class);
+                        break;
+                    case 14:
                         intent = new Intent(AllList.this, DIYList.class);
                         break;
                     default:
