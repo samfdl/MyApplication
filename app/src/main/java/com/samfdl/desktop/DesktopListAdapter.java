@@ -13,7 +13,7 @@ import com.samfdl.R;
 import java.util.ArrayList;
 
 /**
- * Created by samfdl on 2016/12/23.
+ * Created by samfdl on 2017/01/16.
  */
 public class DesktopListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
@@ -73,7 +73,7 @@ public class DesktopListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("动态壁纸");
-        listItem.add("手机电量提醒 无法验证");
+        listItem.add("让程序占领桌面");
         return listItem;
     }
 }

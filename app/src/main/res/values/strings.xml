@@ -138,4 +138,7 @@
     <string name="phone_groupsend_numbers">号码（多个号码以逗号隔开）</string>
     <string name="phone_groupsend_select">选择收件人</string>
     <string name="phone_groupsend_send">群发</string>
+
+    <string name="desktop_addshortcut">添加快捷键</string>
+    <string name="desktop_addshortcut_title">补间动画</string>
 </resources>

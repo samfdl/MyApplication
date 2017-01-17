@@ -13,7 +13,6 @@ import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.phone.BlockList;
 import com.samfdl.phone.GroupSend;
-import com.samfdl.phone.MonitorPhone;
 import com.samfdl.phone.MonitorSms;
 import com.samfdl.phone.SendSms;
 
@@ -39,7 +38,7 @@ public class DesktopList extends AppCompatActivity {
                         intent = new Intent(DesktopList.this, LiveWallPaperHelp.class);
                         break;
                     case 1:
-                        intent = new Intent(DesktopList.this, MonitorPhone.class);
+                        intent = new Intent(DesktopList.this, AddShortcut.class);
                         break;
                     case 2:
                         intent = new Intent(DesktopList.this, BlockList.class);
