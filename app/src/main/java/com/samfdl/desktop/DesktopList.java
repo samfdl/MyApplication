@@ -40,9 +40,6 @@ public class DesktopList extends AppCompatActivity {
                     case 1:
                         intent = new Intent(DesktopList.this, AddShortcut.class);
                         break;
-                    case 2:
-                        intent = new Intent(DesktopList.this, BlockList.class);
-                        break;
                     case 3:
                         intent = new Intent(DesktopList.this, SendSms.class);
                         break;
