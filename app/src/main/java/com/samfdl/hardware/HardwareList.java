@@ -11,9 +11,7 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.phone.BlockList;
 import com.samfdl.phone.GroupSend;
-import com.samfdl.phone.MonitorPhone;
 import com.samfdl.phone.MonitorSms;
 import com.samfdl.phone.SendSms;
 
@@ -42,7 +40,7 @@ public class HardwareList extends AppCompatActivity {
                         intent = new Intent(HardwareList.this, Accelerometer.class);
                         break;
                     case 2:
-                        intent = new Intent(HardwareList.this, BlockList.class);
+                        intent = new Intent(HardwareList.this, Sensors.class);
                         break;
                     case 3:
                         intent = new Intent(HardwareList.this, SendSms.class);

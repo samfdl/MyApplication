@@ -121,6 +121,15 @@
 
     <string name="hardware_accelerometer_tip">传感器返回的值</string>
 
+    <string name="hardware_sensor_orientation">方向传感器返回的值</string>
+    <string name="hardware_sensor_gyro">陀螺仪传感器返回的值</string>
+    <string name="hardware_sensor_magnetic">磁场传感器返回的值</string>
+    <string name="hardware_sensor_gravity">重力传感器返回的值</string>
+    <string name="hardware_sensor_linearAcc">线性加速度传感器返回的值</string>
+    <string name="hardware_sensor_temperature">温度传感器返回的值</string>
+    <string name="hardware_sensor_light">光传感器返回的值</string>
+    <string name="hardware_sensor_pressure">压力传感器返回的值</string>
+
     <string name="web_getpost_get">发送GET请求</string>
     <string name="web_getpost_post">发送POST请求</string>
 

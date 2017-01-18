@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.samfdl.R;
-import com.samfdl.desktop.DesktopList;
 
 public class Canvas1 extends AppCompatActivity {
     @Override

@@ -442,6 +442,7 @@
         </receiver>
 
         <activity android:name=".hardware.Accelerometer" />
+        <activity android:name=".hardware.Sensors" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.SimpleClient" />

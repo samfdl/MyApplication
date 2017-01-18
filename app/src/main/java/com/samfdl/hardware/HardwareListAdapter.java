@@ -74,7 +74,7 @@ public class HardwareListAdapter extends BaseAdapter {
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("手机振动");
         listItem.add("加速度传感器");
-        listItem.add("加速度传感器");
+        listItem.add("常用传感器");
         return listItem;
     }
 }
