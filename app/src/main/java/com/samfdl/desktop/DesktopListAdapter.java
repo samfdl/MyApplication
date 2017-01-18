@@ -76,6 +76,7 @@ public class DesktopListAdapter extends BaseAdapter {
         listItem.add("让程序占领桌面");
         listItem.add("桌面控件 不用点");
         listItem.add("液晶时钟 不用点");
+        listItem.add("带数据集的桌面控件 不用点");
         return listItem;
     }
 }

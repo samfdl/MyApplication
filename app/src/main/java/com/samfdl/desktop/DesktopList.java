@@ -11,8 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.phone.GroupSend;
-import com.samfdl.phone.MonitorSms;
 
 public class DesktopList extends AppCompatActivity {
     private ListView lv;
@@ -37,12 +35,6 @@ public class DesktopList extends AppCompatActivity {
                         break;
                     case 1:
                         intent = new Intent(DesktopList.this, AddShortcut.class);
-                        break;
-                    case 4:
-                        intent = new Intent(DesktopList.this, GroupSend.class);
-                        break;
-                    case 5:
-                        intent = new Intent(DesktopList.this, MonitorSms.class);
                         break;
                     default:
                         intent = new Intent(DesktopList.this, LiveWallPaperHelp.class);

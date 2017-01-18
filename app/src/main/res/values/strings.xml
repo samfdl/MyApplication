@@ -141,4 +141,6 @@
 
     <string name="desktop_addshortcut">添加快捷键</string>
     <string name="desktop_addshortcut_title">补间动画</string>
+
+    <string name="desktop_appwidgetcollection_no_item">没有列表项</string>
 </resources>
