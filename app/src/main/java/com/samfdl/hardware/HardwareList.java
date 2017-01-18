@@ -13,7 +13,6 @@ import com.samfdl.AllList;
 import com.samfdl.R;
 import com.samfdl.phone.GroupSend;
 import com.samfdl.phone.MonitorSms;
-import com.samfdl.phone.SendSms;
 
 public class HardwareList extends AppCompatActivity {
     private ListView lv;
@@ -43,7 +42,7 @@ public class HardwareList extends AppCompatActivity {
                         intent = new Intent(HardwareList.this, Sensors.class);
                         break;
                     case 3:
-                        intent = new Intent(HardwareList.this, SendSms.class);
+                        intent = new Intent(HardwareList.this, Compass.class);
                         break;
                     case 4:
                         intent = new Intent(HardwareList.this, GroupSend.class);

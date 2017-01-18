@@ -75,6 +75,7 @@ public class HardwareListAdapter extends BaseAdapter {
         listItem.add("手机振动");
         listItem.add("加速度传感器");
         listItem.add("常用传感器");
+        listItem.add("指南针");
         return listItem;
     }
 }
