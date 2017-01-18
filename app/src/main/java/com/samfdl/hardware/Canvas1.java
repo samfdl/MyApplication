@@ -1,4 +1,4 @@
-package com.samfdl.desktop;
+package com.samfdl.hardware;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
 import com.samfdl.R;
+import com.samfdl.desktop.DesktopList;
 
 public class Canvas1 extends AppCompatActivity {
     @Override
@@ -19,7 +20,7 @@ public class Canvas1 extends AppCompatActivity {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, DesktopList.class);
+            Intent intent = new Intent(this, HardwareList.class);
             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             startActivity(intent);
         }

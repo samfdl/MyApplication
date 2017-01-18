@@ -73,7 +73,8 @@ public class HardwareListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("手机振动");
-        listItem.add("手机电量提醒 无法验证");
+        listItem.add("加速度传感器");
+        listItem.add("加速度传感器");
         return listItem;
     }
 }

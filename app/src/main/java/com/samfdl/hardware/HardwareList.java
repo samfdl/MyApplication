@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.media.Audio1;
 import com.samfdl.phone.BlockList;
 import com.samfdl.phone.GroupSend;
 import com.samfdl.phone.MonitorPhone;
@@ -40,7 +39,7 @@ public class HardwareList extends AppCompatActivity {
                         intent = new Intent(HardwareList.this, Vibrator1.class);
                         break;
                     case 1:
-                        intent = new Intent(HardwareList.this, MonitorPhone.class);
+                        intent = new Intent(HardwareList.this, Accelerometer.class);
                         break;
                     case 2:
                         intent = new Intent(HardwareList.this, BlockList.class);

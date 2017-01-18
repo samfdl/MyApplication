@@ -119,6 +119,8 @@
     <string name="media_soundpool_shot">射击声</string>
     <string name="media_soundpool_arrow">射箭声</string>
 
+    <string name="hardware_accelerometer_tip">传感器返回的值</string>
+
     <string name="web_getpost_get">发送GET请求</string>
     <string name="web_getpost_post">发送POST请求</string>
 
