@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.phone.GroupSend;
 import com.samfdl.phone.MonitorSms;
 
 public class HardwareList extends AppCompatActivity {
@@ -45,7 +44,7 @@ public class HardwareList extends AppCompatActivity {
                         intent = new Intent(HardwareList.this, Compass.class);
                         break;
                     case 4:
-                        intent = new Intent(HardwareList.this, GroupSend.class);
+                        intent = new Intent(HardwareList.this, Gradienter.class);
                         break;
                     case 5:
                         intent = new Intent(HardwareList.this, MonitorSms.class);

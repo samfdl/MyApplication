@@ -76,6 +76,7 @@ public class HardwareListAdapter extends BaseAdapter {
         listItem.add("加速度传感器");
         listItem.add("常用传感器");
         listItem.add("指南针");
+        listItem.add("水平仪 有问题");
         return listItem;
     }
 }
