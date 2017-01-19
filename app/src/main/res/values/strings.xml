@@ -130,6 +130,8 @@
     <string name="hardware_sensor_light">光传感器返回的值</string>
     <string name="hardware_sensor_pressure">压力传感器返回的值</string>
 
+    <string name="hardware_locationproviders_providerList">系统所有的 LocationProvider 列表</string>
+
     <string name="web_getpost_get">发送GET请求</string>
     <string name="web_getpost_post">发送POST请求</string>
 

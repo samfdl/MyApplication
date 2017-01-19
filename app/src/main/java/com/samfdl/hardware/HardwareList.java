@@ -11,7 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.phone.MonitorSms;
 
 public class HardwareList extends AppCompatActivity {
     private ListView lv;
@@ -47,7 +46,7 @@ public class HardwareList extends AppCompatActivity {
                         intent = new Intent(HardwareList.this, Gradienter.class);
                         break;
                     case 5:
-                        intent = new Intent(HardwareList.this, MonitorSms.class);
+                        intent = new Intent(HardwareList.this, LocationProviders.class);
                         break;
                     default:
                         intent = new Intent(HardwareList.this, Vibrator1.class);
