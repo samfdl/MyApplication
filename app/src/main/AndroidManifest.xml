@@ -446,6 +446,7 @@
         <activity android:name=".hardware.Compass" />
         <activity android:name=".hardware.Gradienter" />
         <activity android:name=".hardware.LocationProviders" />
+        <activity android:name=".hardware.FreeLocationProvider" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.SimpleClient" />

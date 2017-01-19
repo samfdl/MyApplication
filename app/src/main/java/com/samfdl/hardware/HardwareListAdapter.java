@@ -78,6 +78,7 @@ public class HardwareListAdapter extends BaseAdapter {
         listItem.add("指南针");
         listItem.add("水平仪 有问题");
         listItem.add("获取系统所有的 LocationProvider");
+        listItem.add("根据 Criteria 获得免费 LocationProvider");
         return listItem;
     }
 }
