@@ -17,8 +17,6 @@
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
     <!-- 向SD卡写入数据权限 -->
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- 添加访问手机位置的权限 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <!-- 授予程序访问振动器的权限 -->
     <uses-permission android:name="android.permission.VIBRATE" />
     <!-- 授予用户修改壁纸的权限 -->
@@ -33,6 +31,10 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <!-- 指定添加安装快捷方式的权限 -->
     <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 添加访问手机位置的权限 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 授权获取定位信息 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -447,6 +449,7 @@
         <activity android:name=".hardware.Gradienter" />
         <activity android:name=".hardware.LocationProviders" />
         <activity android:name=".hardware.FreeLocationProvider" />
+        <activity android:name=".hardware.Location1" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.SimpleClient" />
