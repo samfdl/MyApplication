@@ -54,6 +54,9 @@ public class HardwareList extends AppCompatActivity {
                     case 7:
                         intent = new Intent(HardwareList.this, Location1.class);
                         break;
+                    case 8:
+                        intent = new Intent(HardwareList.this, Proximity.class);
+                        break;
                     default:
                         intent = new Intent(HardwareList.this, Vibrator1.class);
                 }

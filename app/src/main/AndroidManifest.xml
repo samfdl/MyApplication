@@ -450,6 +450,9 @@
         <activity android:name=".hardware.LocationProviders" />
         <activity android:name=".hardware.FreeLocationProvider" />
         <activity android:name=".hardware.Location1" />
+        <activity android:name=".hardware.Proximity" />
+
+        <receiver android:name=".hardware.ProximityAlertReciever" />
 
         <activity android:name=".web.WebList" />
         <activity android:name=".web.SimpleClient" />
