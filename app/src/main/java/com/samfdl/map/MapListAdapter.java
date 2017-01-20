@@ -1,4 +1,4 @@
-package com.samfdl;
+package com.samfdl.map;
 
 import android.content.Context;
 import android.util.Log;
@@ -8,15 +8,17 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.samfdl.R;
+
 import java.util.ArrayList;
 
 /**
- * Created by samsung on 2016/8/24.
+ * Created by samfdl on 2017/01/20.
  */
-public class AllListAdapter extends BaseAdapter {
+public class MapListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
 
-    public AllListAdapter(Context context) {
+    public MapListAdapter(Context context) {
         this.mInflater = LayoutInflater.from(context);
     }
 
@@ -70,22 +72,15 @@ public class AllListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("Activity 和 Fragment");
-        listItem.add("界面 UI 控件");
-        listItem.add("Service 后台进程");
-        listItem.add("事件处理 Event");
-        listItem.add("Intent 通信");
-        listItem.add("资源 Res");
-        listItem.add("数据存储");
-        listItem.add("图形和动画");
-        listItem.add("OpenGL");
-        listItem.add("多媒体");
-        listItem.add("硬件设备");
-        listItem.add("网络");
-        listItem.add("电话短信功能");
-        listItem.add("手机桌面");
-        listItem.add("自定义控件");
-        listItem.add("地图服务");
+        listItem.add("手机振动");
+        listItem.add("加速度传感器");
+        listItem.add("常用传感器");
+        listItem.add("指南针");
+        listItem.add("水平仪 有问题");
+        listItem.add("获取系统所有的 LocationProvider");
+        listItem.add("根据 Criteria 获得免费 LocationProvider");
+        listItem.add("获取定位数据 有问题");
+        listItem.add("临近警告");
         return listItem;
     }
 }

@@ -16,6 +16,7 @@ import com.samfdl.hardware.HardwareList;
 import com.samfdl.desktop.DesktopList;
 import com.samfdl.intent.IntentList;
 import com.samfdl.io.IOList;
+import com.samfdl.map.MapList;
 import com.samfdl.media.MediaList;
 import com.samfdl.opengl.OpenGLList;
 import com.samfdl.phone.PhoneList;
@@ -85,6 +86,9 @@ public class AllList extends AppCompatActivity {
                         break;
                     case 14:
                         intent = new Intent(AllList.this, DIYList.class);
+                        break;
+                    case 15:
+                        intent = new Intent(AllList.this, MapList.class);
                         break;
                     default:
                         intent = new Intent(AllList.this, ActivityList.class);
