@@ -19,7 +19,6 @@ import com.samfdl.hardware.Location1;
 import com.samfdl.hardware.LocationProviders;
 import com.samfdl.hardware.Proximity;
 import com.samfdl.hardware.Sensors;
-import com.samfdl.hardware.Vibrator1;
 
 public class MapList extends AppCompatActivity {
     private ListView lv;
@@ -40,7 +39,7 @@ public class MapList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(MapList.this, Vibrator1.class);
+                        intent = new Intent(MapList.this, AMap1.class);
                         break;
                     case 1:
                         intent = new Intent(MapList.this, Accelerometer.class);
@@ -67,7 +66,7 @@ public class MapList extends AppCompatActivity {
                         intent = new Intent(MapList.this, Proximity.class);
                         break;
                     default:
-                        intent = new Intent(MapList.this, Vibrator1.class);
+                        intent = new Intent(MapList.this, AMap1.class);
                 }
                 startActivity(intent);
             }
