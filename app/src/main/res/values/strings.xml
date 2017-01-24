@@ -156,4 +156,12 @@
     <string name="desktop_addshortcut_title">补间动画</string>
 
     <string name="desktop_appwidgetcollection_no_item">没有列表项</string>
+
+    <string name="map_locationmap_txtLong">经度:</string>
+    <string name="map_locationmap_txtLat">纬度:</string>
+    <string name="map_locationmap_loc">定位</string>
+    <string name="map_locationmap_lng">116.4475035667</string>
+    <string name="map_locationmap_lat">39.9727954429</string>
+    <string name="map_locationmap_gps">GPS定位</string>
+    <string name="map_locationmap_manul">手动定位</string>
 </resources>

@@ -42,7 +42,7 @@ public class MapList extends AppCompatActivity {
                         intent = new Intent(MapList.this, AMap1.class);
                         break;
                     case 1:
-                        intent = new Intent(MapList.this, Accelerometer.class);
+                        intent = new Intent(MapList.this, LocationMap.class);
                         break;
                     case 2:
                         intent = new Intent(MapList.this, Sensors.class);

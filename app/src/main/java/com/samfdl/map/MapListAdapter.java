@@ -73,7 +73,7 @@ public class MapListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("调用高德 Map 服务");
-        listItem.add("加速度传感器");
+        listItem.add("根据 GPS 地图定位");
         listItem.add("常用传感器");
         listItem.add("指南针");
         listItem.add("水平仪 有问题");
