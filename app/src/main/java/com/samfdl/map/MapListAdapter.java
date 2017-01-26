@@ -74,12 +74,8 @@ public class MapListAdapter extends BaseAdapter {
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("调用高德 Map 服务");
         listItem.add("根据 GPS 地图定位");
-        listItem.add("常用传感器");
-        listItem.add("指南针");
-        listItem.add("水平仪 有问题");
-        listItem.add("获取系统所有的 LocationProvider");
-        listItem.add("根据 Criteria 获得免费 LocationProvider");
-        listItem.add("获取定位数据 有问题");
+        listItem.add("根据地址得到经纬度 有问题");
+        listItem.add("根据地址定位地图 有问题");
         listItem.add("临近警告");
         return listItem;
     }

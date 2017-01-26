@@ -164,4 +164,9 @@
     <string name="map_locationmap_lat">39.9727954429</string>
     <string name="map_locationmap_gps">GPS定位</string>
     <string name="map_locationmap_manul">手动定位</string>
+
+    <string name="map_geocoder_txtAddress">地址:</string>
+    <string name="map_geocoder_address">沣宏大厦</string>
+    <string name="map_geocoder_parse">解析</string>
+    <string name="map_geocoder_reverse">反向解析</string>
 </resources>

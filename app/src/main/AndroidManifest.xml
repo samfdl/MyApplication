@@ -554,6 +554,8 @@
         <activity android:name=".map.MapList" />
         <activity android:name=".map.AMap1" />
         <activity android:name=".map.LocationMap" />
+        <activity android:name=".map.Geocoder1" />
+        <activity android:name=".map.AddrLocMap" />
     </application>
 
 </manifest>

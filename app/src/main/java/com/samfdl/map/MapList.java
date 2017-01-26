@@ -45,10 +45,10 @@ public class MapList extends AppCompatActivity {
                         intent = new Intent(MapList.this, LocationMap.class);
                         break;
                     case 2:
-                        intent = new Intent(MapList.this, Sensors.class);
+                        intent = new Intent(MapList.this, Geocoder1.class);
                         break;
                     case 3:
-                        intent = new Intent(MapList.this, Compass.class);
+                        intent = new Intent(MapList.this, AddrLocMap.class);
                         break;
                     case 4:
                         intent = new Intent(MapList.this, Gradienter.class);
