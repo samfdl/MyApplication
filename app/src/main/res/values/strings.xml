@@ -169,4 +169,8 @@
     <string name="map_geocoder_address">沣宏大厦</string>
     <string name="map_geocoder_parse">解析</string>
     <string name="map_geocoder_reverse">反向解析</string>
+
+    <string name="map_navigation_txtAddress">目标地</string>
+    <string name="map_navigation_targetAddress">华南农业大学</string>
+    <string name="map_navigation_nav">规划路线</string>
 </resources>

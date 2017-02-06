@@ -76,7 +76,7 @@ public class MapListAdapter extends BaseAdapter {
         listItem.add("根据 GPS 地图定位");
         listItem.add("根据地址得到经纬度 有问题");
         listItem.add("根据地址定位地图 有问题");
-        listItem.add("临近警告");
+        listItem.add("GPS 导航 有问题");
         return listItem;
     }
 }

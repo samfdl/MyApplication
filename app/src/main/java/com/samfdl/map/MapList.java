@@ -11,14 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.hardware.Accelerometer;
-import com.samfdl.hardware.Compass;
-import com.samfdl.hardware.FreeLocationProvider;
-import com.samfdl.hardware.Gradienter;
-import com.samfdl.hardware.Location1;
-import com.samfdl.hardware.LocationProviders;
-import com.samfdl.hardware.Proximity;
-import com.samfdl.hardware.Sensors;
 
 public class MapList extends AppCompatActivity {
     private ListView lv;
@@ -51,19 +43,7 @@ public class MapList extends AppCompatActivity {
                         intent = new Intent(MapList.this, AddrLocMap.class);
                         break;
                     case 4:
-                        intent = new Intent(MapList.this, Gradienter.class);
-                        break;
-                    case 5:
-                        intent = new Intent(MapList.this, LocationProviders.class);
-                        break;
-                    case 6:
-                        intent = new Intent(MapList.this, FreeLocationProvider.class);
-                        break;
-                    case 7:
-                        intent = new Intent(MapList.this, Location1.class);
-                        break;
-                    case 8:
-                        intent = new Intent(MapList.this, Proximity.class);
+                        intent = new Intent(MapList.this, Navigation.class);
                         break;
                     default:
                         intent = new Intent(MapList.this, AMap1.class);
