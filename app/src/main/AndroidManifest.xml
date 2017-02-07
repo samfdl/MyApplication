@@ -557,6 +557,8 @@
         <activity android:name=".map.Geocoder1" />
         <activity android:name=".map.AddrLocMap" />
         <activity android:name=".map.Navigation" />
+
+        <activity android:name=".game.metalslug.MetalSlug" />
     </application>
 
 </manifest>

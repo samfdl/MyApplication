@@ -86,6 +86,7 @@ public class AllListAdapter extends BaseAdapter {
         listItem.add("手机桌面");
         listItem.add("自定义控件");
         listItem.add("地图服务");
+        listItem.add("游戏 合金弹头");
         return listItem;
     }
 }

@@ -11,6 +11,7 @@ import android.widget.ListView;
 import com.samfdl.activity.ActivityList;
 import com.samfdl.diy.DIYList;
 import com.samfdl.event.EventList;
+import com.samfdl.game.metalslug.MetalSlug;
 import com.samfdl.graphics.GraphicsList;
 import com.samfdl.hardware.HardwareList;
 import com.samfdl.desktop.DesktopList;
@@ -89,6 +90,9 @@ public class AllList extends AppCompatActivity {
                         break;
                     case 15:
                         intent = new Intent(AllList.this, MapList.class);
+                        break;
+                    case 16:
+                        intent = new Intent(AllList.this, MetalSlug.class);
                         break;
                     default:
                         intent = new Intent(AllList.this, ActivityList.class);
