@@ -558,7 +558,12 @@
         <activity android:name=".map.AddrLocMap" />
         <activity android:name=".map.Navigation" />
 
-        <activity android:name=".game.metalslug.MetalSlug" />
+        <activity
+            android:name=".game.metalslug.MetalSlug"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:keepScreenOn="true"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="adjustPan" />
     </application>
 
 </manifest>

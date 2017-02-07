@@ -3,9 +3,6 @@ package com.samfdl.game.metalslug;
 import java.io.InputStream;
 import java.util.HashMap;
 
-import org.crazyit.game.Graphics;
-import org.crazyit.metalslug.comp.MonsterManager;
-
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -89,12 +86,12 @@ public class ViewManager {
         // load方法加载指定音频文件，并返回所加载的音频ID
         // 此处使用HashMap来管理这些音频流
         soundMap.put(1,
-                soundPool.load(MetalSlug.mainActivity, R.raw.shot, 1));
+                soundPool.load(MetalSlug.mainActivity, R.raw.media_soundpool_shot, 1));
         soundMap.put(2,
-                soundPool.load(MetalSlug.mainActivity, R.raw.bomb, 1));
-        soundMap.put(3, soundPool.load(MetalSlug.mainActivity, R.raw.oh, 1));
+                soundPool.load(MetalSlug.mainActivity, R.raw.res_rawres_bomb, 1));
+        soundMap.put(3, soundPool.load(MetalSlug.mainActivity, R.raw.game_metalslug_oh, 1));
 
-        Bitmap temp = createBitmapByID(MetalSlug.res, R.drawable.map);
+        Bitmap temp = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_map);
         if (temp != null && !temp.isRecycled()) {
             int height = temp.getHeight();
             if (height != SCREEN_HEIGHT && SCREEN_HEIGHT != 0) {
@@ -161,118 +158,118 @@ public class ViewManager {
         // 加载角色射击时头部动画帧的图片
         headShootImage = new Bitmap[6];
         headShootImage[0] = createBitmapByID(MetalSlug.res,
-                R.drawable.head_shoot_1, scale);
+                R.drawable.game_metalslug_head_shoot_1, scale);
         headShootImage[1] = createBitmapByID(MetalSlug.res,
-                R.drawable.head_shoot_2, scale);
+                R.drawable.game_metalslug_head_shoot_2, scale);
         headShootImage[2] = createBitmapByID(MetalSlug.res,
-                R.drawable.head_shoot_3, scale);
+                R.drawable.game_metalslug_head_shoot_3, scale);
         headShootImage[3] = createBitmapByID(MetalSlug.res,
-                R.drawable.head_shoot_4, scale);
+                R.drawable.game_metalslug_head_shoot_4, scale);
         headShootImage[4] = createBitmapByID(MetalSlug.res,
-                R.drawable.head_shoot_5, scale);
+                R.drawable.game_metalslug_head_shoot_5, scale);
         headShootImage[5] = createBitmapByID(MetalSlug.res,
-                R.drawable.head_shoot_6, scale);
+                R.drawable.game_metalslug_head_shoot_6, scale);
         // 加载子弹的图片
         bulletImage = new Bitmap[4];
         bulletImage[0] = createBitmapByID(MetalSlug.res,
-                R.drawable.bullet_1, scale);
+                R.drawable.game_metalslug_bullet_1, scale);
         bulletImage[1] = createBitmapByID(MetalSlug.res,
-                R.drawable.bullet_2, scale);
+                R.drawable.game_metalslug_bullet_2, scale);
         bulletImage[2] = createBitmapByID(MetalSlug.res,
-                R.drawable.bullet_3, scale);
+                R.drawable.game_metalslug_bullet_3, scale);
         bulletImage[3] = createBitmapByID(MetalSlug.res,
-                R.drawable.bullet_4, scale);
-        head = createBitmapByID(MetalSlug.res, R.drawable.head, scale);
+                R.drawable.game_metalslug_bullet_4, scale);
+        head = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_head, scale);
         // 加载第一种怪物（炸弹）未爆炸时动画帧的图片
         bombImage = new Bitmap[2];
-        bombImage[0] = createBitmapByID(MetalSlug.res, R.drawable.bomb_1,
+        bombImage[0] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb_1,
                 scale);
-        bombImage[1] = createBitmapByID(MetalSlug.res, R.drawable.bomb_2,
+        bombImage[1] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb_2,
                 scale);
         // 加载第一种怪物（炸弹）爆炸时的图片
         bomb2Image = new Bitmap[13];
-        bomb2Image[0] = createBitmapByID(MetalSlug.res, R.drawable.bomb2_1,
+        bomb2Image[0] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb2_1,
                 scale);
-        bomb2Image[1] = createBitmapByID(MetalSlug.res, R.drawable.bomb2_2,
+        bomb2Image[1] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb2_2,
                 scale);
-        bomb2Image[2] = createBitmapByID(MetalSlug.res, R.drawable.bomb2_3,
+        bomb2Image[2] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb2_3,
                 scale);
-        bomb2Image[3] = createBitmapByID(MetalSlug.res, R.drawable.bomb2_4,
+        bomb2Image[3] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb2_4,
                 scale);
-        bomb2Image[4] = createBitmapByID(MetalSlug.res, R.drawable.bomb2_5,
+        bomb2Image[4] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb2_5,
                 scale);
-        bomb2Image[5] = createBitmapByID(MetalSlug.res, R.drawable.bomb2_6,
+        bomb2Image[5] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb2_6,
                 scale);
-        bomb2Image[6] = createBitmapByID(MetalSlug.res, R.drawable.bomb2_7,
+        bomb2Image[6] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb2_7,
                 scale);
-        bomb2Image[7] = createBitmapByID(MetalSlug.res, R.drawable.bomb2_8,
+        bomb2Image[7] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb2_8,
                 scale);
-        bomb2Image[8] = createBitmapByID(MetalSlug.res, R.drawable.bomb2_9,
+        bomb2Image[8] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb2_9,
                 scale);
-        bomb2Image[9] = createBitmapByID(MetalSlug.res, R.drawable.bomb2_10,
+        bomb2Image[9] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_bomb2_10,
                 scale);
         bomb2Image[10] = createBitmapByID(MetalSlug.res,
-                R.drawable.bomb2_11, scale);
+                R.drawable.game_metalslug_bomb2_11, scale);
         bomb2Image[11] = createBitmapByID(MetalSlug.res,
-                R.drawable.bomb2_12, scale);
+                R.drawable.game_metalslug_bomb2_12, scale);
         bomb2Image[12] = createBitmapByID(MetalSlug.res,
-                R.drawable.bomb2_13, scale);
+                R.drawable.game_metalslug_bomb2_13, scale);
         // 加载第二种怪物（飞机）的动画帧的图片
         flyImage = new Bitmap[6];
-        flyImage[0] = createBitmapByID(MetalSlug.res, R.drawable.fly_1,
+        flyImage[0] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_fly_1,
                 scale);
-        flyImage[1] = createBitmapByID(MetalSlug.res, R.drawable.fly_2,
+        flyImage[1] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_fly_2,
                 scale);
-        flyImage[2] = createBitmapByID(MetalSlug.res, R.drawable.fly_3,
+        flyImage[2] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_fly_3,
                 scale);
-        flyImage[3] = createBitmapByID(MetalSlug.res, R.drawable.fly_4,
+        flyImage[3] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_fly_4,
                 scale);
-        flyImage[4] = createBitmapByID(MetalSlug.res, R.drawable.fly_5,
+        flyImage[4] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_fly_5,
                 scale);
-        flyImage[5] = createBitmapByID(MetalSlug.res, R.drawable.fly_6,
+        flyImage[5] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_fly_6,
                 scale);
         // 加载第二种怪物（飞机）爆炸时的动画帧的图片
         flyDieImage = new Bitmap[13];
         flyDieImage[0] = createBitmapByID(MetalSlug.res,
-                R.drawable.fly_die_1, scale);
+                R.drawable.game_metalslug_fly_die_1, scale);
         flyDieImage[1] = createBitmapByID(MetalSlug.res,
-                R.drawable.fly_die_2, scale);
+                R.drawable.game_metalslug_fly_die_2, scale);
         flyDieImage[2] = createBitmapByID(MetalSlug.res,
-                R.drawable.fly_die_3, scale);
+                R.drawable.game_metalslug_fly_die_3, scale);
         flyDieImage[3] = createBitmapByID(MetalSlug.res,
-                R.drawable.fly_die_4, scale);
+                R.drawable.game_metalslug_fly_die_4, scale);
         flyDieImage[4] = createBitmapByID(MetalSlug.res,
-                R.drawable.fly_die_5, scale);
+                R.drawable.game_metalslug_fly_die_5, scale);
         flyDieImage[5] = createBitmapByID(MetalSlug.res,
-                R.drawable.fly_die_6, scale);
+                R.drawable.game_metalslug_fly_die_6, scale);
         flyDieImage[6] = createBitmapByID(MetalSlug.res,
-                R.drawable.fly_die_7, scale);
+                R.drawable.game_metalslug_fly_die_7, scale);
         flyDieImage[7] = createBitmapByID(MetalSlug.res,
-                R.drawable.fly_die_8, scale);
+                R.drawable.game_metalslug_fly_die_8, scale);
         flyDieImage[8] = createBitmapByID(MetalSlug.res,
-                R.drawable.fly_die_9, scale);
+                R.drawable.game_metalslug_fly_die_9, scale);
         flyDieImage[9] = createBitmapByID(MetalSlug.res,
-                R.drawable.fly_die_10, scale);
+                R.drawable.game_metalslug_fly_die_10, scale);
         // 加载第三种怪物（人）活着时的动画帧的图片
         manImgae = new Bitmap[3];
-        manImgae[0] = createBitmapByID(MetalSlug.res, R.drawable.man_1,
+        manImgae[0] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_man_1,
                 scale);
-        manImgae[1] = createBitmapByID(MetalSlug.res, R.drawable.man_2,
+        manImgae[1] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_man_2,
                 scale);
-        manImgae[2] = createBitmapByID(MetalSlug.res, R.drawable.man_3,
+        manImgae[2] = createBitmapByID(MetalSlug.res, R.drawable.game_metalslug_man_3,
                 scale);
         // 加载第三种怪物（人）死亡时的动画帧的图片
         manDieImage = new Bitmap[13];
         manDieImage[0] = createBitmapByID(MetalSlug.res,
-                R.drawable.man_die_1, scale);
+                R.drawable.game_metalslug_man_die_1, scale);
         manDieImage[1] = createBitmapByID(MetalSlug.res,
-                R.drawable.man_die_2, scale);
+                R.drawable.game_metalslug_man_die_2, scale);
         manDieImage[2] = createBitmapByID(MetalSlug.res,
-                R.drawable.man_die_3, scale);
+                R.drawable.game_metalslug_man_die_3, scale);
         manDieImage[3] = createBitmapByID(MetalSlug.res,
-                R.drawable.man_die_4, scale);
+                R.drawable.game_metalslug_man_die_4, scale);
         manDieImage[4] = createBitmapByID(MetalSlug.res,
-                R.drawable.man_die_5, scale);
+                R.drawable.game_metalslug_man_die_5, scale);
     }
 
     // 绘制游戏界面的方法，该方法先绘制游戏背景地图，再绘制游戏角色，最后绘制所有怪物

@@ -35,8 +35,6 @@ public class MetalSlug extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // 添加返回按钮
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         mainActivity = this;
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -46,8 +44,8 @@ public class MetalSlug extends AppCompatActivity {
         DisplayMetrics metric = new DisplayMetrics();
         // 获取屏幕高度、宽度
         getWindowManager().getDefaultDisplay().getMetrics(metric);
-        windowHeight = metric.heightPixels; // 屏幕高度
-        windowWidth = metric.widthPixels; // 屏幕宽度
+        windowHeight = metric.heightPixels / 4; // 屏幕高度
+        windowWidth = metric.widthPixels / 4; // 屏幕宽度
         getWindow().setSoftInputMode(
                 WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
         res = getResources();
