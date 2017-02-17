@@ -20,34 +20,35 @@ import android.widget.RelativeLayout;
 
 import com.samfdl.R;
 
+import static com.samfdl.game.metalslug.Constant.CLEAN;
+import static com.samfdl.game.metalslug.Constant.INIT;
+import static com.samfdl.game.metalslug.Constant.LOGIC;
+import static com.samfdl.game.metalslug.Constant.PAINT;
+import static com.samfdl.game.metalslug.Constant.STAGE_ERROR;
+import static com.samfdl.game.metalslug.Constant.STAGE_GAME;
+import static com.samfdl.game.metalslug.Constant.STAGE_INIT;
+import static com.samfdl.game.metalslug.Constant.STAGE_LOGIN;
+import static com.samfdl.game.metalslug.Constant.STAGE_LOSE;
+import static com.samfdl.game.metalslug.Constant.STAGE_NO_CHANGE;
+import static com.samfdl.game.metalslug.Constant.STAGE_QUIT;
+
 public class GameView extends SurfaceView implements SurfaceHolder.Callback {
-    public static final Player player = new Player("孙悟空", Player.MAX_HP);
+    // SurfaceHolder负责维护SurfaceView上绘制的内容
+    private SurfaceHolder surfaceHolder;
+
     // 保存当前Android应用的主Context
     private Context mainContext = null;
     // 画图所需要的Paint和Canvas对象
     private Paint paint = null;
     private Canvas canvas = null;
-    // SurfaceHolder负责维护SurfaceView上绘制的内容
-    private SurfaceHolder surfaceHolder;
-    // 代表场景不改变的常量
-    public static final int STAGE_NO_CHANGE = 0;
-    // 代表初始化场景的常量
-    public static final int STAGE_INIT = 1;
-    // 代表登录场景的常量
-    public static final int STAGE_LOGIN = 2;
-    // 代表游戏场景的常量
-    public static final int STAGE_GAME = 3;
-    // 代表失败场景的常量
-    public static final int STAGE_LOSE = 4;
-    // 代表退出场景的常量
-    public static final int STAGE_QUIT = 99;
-    // 代表错误场景的常量
-    public static final int STAGE_ERROR = 255;
+
     // 定义该游戏当前处于何种场景的变量
     private int gStage = 0;
     // 定义一个集合来保存该游戏已经加载到所有场景
     public static final List<Integer> stageList = Collections
             .synchronizedList(new ArrayList<Integer>());
+
+    public static final Player player = new Player("孙悟空", Player.MAX_HP);
 
     // 定义GameView的构造器
     public GameView(Context context, int firstStage) {
@@ -69,55 +70,6 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                 MetalSlug.windowHeight);
         gStage = firstStage;
     }
-
-    public Context getMainContext() {
-        return mainContext;
-    }
-
-    public void setMainContext(Context mainContext) {
-        this.mainContext = mainContext;
-    }
-
-    public Paint getPaint() {
-        return paint;
-    }
-
-    public void setPaint(Paint paint) {
-        this.paint = paint;
-    }
-
-    public Canvas getCanvas() {
-        return canvas;
-    }
-
-    public void setCanvas(Canvas canvas) {
-        this.canvas = canvas;
-    }
-
-    public int getgStage() {
-        return gStage;
-    }
-
-    public void setgStage(int gStage) {
-        this.gStage = gStage;
-    }
-
-    public SurfaceHolder getSurfaceHolder() {
-        return surfaceHolder;
-    }
-
-    public void setSurfaceHolder(SurfaceHolder surfaceHolder) {
-        this.surfaceHolder = surfaceHolder;
-    }
-
-    // 步骤：初始化
-    private static final int INIT = 1;
-    // 步骤：逻辑
-    private static final int LOGIC = 2;
-    // 步骤：清除
-    private static final int CLEAN = 3;
-    // 步骤：画
-    private static final int PAINT = 4;
 
     // 处理游戏场景
     public int doStage(int stage, int step) {

@@ -1,10 +1,10 @@
 package com.samfdl.game.metalslug;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.util.DisplayMetrics;
 import android.view.MenuItem;
 import android.view.Window;
@@ -15,8 +15,9 @@ import com.samfdl.R;
 import com.samfdl.graphics.GraphicsList;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
+import static com.samfdl.game.metalslug.Constant.STAGE_INIT;
 
-public class MetalSlug extends AppCompatActivity {
+public class MetalSlug extends Activity {
     // 定义主布局内的容器：FrameLayout
     public static FrameLayout mainLayout = null;
     // 主布局的布局参数
@@ -29,6 +30,7 @@ public class MetalSlug extends AppCompatActivity {
     public static int windowHeight;
     // 游戏窗口的主游戏界面
     public static GameView mainView = null;
+
     // 播放背景音乐的MediaPlayer
     private MediaPlayer player;
 
@@ -37,27 +39,30 @@ public class MetalSlug extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         mainActivity = this;
+        res = getResources();
+
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         // 设置全屏
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().setSoftInputMode(
+                WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
+
         DisplayMetrics metric = new DisplayMetrics();
         // 获取屏幕高度、宽度
         getWindowManager().getDefaultDisplay().getMetrics(metric);
-        windowHeight = metric.heightPixels / 4; // 屏幕高度
-        windowWidth = metric.widthPixels / 4; // 屏幕宽度
-        getWindow().setSoftInputMode(
-                WindowManager.LayoutParams.SOFT_INPUT_ADJUST_PAN);
-        res = getResources();
+        windowHeight = metric.heightPixels; // 屏幕高度
+        windowWidth = metric.widthPixels; // 屏幕宽度
+
         // 加载main.xml界面设计文件
         setContentView(R.layout.game_metalslug);
         // 获取main.xml界面设计文件中ID为mainLayout的组件
         mainLayout = (FrameLayout) findViewById(R.id.mainLayout);
         // 创建GameView组件
-        mainView = new GameView(this.getApplicationContext(),
-                GameView.STAGE_INIT);
+        mainView = new GameView(this.getApplicationContext(), STAGE_INIT);
         mainLP = new FrameLayout.LayoutParams(MATCH_PARENT, MATCH_PARENT);
         mainLayout.addView(mainView, mainLP);
+
         // 播放背景音乐
         player = MediaPlayer.create(this, R.raw.game_metalslug_background);
         player.setLooping(true);
