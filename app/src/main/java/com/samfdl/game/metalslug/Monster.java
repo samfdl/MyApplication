@@ -254,7 +254,7 @@ public class Monster {
                 // 子弹设为无效
                 bullet.setEffect(false);
                 // 将玩家的生命值减5
-                GameView.player.setHp(GameView.player.getHp() - 5);
+                GameView.player.hp = GameView.player.hp - 5;
                 // 将子弹添加到delBulletList集合中
                 delBulletList.add(bullet);
             }

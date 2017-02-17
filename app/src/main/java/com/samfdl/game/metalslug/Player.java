@@ -29,7 +29,7 @@ public class Player {
     // 保存角色名字的成员变量
     private String name;
     // 保存角色生命值的成员变量
-    private int hp;
+    public int hp;
     // 保存角色所使用枪的类型（以后可考虑让角色能更换不同的枪）
     private int gun;
     // 保存角色当前动作的成员变量（默认向右站立）
@@ -51,7 +51,7 @@ public class Player {
     // 控制射击状态的保留计数器
     // 每当用户发射一枪时，leftShootTime会被设为MAX_LEFT_SHOOT_TIME。
     // 只有当leftShootTime变为0时，用户才能发射下一枪
-    private int leftShootTime = 0;
+    public int leftShootTime = 0;
     // 保存角色是否跳动的成员变量
     public boolean isJump = false;
     // 保存角色是否跳到最高处的成员变量
@@ -298,10 +298,6 @@ public class Player {
         }
     }
 
-    public int getLeftShootTime() {
-        return leftShootTime;
-    }
-
     // 发射子弹的方法
     public void addBullet() {
         // 计算子弹的初始X坐标
@@ -326,9 +322,9 @@ public class Player {
             MonsterManager.updatePosistion((int) (6 * ViewManager.scale));
             // 更新角色位置
             setX(getX() + (int) (6 * ViewManager.scale));
-            if (!isJump()) {
+            if (!isJump) {
                 // 不跳的时候，需要设置动作
-                setAction(Player.ACTION_RUN_RIGHT);
+                action = Player.ACTION_RUN_RIGHT;
             }
         } else if (move == MOVE_LEFT) {
             if (getX() - (int) (6 * ViewManager.scale) < Player.X_DEFAULT) {
@@ -340,32 +336,31 @@ public class Player {
             }
             // 更新角色位置
             setX(getX() - (int) (6 * ViewManager.scale));
-            if (!isJump()) {
+            if (!isJump) {
                 // 不跳的时候，需要设置动作
-                setAction(Player.ACTION_RUN_LEFT);
+                action = Player.ACTION_RUN_LEFT;
             }
-        } else if (getAction() != Player.ACTION_JUMP_RIGHT
-                && getAction() != Player.ACTION_JUMP_LEFT) {
-            if (!isJump()) {
+        } else if (action != Player.ACTION_JUMP_RIGHT
+                && action != Player.ACTION_JUMP_LEFT) {
+            if (!isJump) {
                 // 不跳的时候，需要设置动作
-                setAction(Player.ACTION_STAND_RIGHT);
+                action = Player.ACTION_STAND_RIGHT;
             }
         }
     }
 
     // 处理角色移动与跳的逻辑关系
     public void logic() {
-        if (!isJump()) {
+        if (!isJump) {
             move();
             return;
         }
 
         // 如果还没有跳到最高点
         if (!isJumpMax) {
-            setAction(getDir() == Player.DIR_RIGHT ? Player.ACTION_JUMP_RIGHT
-                    : Player.ACTION_JUMP_LEFT);
+            action = getDir() == Player.DIR_RIGHT ? Player.ACTION_JUMP_RIGHT : Player.ACTION_JUMP_LEFT;
             // 更新Y坐标
-            setY(getY() - (int) (8 * ViewManager.scale));
+            y = getY() - (int) (8 * ViewManager.scale);
             // 设置子弹在Y方向上具有向上的加速度
             setBulletYAccelate(-(int) (2 * ViewManager.scale));
             // 已经达到最高点
@@ -377,20 +372,19 @@ public class Player {
             // 如果在最高点停留次数已经使用完
             if (jumpStopCount <= 0) {
                 // 更新Y坐标
-                setY(getY() + (int) (8 * ViewManager.scale));
+                y = getY() + (int) (8 * ViewManager.scale);
                 // 设置子弹在Y方向上具有向下的加速度
                 setBulletYAccelate((int) (2 * ViewManager.scale));
                 // 已经掉落到最低点
                 if (getY() >= Player.Y_DEFALUT) {
                     // 恢复Y坐标
-                    setY(Player.Y_DEFALUT);
+                    y = Player.Y_DEFALUT;
                     isJump = false;
                     isJumpMax = false;
-                    setAction(Player.ACTION_STAND_RIGHT);
+                    action = Player.ACTION_STAND_RIGHT;
                 } else {
                     // 未掉落到最低点，继续使用跳的动作
-                    setAction(getDir() == Player.DIR_RIGHT ? Player.ACTION_JUMP_RIGHT
-                            : Player.ACTION_JUMP_LEFT);
+                    action = getDir() == Player.DIR_RIGHT ? Player.ACTION_JUMP_RIGHT : Player.ACTION_JUMP_LEFT;
                 }
             }
         }
@@ -440,38 +434,6 @@ public class Player {
             initPosition();
         }
         return y;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
-
-    public int getHp() {
-        return hp;
-    }
-
-    public void setHp(int hp) {
-        this.hp = hp;
-    }
-
-    public int getAction() {
-        return action;
-    }
-
-    public void setAction(int action) {
-        this.action = action;
-    }
-
-    public int getMove() {
-        return move;
-    }
-
-    public void setMove(int move) {
-        this.move = move;
-    }
-
-    public boolean isJump() {
-        return isJump;
     }
 
     public void setJump(boolean isJump) {

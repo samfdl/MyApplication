@@ -174,10 +174,10 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                         public boolean onTouch(View v, MotionEvent event) {
                             switch (event.getAction()) {
                                 case MotionEvent.ACTION_DOWN:
-                                    player.setMove(Player.MOVE_LEFT);
+                                    player.move = Player.MOVE_LEFT;
                                     break;
                                 case MotionEvent.ACTION_UP:
-                                    player.setMove(Player.MOVE_STAND);
+                                    player.move = Player.MOVE_STAND;
                                     break;
                                 case MotionEvent.ACTION_MOVE:
                                     break;
@@ -203,10 +203,10 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                         public boolean onTouch(View v, MotionEvent event) {
                             switch (event.getAction()) {
                                 case MotionEvent.ACTION_DOWN:
-                                    player.setMove(Player.MOVE_RIGHT);
+                                    player.move = Player.MOVE_RIGHT;
                                     break;
                                 case MotionEvent.ACTION_UP:
-                                    player.setMove(Player.MOVE_STAND);
+                                    player.move = Player.MOVE_STAND;
                                     break;
                                 case MotionEvent.ACTION_MOVE:
                                     break;
@@ -233,7 +233,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                         @Override
                         public void onClick(View v) {
                             // 当角色的leftShootTime为0时（上一枪发射结束），角色才能发射下一枪。
-                            if (player.getLeftShootTime() <= 0) {
+                            if (player.leftShootTime <= 0) {
                                 player.addBullet();
                             }
                         }
@@ -298,7 +298,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
         switch (step) {
             case INIT:
                 // 初始化角色血量
-                player.setHp(Player.MAX_HP);
+                player.hp = Player.MAX_HP;
                 // 初始化登录界面
                 if (loginView == null) {
                     loginView = new RelativeLayout(mainContext);
@@ -364,7 +364,7 @@ public class GameView extends SurfaceView implements SurfaceHolder.Callback {
                             // 跳转到继续游戏的界面
                             stageList.add(STAGE_GAME);
                             // 让角色的生命值回到最大值
-                            player.setHp(Player.MAX_HP);
+                            player.hp = Player.MAX_HP;
                         }
                     });
                     setViewHandler.sendMessage(setViewHandler.obtainMessage(0,

@@ -92,7 +92,7 @@ public class MonsterManager {
                     // 将怪物（爆炸的炸弹）添加到delList集合中
                     delList.add(monster);
                     // 玩家控制的角色的生命值减10
-                    GameView.player.setHp(GameView.player.getHp() - 10);
+                    GameView.player.hp = GameView.player.hp - 10;
                 }
                 continue;
             }
