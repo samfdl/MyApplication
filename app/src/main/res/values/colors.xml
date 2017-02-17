@@ -14,4 +14,22 @@
     <color name="res_valuesres_c7">#07F</color>
     <color name="res_valuesres_c8">#70F</color>
     <color name="res_valuesres_c9">#F70</color>
+
+    <color name="game_game2048_bg">#faf7f0</color>
+    <color name="game_game2048_text_bg">#ebc400</color>
+    <color name="game_game2048_text">#fefbf5</color>
+    <color name="game_game2048_score">#beaea1</color>
+    <color name="game_game2048_options">#ed995b</color>
+    <color name="game_game2048_grid">#bfae9c</color>
+    <color name="game_game2048_bg_null">#ccc0b2</color>
+    <color name="game_game2048_bg_2">#f0e3da</color>
+    <color name="game_game2048_bg_4">#efe0cb</color>
+    <color name="game_game2048_bg_8">#f0b17b</color>
+    <color name="game_game2048_bg_16">#f0e3da</color> <!-- wrong -->
+    <color name="game_game2048_bg_32">#f67d62</color>
+    <color name="game_game2048_bg_64">#f0e3da</color> <!-- wrong -->
+    <color name="game_game2048_bg_128">#f5d96e</color>
+    <color name="game_game2048_bg_256">#f0d04a</color>
+    <color name="game_game2048_bg_512">#e2c029</color>
+    <color name="game_game2048_bg_1024">#f0e3da</color> <!-- wrong -->
 </resources>

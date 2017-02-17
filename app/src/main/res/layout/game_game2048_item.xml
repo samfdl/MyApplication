@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/number"
+    android:layout_width="68dip"
+    android:layout_height="68dip"
+    android:background="@color/game_game2048_bg_null"
+    android:gravity="center"
+    android:text="2"
+    android:textColor="@color/game_game2048_bg_null"
+    android:textSize="40sp" />

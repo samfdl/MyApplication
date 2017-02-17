@@ -565,6 +565,7 @@
             android:keepScreenOn="true"
             android:screenOrientation="landscape"
             android:windowSoftInputMode="adjustPan" />
+        <activity android:name=".game.game2048.Game2048" />
     </application>
 
 </manifest>

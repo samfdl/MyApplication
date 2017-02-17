@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/game_game2048_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="114dip"
+        android:layout_marginLeft="13dip"
+        android:layout_marginTop="17dip">
+
+        <TextView
+            android:layout_width="112dip"
+            android:layout_height="114dip"
+            android:background="@color/game_game2048_text_bg"
+            android:gravity="center"
+            android:text="2048"
+            android:textColor="@color/game_game2048_text"
+            android:textSize="40sp" />
+
+        <LinearLayout
+            android:layout_width="90dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/score"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:background="@color/game_game2048_score"
+                android:gravity="center"
+                android:text="score"
+                android:textColor="@color/game_game2048_text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/options"
+                android:layout_width="90dip"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dip"
+                android:background="@color/game_game2048_options"
+                android:gravity="center"
+                android:text="OPTIONS"
+                android:textColor="@color/game_game2048_text"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="90dip"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dip"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/best"
+                android:layout_width="match_parent"
+                android:layout_height="60dip"
+                android:background="@color/game_game2048_score"
+                android:gravity="center"
+                android:text="best"
+                android:textColor="@color/game_game2048_text"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/leaderboard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="12dip"
+                android:background="@color/game_game2048_options"
+                android:gravity="center"
+                android:text="LEADERBOARD"
+                android:textColor="@color/game_game2048_text"
+                android:textSize="11sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="326dip"
+        android:layout_height="326dip"
+        android:layout_marginLeft="13dip"
+        android:layout_marginTop="9dip"
+        android:background="@color/game_game2048_grid">
+
+        <GridView
+            android:id="@+id/grid"
+            android:layout_width="305dip"
+            android:layout_height="305dip"
+            android:layout_marginLeft="11dip"
+            android:layout_marginTop="11dip"
+            android:background="@color/game_game2048_grid"
+            android:horizontalSpacing="11dip"
+            android:numColumns="4"
+            android:verticalSpacing="11dip" />
+    </LinearLayout>
+</LinearLayout>

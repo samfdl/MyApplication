@@ -1,5 +1,6 @@
 package com.samfdl.ui.listview;
 
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -18,14 +19,23 @@ import java.util.Map;
 public class GridView1 extends AppCompatActivity {
     GridView grid;
     ImageView imageView;
-    int[] imageIds = new int[]{R.drawable.ui_listview_gridview_bomb5, R.drawable.ui_listview_gridview_bomb6, R.drawable.ui_listview_gridview_bomb7, R.drawable.ui_listview_gridview_bomb8,
-            R.drawable.ui_listview_gridview_bomb9, R.drawable.ui_listview_gridview_bomb10, R.drawable.ui_listview_gridview_bomb11, R.drawable.ui_listview_gridview_bomb12, R.drawable.ui_listview_gridview_bomb13,
-            R.drawable.ui_listview_gridview_bomb14, R.drawable.ui_listview_gridview_bomb15, R.drawable.ui_listview_gridview_bomb16};
+    int[] imageIds = new int[12];
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ui_listview_gridview);
+
+        for (int i = 0; i < 12; i++) {
+            try {
+                imageIds[i] = (Integer) R.drawable.class.getField("ui_listview_gridview_bomb" + (i + 5)).get(null);
+            } catch (IllegalAccessException e) {
+                e.printStackTrace();
+            } catch (NoSuchFieldException e) {
+                e.printStackTrace();
+            }
+        }
+
         // 创建一个List对象，List对象的元素是Map
         List<Map<String, Object>> listItems = new ArrayList<Map<String, Object>>();
         for (int i = 0; i < imageIds.length; i++) {

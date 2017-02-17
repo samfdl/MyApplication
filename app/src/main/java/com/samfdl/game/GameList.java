@@ -11,6 +11,7 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
+import com.samfdl.game.game2048.Game2048;
 import com.samfdl.game.metalslug.MetalSlug;
 import com.samfdl.io.File1;
 
@@ -36,7 +37,7 @@ public class GameList extends AppCompatActivity {
                         intent = new Intent(GameList.this, MetalSlug.class);
                         break;
                     case 1:
-                        intent = new Intent(GameList.this, File1.class);
+                        intent = new Intent(GameList.this, Game2048.class);
                         break;
                     default:
                         intent = new Intent(GameList.this, MetalSlug.class);

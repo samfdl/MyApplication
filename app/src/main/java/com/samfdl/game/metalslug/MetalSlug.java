@@ -1,18 +1,15 @@
 package com.samfdl.game.metalslug;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
-import android.view.MenuItem;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 
 import com.samfdl.R;
-import com.samfdl.graphics.GraphicsList;
 
 import static android.view.ViewGroup.LayoutParams.MATCH_PARENT;
 import static com.samfdl.game.metalslug.Constant.STAGE_INIT;
@@ -85,15 +82,5 @@ public class MetalSlug extends Activity {
         if (player != null && player.isPlaying()) {
             player.pause();
         }
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == android.R.id.home) {
-            Intent intent = new Intent(this, GraphicsList.class);
-            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-            startActivity(intent);
-        }
-        return true;
     }
 }
