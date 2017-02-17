@@ -558,6 +558,7 @@
         <activity android:name=".map.AddrLocMap" />
         <activity android:name=".map.Navigation" />
 
+        <activity android:name=".game.GameList" />
         <activity
             android:name=".game.metalslug.MetalSlug"
             android:configChanges="orientation|keyboardHidden|screenSize"
