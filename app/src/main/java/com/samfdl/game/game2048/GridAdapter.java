@@ -1,16 +1,16 @@
 package com.samfdl.game.game2048;
 
-import java.lang.*;
-import java.lang.Number;
 import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.samfdl.R;
 
@@ -38,18 +38,20 @@ public class GridAdapter extends BaseAdapter {
 
     public View getView(int position, View convertView, ViewGroup parent) {
         convertView = LayoutInflater.from(context).inflate(
-                R.layout.game_game2048_item, null);
+                R.layout.game_game2048_item, parent, false);
+        /**得到各个控件的对象*/
+        TextView numberView = (TextView) convertView.findViewById(R.id.number);
 
         Number1 number = numberList.get(position);
-        TextView numberView = (TextView) convertView.findViewById(R.id.number);
         String numberS = "" + number.number;
         if ("0".equals(numberS)) {
             numberS = "";
         }
         numberView.setText(numberS);
-        numberView.setBackgroundColor(number.bgColor);
-//        numberView.setTextColor(number.textColor);
+        // 只能这样使用R.color.资源
+        numberView.setBackgroundColor(context.getResources().getColor(number.bgColor));
         numberView.setTextSize(number.textSize);
+
         return convertView;
     }
 }

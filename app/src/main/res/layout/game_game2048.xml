@@ -78,7 +78,8 @@
         </LinearLayout>
     </LinearLayout>
 
-    <LinearLayout
+    <FrameLayout
+        android:id="@+id/gridLayout"
         android:layout_width="326dip"
         android:layout_height="326dip"
         android:layout_marginLeft="13dip"
@@ -95,5 +96,5 @@
             android:horizontalSpacing="11dip"
             android:numColumns="4"
             android:verticalSpacing="11dip" />
-    </LinearLayout>
+    </FrameLayout>
 </LinearLayout>

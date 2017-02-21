@@ -3,7 +3,7 @@ package com.samfdl.game.game2048;
 import com.samfdl.R;
 
 public class Number1 {
-    public int number = 2;
+    public int number = 0;
     public int bgColor = R.color.game_game2048_bg_null;
     public int textColor = R.color.game_game2048_bg_null;
     public int textSize = 40;
