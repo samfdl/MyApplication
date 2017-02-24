@@ -36,6 +36,9 @@ public class DIYList extends AppCompatActivity {
                     case 1:
                         intent = new Intent(DIYList.this, FloatingWindow1.class);
                         break;
+                    case 2:
+                        intent = new Intent(DIYList.this, MiExActivity.class);
+                        break;
                     default:
                         intent = new Intent(DIYList.this, FloatingWindow.class);
                 }

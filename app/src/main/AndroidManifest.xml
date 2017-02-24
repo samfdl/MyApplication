@@ -550,6 +550,7 @@
         <activity android:name=".diy.DIYList" />
         <activity android:name=".diy.FloatingWindow" />
         <activity android:name=".diy.FloatingWindow1" />
+        <activity android:name=".diy.MiExActivity" />
 
         <activity android:name=".map.MapList" />
         <activity android:name=".map.AMap1" />

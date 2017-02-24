@@ -74,6 +74,7 @@ public class DIYListAdapter extends BaseAdapter {
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("悬浮窗");
         listItem.add("悬浮窗2");
+        listItem.add("Toast 实现悬浮窗效果");
         return listItem;
     }
 }
