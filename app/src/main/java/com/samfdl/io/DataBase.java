@@ -16,7 +16,7 @@ import android.widget.SimpleCursorAdapter;
 
 import com.samfdl.R;
 
-public class Database extends AppCompatActivity {
+public class DataBase extends AppCompatActivity {
     SQLiteDatabase db;
     Button bn = null;
     ListView listView;
@@ -71,7 +71,7 @@ public class Database extends AppCompatActivity {
     private void inflateList(Cursor cursor) {
         // 填充SimpleCursorAdapter
         SimpleCursorAdapter adapter = new SimpleCursorAdapter(
-                Database.this, R.layout.io_database_item, cursor, new String[]{
+                DataBase.this, R.layout.io_database_item, cursor, new String[]{
                 "news_title", "news_content"}, new int[]{
                 R.id.my_title, R.id.my_content},
                 CursorAdapter.FLAG_REGISTER_CONTENT_OBSERVER); // ③

@@ -11,10 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.io.Database;
-import com.samfdl.io.File1;
-import com.samfdl.io.SDCard;
-import com.samfdl.io.SDFileExplorer;
 
 public class DIYList extends AppCompatActivity {
     private ListView lv;
@@ -39,15 +35,6 @@ public class DIYList extends AppCompatActivity {
                         break;
                     case 1:
                         intent = new Intent(DIYList.this, FloatingWindow1.class);
-                        break;
-                    case 2:
-                        intent = new Intent(DIYList.this, SDCard.class);
-                        break;
-                    case 3:
-                        intent = new Intent(DIYList.this, SDFileExplorer.class);
-                        break;
-                    case 4:
-                        intent = new Intent(DIYList.this, Database.class);
                         break;
                     default:
                         intent = new Intent(DIYList.this, FloatingWindow.class);
