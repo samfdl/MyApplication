@@ -72,8 +72,6 @@ public class DIYListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("悬浮窗");
-        listItem.add("悬浮窗2");
         listItem.add("Toast 实现悬浮窗效果");
         return listItem;
     }

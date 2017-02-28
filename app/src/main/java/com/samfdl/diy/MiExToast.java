@@ -58,7 +58,7 @@ public class MiExToast implements View.OnTouchListener {
         }
         LayoutInflater inflate = (LayoutInflater)
                 mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        mView = inflate.inflate(R.layout.diy_toast_float_tips, null);
+        mView = inflate.inflate(R.layout.diy_diytoast_float_tips, null);
         mView.setOnTouchListener(this);
     }
 
@@ -76,8 +76,8 @@ public class MiExToast implements View.OnTouchListener {
         if (isShow) {
             return;
         }
-        TextView tv = (TextView) mView.findViewById(R.id.message);
-        tv.setText("悬浮窗");
+//        TextView tv = (TextView) mView.findViewById(R.id.message);
+//        tv.setText("悬浮窗");
         // 获取界面上VideoView组件
         VideoView videoView = (VideoView) mView.findViewById(R.id.video);
         // 创建MediaController对象
