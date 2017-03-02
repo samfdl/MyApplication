@@ -32,4 +32,7 @@
     <color name="game_game2048_bg_256">#f0d04a</color>
     <color name="game_game2048_bg_512">#e2c029</color>
     <color name="game_game2048_bg_1024">#f0e3da</color> <!-- wrong -->
+
+    <!-- 透明 -->
+    <color name="diy_diytoast_transparent">#00FFFFFF</color>
 </resources>

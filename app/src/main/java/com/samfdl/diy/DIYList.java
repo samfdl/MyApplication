@@ -33,9 +33,9 @@ public class DIYList extends AppCompatActivity {
                     case 0:
                         intent = new Intent(DIYList.this, DiyToast.class);
                         break;
-                    case 2:
-                        intent = new Intent(DIYList.this, MiExActivity.class);
-                        break;
+//                    case 2:
+//                        intent = new Intent(DIYList.this, MiExActivity.class);
+//                        break;
                     default:
                         intent = new Intent(DIYList.this, DiyToast.class);
                 }

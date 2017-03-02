@@ -23,9 +23,10 @@ public class DiyToastService extends Service {
         int width = 700;     // 屏幕宽度（像素）
         int height = 500;   // 屏幕高度（像素）
 
-        DiyToast1 floatingToast = new DiyToast1(getApplicationContext(), width, height);
-        floatingToast.show();
-        System.out.println("Service is Created");
+        DiyToast1 diyToast = new DiyToast1(DiyToastService.this);
+        diyToast.width = 900;     // 屏幕宽度（像素）
+        diyToast.height = 900;   // 屏幕高度（像素）
+        diyToast.show();
     }
 
     // Service被启动时回调该方法
