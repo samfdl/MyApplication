@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import java.io.FileNotFoundException;
 import java.io.OutputStream;
@@ -32,11 +33,14 @@ public class MonitorPhone extends AppCompatActivity {
                 switch (state) {
                     // 无任何状态
                     case TelephonyManager.CALL_STATE_IDLE:
+                        Toast.makeText(MonitorPhone.this, "CALL_STATE_IDLE", Toast.LENGTH_SHORT).show();
                         break;
                     case TelephonyManager.CALL_STATE_OFFHOOK:
+                        Toast.makeText(MonitorPhone.this, "CALL_STATE_OFFHOOK", Toast.LENGTH_SHORT).show();
                         break;
                     // 来电铃响时
                     case TelephonyManager.CALL_STATE_RINGING:
+                        Toast.makeText(MonitorPhone.this, "CALL_STATE_RINGING", Toast.LENGTH_SHORT).show();
                         OutputStream os = null;
                         try {
                             os = openFileOutput("phoneList", MODE_APPEND);
