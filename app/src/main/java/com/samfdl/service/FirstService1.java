@@ -2,7 +2,10 @@ package com.samfdl.service;
 
 import android.app.Service;
 import android.content.Intent;
+import android.os.Handler;
 import android.os.IBinder;
+import android.os.Looper;
+import android.widget.Toast;
 
 public class FirstService1 extends Service {
     // 必须实现的方法
@@ -16,6 +19,14 @@ public class FirstService1 extends Service {
     public void onCreate() {
         super.onCreate();
         System.out.println("Service is Created");
+        Handler handler = new Handler(Looper.getMainLooper());
+        handler.post(new Runnable() {
+            public void run() {
+                System.out.println("存Service is runingdddd");
+                Toast.makeText(getApplicationContext(), "存Service is onCreate!",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     // Service被启动时回调该方法

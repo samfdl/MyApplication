@@ -132,6 +132,7 @@ public class DiyToast1 {
             params = (WindowManager.LayoutParams) tnParamsField.get(mTN);
             params.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL
                     | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
+//            params.type = WindowManager.LayoutParams.TYPE_PRIORITY_PHONE;
 
             params.width = width;
             params.height = height;
