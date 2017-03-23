@@ -73,6 +73,7 @@ public class DIYListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("Toast 实现悬浮窗效果");
+        listItem.add("任意文件夹读取layout布局文件 Json2View");
         return listItem;
     }
 }

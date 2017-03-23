@@ -25,4 +25,11 @@ dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     compile 'com.android.support:appcompat-v7:24.2.1'
     testCompile 'junit:junit:4.12'
+    compile(name: 'json2view', ext: 'aar')
+}
+
+repositories {
+    flatDir {
+        dirs 'libs'
+    }
 }

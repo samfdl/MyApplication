@@ -1,0 +1,325 @@
+{
+  "views": [
+    {
+      "views": [],
+      "properties": [
+        {
+          "value": "textView",
+          "type": "ref",
+          "name": "id"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_width"
+        },
+        {
+          "value": "30dp",
+          "type": "dimen",
+          "name": "layout_height"
+        },
+        {
+          "value": "Helddddddddddddddlo World!",
+          "type": "string",
+          "name": "text"
+        }
+      ],
+      "widget": "TextView"
+    },
+    {
+      "views": [],
+      "properties": [
+        {
+          "value": "button",
+          "type": "ref",
+          "name": "id"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_width"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_height"
+        },
+        {
+          "value": "textView",
+          "type": "ref",
+          "name": "layout_alignEnd"
+        },
+        {
+          "value": "textView",
+          "type": "ref",
+          "name": "layout_below"
+        },
+        {
+          "value": "20dp",
+          "type": "string",
+          "name": "layout_marginEnd"
+        },
+        {
+          "value": "29dp",
+          "type": "dimen",
+          "name": "layout_marginTop"
+        },
+        {
+          "value": "Button",
+          "type": "string",
+          "name": "text"
+        }
+      ],
+      "widget": "Button"
+    },
+    {
+      "views": [],
+      "properties": [
+        {
+          "value": "spinner",
+          "type": "ref",
+          "name": "id"
+        },
+        {
+          "value": "match_parent",
+          "type": "dimen",
+          "name": "layout_width"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_height"
+        },
+        {
+          "value": "button",
+          "type": "ref",
+          "name": "layout_below"
+        },
+        {
+          "value": "true",
+          "type": "BOOLEAN",
+          "name": "layout_centerHorizontal"
+        },
+        {
+          "value": "22dp",
+          "type": "dimen",
+          "name": "layout_marginTop"
+        }
+      ],
+      "widget": "Spinner"
+    },
+    {
+      "views": [],
+      "properties": [
+        {
+          "value": "progressBar",
+          "type": "ref",
+          "name": "id"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_width"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_height"
+        },
+        {
+          "value": "button",
+          "type": "ref",
+          "name": "layout_alignStart"
+        },
+        {
+          "value": "spinner",
+          "type": "ref",
+          "name": "layout_below"
+        },
+        {
+          "value": "10dp",
+          "type": "string",
+          "name": "layout_marginStart"
+        },
+        {
+          "value": "16dp",
+          "type": "dimen",
+          "name": "layout_marginTop"
+        }
+      ],
+      "widget": "ProgressBar"
+    },
+    {
+      "views": [],
+      "properties": [
+        {
+          "value": "progressBar2",
+          "type": "ref",
+          "name": "id"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_width"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_height"
+        },
+        {
+          "value": "progressBar",
+          "type": "ref",
+          "name": "layout_alignTop"
+        },
+        {
+          "value": "24dp",
+          "type": "string",
+          "name": "layout_marginStart"
+        },
+        {
+          "value": "button",
+          "type": "ref",
+          "name": "layout_toEndOf"
+        }
+      ],
+      "widget": "ProgressBar"
+    },
+    {
+      "views": [],
+      "properties": [
+        {
+          "value": "editText",
+          "type": "ref",
+          "name": "id"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_width"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_height"
+        },
+        {
+          "value": "textView",
+          "type": "ref",
+          "name": "layout_below"
+        },
+        {
+          "value": "button",
+          "type": "ref",
+          "name": "layout_toEndOf"
+        },
+        {
+          "value": "10",
+          "type": "string",
+          "name": "ems"
+        },
+        {
+          "value": "time",
+          "type": "string",
+          "name": "inputType"
+        }
+      ],
+      "widget": "EditText"
+    },
+    {
+      "views": [],
+      "properties": [
+        {
+          "value": "editText2",
+          "type": "ref",
+          "name": "id"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_width"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_height"
+        },
+        {
+          "value": "progressBar2",
+          "type": "ref",
+          "name": "layout_below"
+        },
+        {
+          "value": "button",
+          "type": "ref",
+          "name": "layout_toEndOf"
+        },
+        {
+          "value": "10",
+          "type": "string",
+          "name": "ems"
+        },
+        {
+          "value": "date",
+          "type": "string",
+          "name": "inputType"
+        }
+      ],
+      "widget": "EditText"
+    },
+    {
+      "views": [],
+      "properties": [
+        {
+          "value": "switch1",
+          "type": "ref",
+          "name": "id"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_width"
+        },
+        {
+          "value": "wrap_content",
+          "type": "dimen",
+          "name": "layout_height"
+        },
+        {
+          "value": "progressBar",
+          "type": "ref",
+          "name": "layout_alignEnd"
+        },
+        {
+          "value": "true",
+          "type": "BOOLEAN",
+          "name": "layout_alignParentTop"
+        },
+        {
+          "value": "15dp",
+          "type": "dimen",
+          "name": "layout_marginTop"
+        },
+        {
+          "value": "Switch",
+          "type": "string",
+          "name": "text"
+        }
+      ],
+      "widget": "Switch"
+    }
+  ],
+  "properties": [
+    {
+      "value": "match_parent",
+      "type": "dimen",
+      "name": "layout_width"
+    },
+    {
+      "value": "match_parent",
+      "type": "dimen",
+      "name": "layout_height"
+    }
+  ],
+  "widget": "RelativeLayout"
+}

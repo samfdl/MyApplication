@@ -552,6 +552,8 @@
 
         <service android:name=".diy.DiyToastService" />
 
+        <activity android:name=".diy.Json2View" />
+
         <activity android:name=".map.MapList" />
         <activity android:name=".map.AMap1" />
         <activity android:name=".map.LocationMap" />
