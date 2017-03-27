@@ -49,7 +49,6 @@ public class Json2View extends Activity {
             sampleView.setLayoutParams(new WindowManager.LayoutParams(WindowManager.LayoutParams.MATCH_PARENT, WindowManager.LayoutParams.MATCH_PARENT));
 
             layout.addView(sampleView);
-//            setContentView(sampleView);
         } else {
             Log.e("Json2View", "Could not load valid json file");
         }

@@ -61,7 +61,9 @@ public class SDCard extends AppCompatActivity {
                 System.out.println("----------------" + sdCardDir);
                 // 获取指定文件对应的输入流
                 FileInputStream fis = new FileInputStream(
-                        sdCardDir.getCanonicalPath() + FILE_NAME);
+                        Environment
+                                .getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+                                + "/myapplication");
                 // 将指定输入流包装成BufferedReader
                 BufferedReader br = new BufferedReader(new
                         InputStreamReader(fis));
@@ -88,8 +90,9 @@ public class SDCard extends AppCompatActivity {
                     Environment.MEDIA_MOUNTED)) {
                 // 获取SD卡的目录
                 File sdCardDir = Environment.getExternalStorageDirectory();
-                File targetFile = new File(sdCardDir
-                        .getCanonicalPath() + FILE_NAME);
+                File targetFile = new File(Environment
+                        .getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)
+                        + "/myapplication.txt");
                 // 以指定文件创建 RandomAccessFile对象
                 RandomAccessFile raf = new RandomAccessFile(
                         targetFile, "rw");
