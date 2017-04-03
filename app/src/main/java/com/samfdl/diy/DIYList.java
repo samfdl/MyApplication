@@ -36,6 +36,9 @@ public class DIYList extends AppCompatActivity {
                     case 1:
                         intent = new Intent(DIYList.this, Json2View.class);
                         break;
+                    case 2:
+                        intent = new Intent(DIYList.this, UMengNotification.class);
+                        break;
                     default:
                         intent = new Intent(DIYList.this, DiyToast.class);
                 }

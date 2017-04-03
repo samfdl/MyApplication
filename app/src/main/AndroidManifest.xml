@@ -1,281 +1,282 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.samfdl">
+          package="com.samfdl">
 
     <!-- 添加访问手机状态的权限 -->
-    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
     <!-- 授予本应用读取短信的权限 -->
-    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS"/>
     <!-- 授予读联系人ContentProvider的权限 -->
-    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <!-- 授予写联系人ContentProvider的权限 -->
-    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
     <!-- 访问网络权限 -->
-    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET"/>
     <!-- 在SD卡中创建与删除文件权限 -->
-    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
     <!-- 向SD卡写入数据权限 -->
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <!-- 授予程序访问振动器的权限 -->
-    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
     <!-- 授予用户修改壁纸的权限 -->
-    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER"/>
     <!-- 授予应用程序访问系统开机事件的权限 -->
-    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <!-- 监听电池电量改变 -->
-    <uses-permission android:name="android.permission.BATTERY_STATS" />
+    <uses-permission android:name="android.permission.BATTERY_STATS"/>
     <!-- 使用音场效果必要的权限 -->
-    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
     <!-- 授予该程序使用摄像头的权限 -->
-    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CAMERA"/>
     <!-- 指定添加安装快捷方式的权限 -->
-    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT"/>
     <!-- 添加访问手机位置的权限 -->
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <!-- 授权获取定位信息 -->
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivity"/>
         <activity android:name=".AllList">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.ActivityList" />
-        <activity android:name=".activity.LauncherActivity1" />
-        <activity android:name=".activity.ExpandableListActivity1" />
-        <activity android:name=".activity.PreferenceActivity1" />
-        <activity android:name=".activity.StartActivity" />
-        <activity android:name=".activity.StartActivity2" />
-        <activity android:name=".activity.Bundle1" />
-        <activity android:name=".activity.BundleResult" />
-        <activity android:name=".activity.ActivityForResult" />
-        <activity android:name=".activity.ActivityForResultSelectCity" />
-        <activity android:name=".activity.ActivityLifeCycle" />
+        <activity android:name=".activity.ActivityList"/>
+        <activity android:name=".activity.LauncherActivity1"/>
+        <activity android:name=".activity.ExpandableListActivity1"/>
+        <activity android:name=".activity.PreferenceActivity1"/>
+        <activity android:name=".activity.StartActivity"/>
+        <activity android:name=".activity.StartActivity2"/>
+        <activity android:name=".activity.Bundle1"/>
+        <activity android:name=".activity.BundleResult"/>
+        <activity android:name=".activity.ActivityForResult"/>
+        <activity android:name=".activity.ActivityForResultSelectCity"/>
+        <activity android:name=".activity.ActivityLifeCycle"/>
         <activity
             android:name=".activity.ActivityLifeCycle2"
-            android:theme="@android:style/Theme.Material.Dialog" />
-        <activity android:name=".activity.StandMode" />
+            android:theme="@android:style/Theme.Material.Dialog"/>
+        <activity android:name=".activity.StandMode"/>
         <activity
             android:name=".activity.SingleTopMode"
-            android:launchMode="singleTop" />
-        <activity android:name=".activity.SingleTaskMode" />
+            android:launchMode="singleTop"/>
+        <activity android:name=".activity.SingleTaskMode"/>
         <activity
             android:name=".activity.SingleTaskMode2"
-            android:launchMode="singleTask" />
-        <activity android:name=".activity.SingleInstanceMode" />
+            android:launchMode="singleTask"/>
+        <activity android:name=".activity.SingleInstanceMode"/>
         <activity
             android:name=".activity.SingleInstanceMode2"
             android:launchMode="singleInstance">
             <intent-filter>
                 <!-- 指定该Activity能响应Action为指定字符串的Intent -->
-                <action android:name="org.crazyit.intent.action.CRAZYIT_ACTION" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="org.crazyit.intent.action.CRAZYIT_ACTION"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activity.HiddenIntent" />
-        <activity android:name=".activity.Fragment1" />
+        <activity android:name=".activity.HiddenIntent"/>
+        <activity android:name=".activity.Fragment1"/>
         <activity
             android:name=".activity.FragmentSenior"
-            android:label="@string/activity_fragmentsenior_name" />
+            android:label="@string/activity_fragmentsenior_name"/>
         <activity
             android:name=".activity.FragmentActivityBookDetail"
-            android:label="@string/activity_fragmentsenior_title_book_detail" />
-        <activity android:name=".activity.FragmentLifeCycle" />
+            android:label="@string/activity_fragmentsenior_title_book_detail"/>
+        <activity android:name=".activity.FragmentLifeCycle"/>
         <activity
             android:name=".ui.UIList"
-            android:label="@string/ui_list" />
+            android:label="@string/ui_list"/>
         <activity
             android:name=".ui.actionbar.ActionBarList"
-            android:label="@string/ui_actionbar_list" />
-        <activity android:name=".ui.actionbar.ActionBar1" />
-        <activity android:name=".ui.actionbar.ActionItem" />
-        <activity android:name=".ui.actionbar.ActionHome" />
-        <activity android:name=".ui.actionbar.ActionView" />
-        <activity android:name=".ui.actionbar.TabNav" />
-        <activity android:name=".ui.actionbar.SwipeNav" />
-        <activity android:name=".ui.actionbar.DropDownNav" />
-        <activity android:name=".ui.menu.MenuList" />
-        <activity android:name=".ui.menu.Menu1" />
-        <activity android:name=".ui.menu.ActivityMenu" />
-        <activity android:name=".ui.menu.ContextMenu1" />
-        <activity android:name=".ui.menu.MenuRes" />
-        <activity android:name=".ui.menu.PopupMenu1" />
-        <activity android:name=".ui.layout.Layout" />
-        <activity android:name=".ui.layout.LinearLayout1" />
-        <activity android:name=".ui.layout.RelativeLayout1" />
-        <activity android:name=".ui.layout.FrameLayout1" />
-        <activity android:name=".ui.layout.GridLayout1" />
-        <activity android:name=".ui.layout.AbsoluteLayout1" />
-        <activity android:name=".ui.layout.TableLayout1" />
-        <activity android:name=".ui.textview.TextViewList" />
-        <activity android:name=".ui.textview.TextView1" />
-        <activity android:name=".ui.textview.EditText1" />
-        <activity android:name=".ui.textview.Button1" />
-        <activity android:name=".ui.textview.RadioButton1" />
-        <activity android:name=".ui.textview.ToggleButton1" />
-        <activity android:name=".ui.textview.Clock" />
-        <activity android:name=".ui.textview.Chronometer1" />
-        <activity android:name=".ui.imageview.ImageViewList" />
-        <activity android:name=".ui.imageview.ImageView1" />
-        <activity android:name=".ui.imageview.ImageButton1" />
-        <activity android:name=".ui.imageview.QuickContactBadge1" />
-        <activity android:name=".ui.listview.ListViewList" />
-        <activity android:name=".ui.listview.SimpleListView" />
-        <activity android:name=".ui.listview.ArrayAdapterListView" />
-        <activity android:name=".ui.listview.ListActivity1" />
-        <activity android:name=".ui.listview.SimpleAdapterListView" />
-        <activity android:name=".ui.listview.BaseAdapterListView" />
-        <activity android:name=".ui.listview.AutoCompleteTextView1" />
-        <activity android:name=".ui.listview.GridView1" />
-        <activity android:name=".ui.listview.ExpandableListView1" />
-        <activity android:name=".ui.listview.Spinner1" />
-        <activity android:name=".ui.listview.AdapterViewFlipper1" />
-        <activity android:name=".ui.listview.StackView1" />
-        <activity android:name=".ui.progressbar.ProgressBarList" />
-        <activity android:name=".ui.progressbar.ProgressBar1" />
+            android:label="@string/ui_actionbar_list"/>
+        <activity android:name=".ui.actionbar.ActionBar1"/>
+        <activity android:name=".ui.actionbar.ActionItem"/>
+        <activity android:name=".ui.actionbar.ActionHome"/>
+        <activity android:name=".ui.actionbar.ActionView"/>
+        <activity android:name=".ui.actionbar.TabNav"/>
+        <activity android:name=".ui.actionbar.SwipeNav"/>
+        <activity android:name=".ui.actionbar.DropDownNav"/>
+        <activity android:name=".ui.menu.MenuList"/>
+        <activity android:name=".ui.menu.Menu1"/>
+        <activity android:name=".ui.menu.ActivityMenu"/>
+        <activity android:name=".ui.menu.ContextMenu1"/>
+        <activity android:name=".ui.menu.MenuRes"/>
+        <activity android:name=".ui.menu.PopupMenu1"/>
+        <activity android:name=".ui.layout.Layout"/>
+        <activity android:name=".ui.layout.LinearLayout1"/>
+        <activity android:name=".ui.layout.RelativeLayout1"/>
+        <activity android:name=".ui.layout.FrameLayout1"/>
+        <activity android:name=".ui.layout.GridLayout1"/>
+        <activity android:name=".ui.layout.AbsoluteLayout1"/>
+        <activity android:name=".ui.layout.TableLayout1"/>
+        <activity android:name=".ui.textview.TextViewList"/>
+        <activity android:name=".ui.textview.TextView1"/>
+        <activity android:name=".ui.textview.EditText1"/>
+        <activity android:name=".ui.textview.Button1"/>
+        <activity android:name=".ui.textview.RadioButton1"/>
+        <activity android:name=".ui.textview.ToggleButton1"/>
+        <activity android:name=".ui.textview.Clock"/>
+        <activity android:name=".ui.textview.Chronometer1"/>
+        <activity android:name=".ui.imageview.ImageViewList"/>
+        <activity android:name=".ui.imageview.ImageView1"/>
+        <activity android:name=".ui.imageview.ImageButton1"/>
+        <activity android:name=".ui.imageview.QuickContactBadge1"/>
+        <activity android:name=".ui.listview.ListViewList"/>
+        <activity android:name=".ui.listview.SimpleListView"/>
+        <activity android:name=".ui.listview.ArrayAdapterListView"/>
+        <activity android:name=".ui.listview.ListActivity1"/>
+        <activity android:name=".ui.listview.SimpleAdapterListView"/>
+        <activity android:name=".ui.listview.BaseAdapterListView"/>
+        <activity android:name=".ui.listview.AutoCompleteTextView1"/>
+        <activity android:name=".ui.listview.GridView1"/>
+        <activity android:name=".ui.listview.ExpandableListView1"/>
+        <activity android:name=".ui.listview.Spinner1"/>
+        <activity android:name=".ui.listview.AdapterViewFlipper1"/>
+        <activity android:name=".ui.listview.StackView1"/>
+        <activity android:name=".ui.progressbar.ProgressBarList"/>
+        <activity android:name=".ui.progressbar.ProgressBar1"/>
         <activity
             android:name=".ui.progressbar.TitleProgressBar"
-            android:theme="@android:style/Theme.Holo" />
-        <activity android:name=".ui.progressbar.SeekBar1" />
-        <activity android:name=".ui.progressbar.RatingBar1" />
-        <activity android:name=".ui.viewanimator.ViewAnimatorList" />
-        <activity android:name=".ui.viewanimator.ViewSwitcher1" />
-        <activity android:name=".ui.viewanimator.ImageSwitcher1" />
-        <activity android:name=".ui.viewanimator.TextSwitcher1" />
-        <activity android:name=".ui.viewanimator.ViewFlipper1" />
-        <activity android:name=".ui.toast.ToastList" />
-        <activity android:name=".ui.toast.Toast1" />
-        <activity android:name=".ui.toast.CalendarView1" />
-        <activity android:name=".ui.toast.DatePicker1" />
-        <activity android:name=".ui.toast.NumberPicker1" />
-        <activity android:name=".ui.toast.SearchView1" />
-        <activity android:name=".ui.toast.TabHost1" />
-        <activity android:name=".ui.toast.ScrollView1" />
-        <activity android:name=".ui.toast.Notification1" />
-        <activity android:name=".ui.toast.Notification2" />
-        <activity android:name=".ui.dialog.DialogList" />
-        <activity android:name=".ui.dialog.AlertDialog1" />
+            android:theme="@android:style/Theme.Holo"/>
+        <activity android:name=".ui.progressbar.SeekBar1"/>
+        <activity android:name=".ui.progressbar.RatingBar1"/>
+        <activity android:name=".ui.viewanimator.ViewAnimatorList"/>
+        <activity android:name=".ui.viewanimator.ViewSwitcher1"/>
+        <activity android:name=".ui.viewanimator.ImageSwitcher1"/>
+        <activity android:name=".ui.viewanimator.TextSwitcher1"/>
+        <activity android:name=".ui.viewanimator.ViewFlipper1"/>
+        <activity android:name=".ui.toast.ToastList"/>
+        <activity android:name=".ui.toast.Toast1"/>
+        <activity android:name=".ui.toast.CalendarView1"/>
+        <activity android:name=".ui.toast.DatePicker1"/>
+        <activity android:name=".ui.toast.NumberPicker1"/>
+        <activity android:name=".ui.toast.SearchView1"/>
+        <activity android:name=".ui.toast.TabHost1"/>
+        <activity android:name=".ui.toast.ScrollView1"/>
+        <activity android:name=".ui.toast.Notification1"/>
+        <activity android:name=".ui.toast.Notification2"/>
+        <activity android:name=".ui.dialog.DialogList"/>
+        <activity android:name=".ui.dialog.AlertDialog1"/>
         <activity
             android:name=".ui.dialog.DialogTheme"
-            android:theme="@android:style/Theme.Material.Dialog" />
+            android:theme="@android:style/Theme.Material.Dialog"/>
         <activity
             android:name=".ui.dialog.PopupWindow1"
-            android:theme="@android:style/Theme.Material.Dialog" />
-        <activity android:name=".ui.dialog.DatePickerDialog1" />
-        <activity android:name=".ui.dialog.ProgressDialog1" />
+            android:theme="@android:style/Theme.Material.Dialog"/>
+        <activity android:name=".ui.dialog.DatePickerDialog1"/>
+        <activity android:name=".ui.dialog.ProgressDialog1"/>
 
-        <activity android:name=".service.ServiceList" />
-        <activity android:name=".service.FirstService" />
+        <activity android:name=".service.ServiceList"/>
+        <activity android:name=".service.FirstService"/>
         <!-- 配置一个Service组件 -->
-        <service android:name=".service.FirstService1" />
+        <service android:name=".service.FirstService1"/>
 
-        <activity android:name=".service.BindService" />
-        <service android:name=".service.BindService1" />
-        <activity android:name=".service.ReBindService" />
-        <service android:name=".service.ReBindService1" />
-        <activity android:name=".service.IntentService1" />
+        <activity android:name=".service.BindService"/>
+        <service android:name=".service.BindService1"/>
+        <activity android:name=".service.ReBindService"/>
+        <service android:name=".service.ReBindService1"/>
+        <activity android:name=".service.IntentService1"/>
 
-        <service android:name=".service.IntentService2" />
-        <service android:name=".service.IntentServiceNo" />
+        <service android:name=".service.IntentService2"/>
+        <service android:name=".service.IntentServiceNo"/>
 
-        <activity android:name=".service.Alarm" />
-        <activity android:name=".service.Alarm1" />
-        <activity android:name=".service.AlarmChangeWallpaper" />
+        <activity android:name=".service.Alarm"/>
+        <activity android:name=".service.Alarm1"/>
+        <activity android:name=".service.AlarmChangeWallpaper"/>
 
-        <service android:name=".service.AlarmChangeWallpaperService" />
+        <service android:name=".service.AlarmChangeWallpaperService"/>
 
-        <activity android:name=".service.Broadcast" />
+        <activity android:name=".service.Broadcast"/>
 
         <receiver android:name=".service.BroadcastReceiver1">
             <intent-filter>
                 <!-- 指定该BroadcastReceiver所响应的Intent的Action -->
-                <action android:name="com.samfdl.action.SAMFDL_BROADCAST" />
+                <action android:name="com.samfdl.action.SAMFDL_BROADCAST"/>
             </intent-filter>
         </receiver>
         <receiver android:name=".service.BroadcastReceiver2">
             <intent-filter android:priority="20">
-                <action android:name="com.samfdl.action.SAMFDL_BROADCAST1" />
+                <action android:name="com.samfdl.action.SAMFDL_BROADCAST1"/>
             </intent-filter>
         </receiver>
         <receiver android:name=".service.BroadcastReceiver3">
             <intent-filter android:priority="0">
-                <action android:name="com.samfdl.action.SAMFDL_BROADCAST1" />
+                <action android:name="com.samfdl.action.SAMFDL_BROADCAST1"/>
             </intent-filter>
         </receiver>
 
-        <service android:name=".service.BootService" />
+        <service android:name=".service.BootService"/>
         <!-- 定义一个BroadcastReceiver,监听系统开机广播  -->
         <receiver android:name=".service.bootReceiver">
             <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
             </intent-filter>
         </receiver>
-        <activity android:name=".service.AidlClient" />
+        <activity android:name=".service.AidlClient"/>
         <service android:name=".service.AidlClientService">
             <intent-filter>
-                <action android:name="com.samfdl.aidl.action.AIDL_SERVICE" />
+                <action android:name="com.samfdl.aidl.action.AIDL_SERVICE"/>
             </intent-filter>
         </service>
 
-        <activity android:name=".event.EventList" />
-        <activity android:name=".event.ControlPlane" />
-        <activity android:name=".event.Ball" />
-        <activity android:name=".event.SystemStatus" />
+        <activity android:name=".event.EventList"/>
+        <activity android:name=".event.ControlPlane"/>
+        <activity android:name=".event.Ball"/>
+        <activity android:name=".event.SystemStatus"/>
         <activity
             android:name=".event.ChangeConfig"
-            android:configChanges="orientation|screenSize" />
-        <activity android:name=".event.Handler1" />
-        <activity android:name=".event.CalPrime" />
-        <activity android:name=".event.AsyncTask1" />
-        <activity android:name=".event.Gesture1" />
-        <activity android:name=".event.GestureZoom" />
-        <activity android:name=".event.GestureFlip" />
-        <activity android:name=".event.GestureAdd" />
-        <activity android:name=".event.GestureRecognize" />
-        <activity android:name=".event.Speech" />
+            android:configChanges="orientation|screenSize"/>
+        <activity android:name=".event.Handler1"/>
+        <activity android:name=".event.CalPrime"/>
+        <activity android:name=".event.AsyncTask1"/>
+        <activity android:name=".event.Gesture1"/>
+        <activity android:name=".event.GestureZoom"/>
+        <activity android:name=".event.GestureFlip"/>
+        <activity android:name=".event.GestureAdd"/>
+        <activity android:name=".event.GestureRecognize"/>
+        <activity android:name=".event.Speech"/>
 
-        <activity android:name=".intent.IntentList" />
-        <activity android:name=".intent.ComponentAttribute" />
+        <activity android:name=".intent.IntentList"/>
+        <activity android:name=".intent.ComponentAttribute"/>
         <activity android:name=".intent.ActionAttribute">
             <intent-filter>
                 <!-- 指定该Activity能响应Action为指定字符串的Intent -->
-                <action android:name="com.samfdl.intent.action.CRAZYIT_ACTION" />
+                <action android:name="com.samfdl.intent.action.CRAZYIT_ACTION"/>
                 <!-- 指定该Activity能响应Action属性为helloWorld的Intent -->
-                <action android:name="helloWorld" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="helloWorld"/>
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
         <activity android:name=".intent.ActionCategoryAttribute">
             <intent-filter>
                 <!-- 指定该Activity能响应action为指定字符串的Intent -->
-                <action android:name="com.samfdl.intent.action.CRAZYIT_ACTION" />
+                <action android:name="com.samfdl.intent.action.CRAZYIT_ACTION"/>
                 <!-- 指定该Activity能响应category为指定字符串的Intent -->
-                <category android:name="com.samfdl.intent.category.CRAZYIT_CATEGORY" />
+                <category android:name="com.samfdl.intent.category.CRAZYIT_CATEGORY"/>
                 <!-- 指定该Activity能响应category为android.intent.category.DEFAULT的Intent -->
-                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.DEFAULT"/>
             </intent-filter>
         </activity>
-        <activity android:name=".intent.SystemAction" />
-        <activity android:name=".intent.DataTypeOverride" />
-        <activity android:name=".intent.DataTypeAttribute" />
+        <activity android:name=".intent.SystemAction"/>
+        <activity android:name=".intent.DataTypeOverride"/>
+        <activity android:name=".intent.DataTypeAttribute"/>
         <activity
             android:name=".intent.DataTypeAttributeScheme"
             android:icon="@drawable/intent_datatypeattribute_scheme"
             android:label="指定scheme的Activity">
             <intent-filter>
-                <action android:name="xx" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="xx"/>
+                <category android:name="android.intent.category.DEFAULT"/>
                 <!-- 只要Intent的Data属性的scheme是lee，即可启动该Activity -->
-                <data android:scheme="lee" />
+                <data android:scheme="lee"/>
             </intent-filter>
         </activity>
         <activity
@@ -283,14 +284,14 @@
             android:icon="@drawable/intent_datatypeattribute_host"
             android:label="指定scheme、host、port的Activity">
             <intent-filter>
-                <action android:name="xx" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="xx"/>
+                <category android:name="android.intent.category.DEFAULT"/>
                 <!-- 只要Intent的Data属性的scheme是lee，且host是www.fkjava.org
                 port是8888即可启动该Activity -->
                 <data
                     android:host="www.fkjava.org"
                     android:port="8888"
-                    android:scheme="lee" />
+                    android:scheme="lee"/>
             </intent-filter>
         </activity>
         <activity
@@ -298,14 +299,14 @@
             android:icon="@drawable/intent_datatypeattribute_sp"
             android:label="指定scheme、host、path的Activity">
             <intent-filter>
-                <action android:name="xx" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="xx"/>
+                <category android:name="android.intent.category.DEFAULT"/>
                 <!-- 只要Intent的Data属性的scheme是lee，且host是www.fkjava.org
                 path是/mypath，即可启动该Activity -->
                 <data
                     android:host="www.fkjava.org"
                     android:path="/mypath"
-                    android:scheme="lee" />
+                    android:scheme="lee"/>
             </intent-filter>
         </activity>
         <activity
@@ -313,15 +314,15 @@
             android:icon="@drawable/intent_datatypeattribute_path"
             android:label="指定scheme、host、port、path的Activity">
             <intent-filter>
-                <action android:name="xx" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="xx"/>
+                <category android:name="android.intent.category.DEFAULT"/>
                 <!-- 需要Intent的Data属性的scheme是lee，且host是www.fkjava.org
                 port是8888，且path是/mypath，才可启动该Activity -->
                 <data
                     android:host="www.fkjava.org"
                     android:path="/mypath"
                     android:port="8888"
-                    android:scheme="lee" />
+                    android:scheme="lee"/>
             </intent-filter>
         </activity>
         <activity
@@ -329,8 +330,8 @@
             android:icon="@drawable/intent_datatypeattribute_type"
             android:label="指定scheme、host、port、path、type的Activity">
             <intent-filter>
-                <action android:name="xx" />
-                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="xx"/>
+                <category android:name="android.intent.category.DEFAULT"/>
                 <!-- 需要Intent的Data属性的scheme是lee，且host是www.fkjava.org
                 port是8888，且path是/mypath
                 且type是abc/xyz，才可启动该Activity -->
@@ -339,150 +340,150 @@
                     android:mimeType="abc/xyz"
                     android:path="/mypath"
                     android:port="8888"
-                    android:scheme="lee" />
+                    android:scheme="lee"/>
             </intent-filter>
         </activity>
-        <activity android:name=".intent.ActionData" />
-        <activity android:name=".intent.IntentTab" />
-        <activity android:name=".intent.IntentTabBeCalled" />
-        <activity android:name=".intent.IntentTabCalled" />
-        <activity android:name=".intent.IntentTabNoCall" />
+        <activity android:name=".intent.ActionData"/>
+        <activity android:name=".intent.IntentTab"/>
+        <activity android:name=".intent.IntentTabBeCalled"/>
+        <activity android:name=".intent.IntentTabCalled"/>
+        <activity android:name=".intent.IntentTabNoCall"/>
 
-        <activity android:name=".res.ResList" />
-        <activity android:name=".res.ValuesRes" />
-        <activity android:name=".res.ArrayRes1" />
-        <activity android:name=".res.StateListDrawable1" />
-        <activity android:name=".res.ClipDrawable1" />
-        <activity android:name=".res.AnimationDrawable1" />
-        <activity android:name=".res.PropertyAnimation" />
-        <activity android:name=".res.XmlRes1" />
-        <activity android:name=".res.StyleRes1" />
-        <activity android:name=".res.AttributeRes" />
-        <activity android:name=".res.RawRes1" />
-        <activity android:name=".res.I18N" />
-        <activity android:name=".res.Dpi" />
-        <activity android:name=".res.ScreenSize" />
+        <activity android:name=".res.ResList"/>
+        <activity android:name=".res.ValuesRes"/>
+        <activity android:name=".res.ArrayRes1"/>
+        <activity android:name=".res.StateListDrawable1"/>
+        <activity android:name=".res.ClipDrawable1"/>
+        <activity android:name=".res.AnimationDrawable1"/>
+        <activity android:name=".res.PropertyAnimation"/>
+        <activity android:name=".res.XmlRes1"/>
+        <activity android:name=".res.StyleRes1"/>
+        <activity android:name=".res.AttributeRes"/>
+        <activity android:name=".res.RawRes1"/>
+        <activity android:name=".res.I18N"/>
+        <activity android:name=".res.Dpi"/>
+        <activity android:name=".res.ScreenSize"/>
 
-        <activity android:name=".io.IOList" />
-        <activity android:name=".io.SharedPreferences1" />
-        <activity android:name=".io.File1" />
-        <activity android:name=".io.SDCard" />
-        <activity android:name=".io.SDFileExplorer" />
-        <activity android:name=".io.DataBase" />
-        <activity android:name=".io.dict.DictActivity" />
+        <activity android:name=".io.IOList"/>
+        <activity android:name=".io.SharedPreferences1"/>
+        <activity android:name=".io.File1"/>
+        <activity android:name=".io.SDCard"/>
+        <activity android:name=".io.SDFileExplorer"/>
+        <activity android:name=".io.DataBase"/>
+        <activity android:name=".io.dict.DictActivity"/>
         <activity
             android:name=".io.dict.DictActivityResult"
             android:label="找到的单词"
-            android:theme="@android:style/Theme.Material.Dialog" />
+            android:theme="@android:style/Theme.Material.Dialog"/>
         <!-- 注册一个ContentProvider -->
         <provider
             android:name=".io.FirstProvider"
             android:authorities="com.samfdl.providers.firstprovider"
-            android:exported="true" />
+            android:exported="true"/>
 
-        <activity android:name=".io.FirstResolver" />
+        <activity android:name=".io.FirstResolver"/>
         <!-- 注册一个ContentProvider -->
         <provider
             android:name=".io.dict.DictProvider"
             android:authorities="com.samfdl.providers.dictprovider"
-            android:exported="true" />
+            android:exported="true"/>
 
-        <activity android:name=".io.dict.DictResolver" />
-        <activity android:name=".io.ContactProvider" />
-        <activity android:name=".io.MediaProvider" />
+        <activity android:name=".io.dict.DictResolver"/>
+        <activity android:name=".io.ContactProvider"/>
+        <activity android:name=".io.MediaProvider"/>
 
-        <activity android:name=".graphics.GraphicsList" />
-        <activity android:name=".graphics.Bitmap1" />
-        <activity android:name=".graphics.Canvas1" />
-        <activity android:name=".graphics.Path1" />
-        <activity android:name=".graphics.PathText" />
-        <activity android:name=".graphics.HandDraw" />
-        <activity android:name=".graphics.PinBall" />
-        <activity android:name=".graphics.Matrix1" />
-        <activity android:name=".graphics.MoveBack" />
-        <activity android:name=".graphics.Mesh" />
-        <activity android:name=".graphics.Shader1" />
-        <activity android:name=".graphics.FatPo" />
-        <activity android:name=".graphics.Blast" />
-        <activity android:name=".graphics.TweenAnim" />
-        <activity android:name=".graphics.Butterfly" />
-        <activity android:name=".graphics.ListViewTween" />
-        <activity android:name=".graphics.ObjectAnimator1" />
-        <activity android:name=".graphics.BouncingBalls" />
-        <activity android:name=".graphics.SurfaceView1" />
-        <activity android:name=".graphics.ShowWave" />
+        <activity android:name=".graphics.GraphicsList"/>
+        <activity android:name=".graphics.Bitmap1"/>
+        <activity android:name=".graphics.Canvas1"/>
+        <activity android:name=".graphics.Path1"/>
+        <activity android:name=".graphics.PathText"/>
+        <activity android:name=".graphics.HandDraw"/>
+        <activity android:name=".graphics.PinBall"/>
+        <activity android:name=".graphics.Matrix1"/>
+        <activity android:name=".graphics.MoveBack"/>
+        <activity android:name=".graphics.Mesh"/>
+        <activity android:name=".graphics.Shader1"/>
+        <activity android:name=".graphics.FatPo"/>
+        <activity android:name=".graphics.Blast"/>
+        <activity android:name=".graphics.TweenAnim"/>
+        <activity android:name=".graphics.Butterfly"/>
+        <activity android:name=".graphics.ListViewTween"/>
+        <activity android:name=".graphics.ObjectAnimator1"/>
+        <activity android:name=".graphics.BouncingBalls"/>
+        <activity android:name=".graphics.SurfaceView1"/>
+        <activity android:name=".graphics.ShowWave"/>
 
-        <activity android:name=".opengl.OpenGLList" />
-        <activity android:name=".opengl.Polygon" />
-        <activity android:name=".opengl.RotatePolygon" />
-        <activity android:name=".opengl.Simple3D" />
-        <activity android:name=".opengl.Texture3D" />
+        <activity android:name=".opengl.OpenGLList"/>
+        <activity android:name=".opengl.Polygon"/>
+        <activity android:name=".opengl.RotatePolygon"/>
+        <activity android:name=".opengl.Simple3D"/>
+        <activity android:name=".opengl.Texture3D"/>
 
-        <activity android:name=".media.MediaList" />
-        <activity android:name=".media.Audio1" />
-        <activity android:name=".media.MusicBox" />
+        <activity android:name=".media.MediaList"/>
+        <activity android:name=".media.Audio1"/>
+        <activity android:name=".media.MusicBox"/>
 
-        <service android:name=".media.MusicBoxService" />
+        <service android:name=".media.MusicBoxService"/>
 
-        <activity android:name=".media.MediaPlayer1" />
-        <activity android:name=".media.SoundPool1" />
-        <activity android:name=".media.VideoView1" />
-        <activity android:name=".media.SurfaceViewPlayVideo" />
-        <activity android:name=".media.RecordSound" />
-        <activity android:name=".media.CameraV2" />
-        <activity android:name=".media.RecordVideo" />
-        <activity android:name=".media.CaptureScreen" />
+        <activity android:name=".media.MediaPlayer1"/>
+        <activity android:name=".media.SoundPool1"/>
+        <activity android:name=".media.VideoView1"/>
+        <activity android:name=".media.SurfaceViewPlayVideo"/>
+        <activity android:name=".media.RecordSound"/>
+        <activity android:name=".media.CameraV2"/>
+        <activity android:name=".media.RecordVideo"/>
+        <activity android:name=".media.CaptureScreen"/>
 
-        <activity android:name=".hardware.HardwareList" />
-        <activity android:name=".hardware.Vibrator1" />
+        <activity android:name=".hardware.HardwareList"/>
+        <activity android:name=".hardware.Vibrator1"/>
 
         <receiver android:name=".hardware.BatteryReceiver">
             <!-- 监听电池电量改变 -->
             <intent-filter>
-                <action android:name="android.intent.action.BATTERY_CHANGED" />
+                <action android:name="android.intent.action.BATTERY_CHANGED"/>
             </intent-filter>
         </receiver>
 
-        <activity android:name=".hardware.Accelerometer" />
-        <activity android:name=".hardware.Sensors" />
-        <activity android:name=".hardware.Compass" />
-        <activity android:name=".hardware.Gradienter" />
-        <activity android:name=".hardware.LocationProviders" />
-        <activity android:name=".hardware.FreeLocationProvider" />
-        <activity android:name=".hardware.Location1" />
-        <activity android:name=".hardware.Proximity" />
+        <activity android:name=".hardware.Accelerometer"/>
+        <activity android:name=".hardware.Sensors"/>
+        <activity android:name=".hardware.Compass"/>
+        <activity android:name=".hardware.Gradienter"/>
+        <activity android:name=".hardware.LocationProviders"/>
+        <activity android:name=".hardware.FreeLocationProvider"/>
+        <activity android:name=".hardware.Location1"/>
+        <activity android:name=".hardware.Proximity"/>
 
-        <receiver android:name=".hardware.ProximityAlertReciever" />
+        <receiver android:name=".hardware.ProximityAlertReciever"/>
 
-        <activity android:name=".web.WebList" />
-        <activity android:name=".web.SimpleClient" />
-        <activity android:name=".web.MultiThreadClient" />
-        <activity android:name=".web.URL1" />
-        <activity android:name=".web.GetPost" />
-        <activity android:name=".web.MultiThreadDown" />
-        <activity android:name=".web.HttpClient1" />
-        <activity android:name=".web.MiniBrowser" />
-        <activity android:name=".web.ViewHtml" />
-        <activity android:name=".web.JsCallAndroid" />
-        <activity android:name=".web.CallWebService" />
-        <activity android:name=".web.WebView1" />
+        <activity android:name=".web.WebList"/>
+        <activity android:name=".web.SimpleClient"/>
+        <activity android:name=".web.MultiThreadClient"/>
+        <activity android:name=".web.URL1"/>
+        <activity android:name=".web.GetPost"/>
+        <activity android:name=".web.MultiThreadDown"/>
+        <activity android:name=".web.HttpClient1"/>
+        <activity android:name=".web.MiniBrowser"/>
+        <activity android:name=".web.ViewHtml"/>
+        <activity android:name=".web.JsCallAndroid"/>
+        <activity android:name=".web.CallWebService"/>
+        <activity android:name=".web.WebView1"/>
 
-        <activity android:name=".phone.PhoneList" />
-        <activity android:name=".phone.TelephonyStatus" />
-        <activity android:name=".phone.MonitorPhone" />
-        <activity android:name=".phone.BlockList" />
-        <activity android:name=".phone.SendSms" />
-        <activity android:name=".phone.GroupSend" />
-        <activity android:name=".phone.MonitorSms" />
+        <activity android:name=".phone.PhoneList"/>
+        <activity android:name=".phone.TelephonyStatus"/>
+        <activity android:name=".phone.MonitorPhone"/>
+        <activity android:name=".phone.BlockList"/>
+        <activity android:name=".phone.SendSms"/>
+        <activity android:name=".phone.GroupSend"/>
+        <activity android:name=".phone.MonitorSms"/>
 
         <receiver android:name=".phone.SmsReceiver">
             <intent-filter android:priority="1000">
-                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
             </intent-filter>
         </receiver>
 
-        <activity android:name=".desktop.DesktopList" />
-        <activity android:name=".desktop.LiveWallPaperHelp" />
+        <activity android:name=".desktop.DesktopList"/>
+        <activity android:name=".desktop.LiveWallPaperHelp"/>
         <!-- 配置动态壁纸Service -->
         <service
             android:name=".desktop.LiveWallPaper"
@@ -490,17 +491,17 @@
             android:permission="android.permission.BIND_WALLPAPER">
             <!-- 为动态壁纸配置intent-filter -->
             <intent-filter>
-                <action android:name="android.service.wallpaper.WallpaperService" />
+                <action android:name="android.service.wallpaper.WallpaperService"/>
             </intent-filter>
             <!-- 为动态壁纸配置meta-data -->
             <meta-data
                 android:name="android.service.wallpaper"
-                android:resource="@xml/desktop_livewallpaper" />
+                android:resource="@xml/desktop_livewallpaper"/>
         </service>
 
         <activity android:name=".desktop.AddShortcut">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"/>
             </intent-filter>
         </activity>
 
@@ -509,35 +510,35 @@
             android:label="@string/app_name">
             <!-- 将该BroadcastReceiver当成桌面控件 -->
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
             </intent-filter>
             <!-- 指定桌面控件的meta-data -->
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/desktop_desktopapp" />
+                android:resource="@xml/desktop_desktopapp"/>
         </receiver>
         <receiver
             android:name=".desktop.LedClock"
             android:label="@string/app_name">
             <!-- 将该BroadcastReceiver当成桌面控件 -->
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
             </intent-filter>
             <!-- 指定桌面控件的meta-data -->
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/desktop_ledclock" />
+                android:resource="@xml/desktop_ledclock"/>
         </receiver>
         <!-- 配置AppWidgetProvider，即配置桌面控件 -->
         <receiver android:name=".desktop.AppWidgetCollection">
             <!-- 通过该intent-filter指定该Receiver作为桌面控件 -->
             <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
             </intent-filter>
             <!-- 为桌面控件指定meta-data -->
             <meta-data
                 android:name="android.appwidget.provider"
-                android:resource="@xml/desktop_appwidgetcollection" />
+                android:resource="@xml/desktop_appwidgetcollection"/>
         </receiver>
         <!-- 配置RemoteViewsService
         必须指定权限为android.permission.BIND_REMOTEVIEWS
@@ -545,30 +546,44 @@
         <service
             android:name=".desktop.AppWidgetCollectionService"
             android:exported="false"
-            android:permission="android.permission.BIND_REMOTEVIEWS" />
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
 
-        <activity android:name=".diy.DIYList" />
-        <activity android:name=".diy.DiyToast" />
+        <activity android:name=".diy.DIYList"/>
+        <activity android:name=".diy.DiyToast"/>
 
-        <service android:name=".diy.DiyToastService" />
+        <service android:name=".diy.DiyToastService"/>
 
-        <activity android:name=".diy.Json2View" />
+        <activity android:name=".diy.Json2View"/>
+        <activity android:name=".diy.UMengNotification"/>
 
-        <activity android:name=".map.MapList" />
-        <activity android:name=".map.AMap1" />
-        <activity android:name=".map.LocationMap" />
-        <activity android:name=".map.Geocoder1" />
-        <activity android:name=".map.AddrLocMap" />
-        <activity android:name=".map.Navigation" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="58e2417cb27b0a379f0012aa">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="a5ead538568bc77d740d8b9af8469ba5">
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="Channel ID">
+        </meta-data>
 
-        <activity android:name=".game.GameList" />
+        <activity android:name=".map.MapList"/>
+        <activity android:name=".map.AMap1"/>
+        <activity android:name=".map.LocationMap"/>
+        <activity android:name=".map.Geocoder1"/>
+        <activity android:name=".map.AddrLocMap"/>
+        <activity android:name=".map.Navigation"/>
+
+        <activity android:name=".game.GameList"/>
         <activity
             android:name=".game.metalslug.MetalSlug"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:keepScreenOn="true"
             android:screenOrientation="landscape"
-            android:windowSoftInputMode="adjustPan" />
-        <activity android:name=".game.game2048.Game2048" />
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".game.game2048.Game2048"/>
     </application>
 
 </manifest>
