@@ -555,6 +555,7 @@
 
         <activity android:name=".diy.Json2View"/>
         <activity android:name=".diy.UMengNotification"/>
+        <activity android:name=".diy.NavigationChangeSize"/>
 
         <meta-data
             android:name="UMENG_APPKEY"

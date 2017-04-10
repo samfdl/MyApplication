@@ -39,6 +39,9 @@ public class DIYList extends AppCompatActivity {
                     case 2:
                         intent = new Intent(DIYList.this, UMengNotification.class);
                         break;
+                    case 3:
+                        intent = new Intent(DIYList.this, NavigationChangeSize.class);
+                        break;
                     default:
                         intent = new Intent(DIYList.this, DiyToast.class);
                 }
