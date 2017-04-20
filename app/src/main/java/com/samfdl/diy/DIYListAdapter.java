@@ -76,6 +76,7 @@ public class DIYListAdapter extends BaseAdapter {
         listItem.add("任意文件夹读取layout布局文件 Json2View");
         listItem.add("友盟消息推送");
         listItem.add("导航栏变大变小变漂亮");
+        listItem.add("科大讯飞 语音转文字");
         return listItem;
     }
 }

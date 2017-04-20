@@ -3,6 +3,7 @@ package com.samfdl;
 import android.app.Application;
 import android.util.Log;
 
+import com.iflytek.cloud.SpeechUtility;
 import com.umeng.message.IUmengRegisterCallback;
 import com.umeng.message.PushAgent;
 
@@ -28,5 +29,7 @@ public class MyApplication extends Application {
             public void onFailure(String s, String s1) {
             }
         });
+
+        SpeechUtility.createUtility(this, "appid=58eb1bc6");
     }
 }

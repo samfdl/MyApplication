@@ -555,7 +555,6 @@
 
         <activity android:name=".diy.Json2View"/>
         <activity android:name=".diy.UMengNotification"/>
-        <activity android:name=".diy.NavigationChangeSize"/>
 
         <meta-data
             android:name="UMENG_APPKEY"
@@ -569,6 +568,13 @@
             android:name="UMENG_CHANNEL"
             android:value="Channel ID">
         </meta-data>
+
+        <activity android:name=".diy.NavigationChangeSize"/>
+        <activity android:name=".diy.Sound2Text"/>
+        <!-- 移动统计分析 -->
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="'58eb1bc6'"/>
 
         <activity android:name=".map.MapList"/>
         <activity android:name=".map.AMap1"/>
