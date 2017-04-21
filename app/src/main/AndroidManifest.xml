@@ -576,6 +576,8 @@
             android:name="IFLYTEK_APPKEY"
             android:value="'58eb1bc6'"/>
 
+        <activity android:name=".diy.AudioRecord2Wav"/>
+
         <activity android:name=".map.MapList"/>
         <activity android:name=".map.AMap1"/>
         <activity android:name=".map.LocationMap"/>
