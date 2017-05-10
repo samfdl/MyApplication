@@ -577,6 +577,7 @@
             android:value="'58eb1bc6'"/>
 
         <activity android:name=".diy.AudioRecord2Wav"/>
+        <activity android:name=".diy.Chinese2Spell"/>
 
         <activity android:name=".map.MapList"/>
         <activity android:name=".map.AMap1"/>

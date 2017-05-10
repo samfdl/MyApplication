@@ -27,6 +27,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile(name: 'json2view', ext: 'aar')
     compile project(':PushSDK')
+    compile 'com.belerweb:pinyin4j:2.5.0'
 }
 
 repositories {

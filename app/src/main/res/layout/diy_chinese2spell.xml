@@ -1,0 +1,32 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="请输入要转换的汉字"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="汉字" />
+
+    <Button
+        android:id="@+id/bn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转换"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/pinyin"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:text="转换后的拼音"
+        android:textSize="20sp" />
+
+</LinearLayout>

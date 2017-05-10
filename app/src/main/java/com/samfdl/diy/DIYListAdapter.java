@@ -78,6 +78,7 @@ public class DIYListAdapter extends BaseAdapter {
         listItem.add("导航栏变大变小变漂亮");
         listItem.add("科大讯飞 语音转文字");
         listItem.add("AudioRecord 实现 wav 格式的音频录制");
+        listItem.add("汉字转拼音");
         return listItem;
     }
 }

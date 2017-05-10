@@ -48,6 +48,9 @@ public class DIYList extends AppCompatActivity {
                     case 5:
                         intent = new Intent(DIYList.this, AudioRecord2Wav.class);
                         break;
+                    case 6:
+                        intent = new Intent(DIYList.this, Chinese2Spell.class);
+                        break;
                     default:
                         intent = new Intent(DIYList.this, DiyToast.class);
                 }
