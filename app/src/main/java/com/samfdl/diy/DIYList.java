@@ -51,6 +51,9 @@ public class DIYList extends AppCompatActivity {
                     case 6:
                         intent = new Intent(DIYList.this, Chinese2Spell.class);
                         break;
+                    case 7:
+                        intent = new Intent(DIYList.this, GetVersion.class);
+                        break;
                     default:
                         intent = new Intent(DIYList.this, DiyToast.class);
                 }

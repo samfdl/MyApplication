@@ -173,4 +173,10 @@
     <string name="map_navigation_txtAddress">目标地</string>
     <string name="map_navigation_targetAddress">华南农业大学</string>
     <string name="map_navigation_nav">规划路线</string>
+
+    <string name="diy_please_choose">请点击下方选择你的操作</string>
+    <string name="diy_app_version">自身版本</string>
+    <string name="diy_sys_version">系统版本</string>
+    <string name="diy_get">"获取:"</string>
+    <string name="diy_error">"糟糕！获取版本失败"</string>
 </resources>

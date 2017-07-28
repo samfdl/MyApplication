@@ -578,6 +578,7 @@
 
         <activity android:name=".diy.AudioRecord2Wav"/>
         <activity android:name=".diy.Chinese2Spell"/>
+        <activity android:name=".diy.GetVersion" />
 
         <activity android:name=".map.MapList"/>
         <activity android:name=".map.AMap1"/>
