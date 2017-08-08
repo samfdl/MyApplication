@@ -83,6 +83,7 @@ public class ListViewAdapter extends BaseAdapter {
         listItem.add("Spinner");
         listItem.add("AdapterViewFlipper");
         listItem.add("StackView");
+        listItem.add("Multiple RecyclerView 显示不同的item");
         return listItem;
     }
 }

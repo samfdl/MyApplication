@@ -60,6 +60,9 @@ public class ListViewList extends AppCompatActivity {
                     case 10:
                         intent = new Intent(ListViewList.this, StackView1.class);
                         break;
+                    case 11:
+                        intent = new Intent(ListViewList.this, MultiRecyclerView.class);
+                        break;
                     default:
                         intent = new Intent(ListViewList.this, SimpleListView.class);
                 }

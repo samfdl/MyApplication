@@ -140,9 +140,10 @@
         <activity android:name=".ui.listview.ExpandableListView1"/>
         <activity android:name=".ui.listview.Spinner1"/>
         <activity android:name=".ui.listview.AdapterViewFlipper1"/>
-        <activity android:name=".ui.listview.StackView1"/>
-        <activity android:name=".ui.progressbar.ProgressBarList"/>
-        <activity android:name=".ui.progressbar.ProgressBar1"/>
+        <activity android:name=".ui.listview.StackView1" />
+        <activity android:name=".ui.listview.MultiRecyclerView" />
+        <activity android:name=".ui.progressbar.ProgressBarList" />
+        <activity android:name=".ui.progressbar.ProgressBar1" />
         <activity
             android:name=".ui.progressbar.TitleProgressBar"
             android:theme="@android:style/Theme.Holo"/>
