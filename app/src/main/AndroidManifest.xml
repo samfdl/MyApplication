@@ -596,6 +596,8 @@
             android:screenOrientation="landscape"
             android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".game.game2048.Game2048"/>
+
+        <activity android:name=".handler.HandlerList"/>
     </application>
 
 </manifest>

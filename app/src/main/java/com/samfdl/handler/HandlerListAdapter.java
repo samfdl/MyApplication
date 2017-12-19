@@ -1,4 +1,4 @@
-package com.samfdl;
+package com.samfdl.handler;
 
 import android.content.Context;
 import android.util.Log;
@@ -8,15 +8,17 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
+import com.samfdl.R;
+
 import java.util.ArrayList;
 
 /**
- * Created by samsung on 2016/8/24.
+ * Created by samfdl on 2017/12/19.
  */
-public class AllListAdapter extends BaseAdapter {
+public class HandlerListAdapter extends BaseAdapter {
     private LayoutInflater mInflater;//得到一个LayoutInfalter对象用来导入布局
 
-    public AllListAdapter(Context context) {
+    public HandlerListAdapter(Context context) {
         this.mInflater = LayoutInflater.from(context);
     }
 
@@ -70,24 +72,19 @@ public class AllListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("Activity 和 Fragment");
-        listItem.add("界面 UI 控件");
-        listItem.add("Service 后台进程");
-        listItem.add("事件处理 Event");
-        listItem.add("Intent 通信");
-        listItem.add("资源 Res");
-        listItem.add("数据存储");
-        listItem.add("图形和动画");
-        listItem.add("OpenGL");
-        listItem.add("多媒体");
-        listItem.add("硬件设备");
-        listItem.add("网络");
-        listItem.add("电话短信功能");
-        listItem.add("手机桌面");
-        listItem.add("自定义控件");
-        listItem.add("地图服务");
-        listItem.add("游戏");
-        listItem.add("Handler");
+        listItem.add("控制飞机移动");
+        listItem.add("跟随手指的小球");
+        listItem.add("获取系统设备状态");
+        listItem.add("监听屏幕方向");
+        listItem.add("自动播放动画");
+        listItem.add("线程计算质数");
+        listItem.add("异步任务下载");
+        listItem.add("手势监测");
+        listItem.add("手势缩放图片");
+        listItem.add("手势实现翻页");
+        listItem.add("添加手势");
+        listItem.add("手势识别");
+        listItem.add("自动朗读");
         return listItem;
     }
 }
