@@ -72,19 +72,11 @@ public class HandlerListAdapter extends BaseAdapter {
     private ArrayList<String> getData() {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
-        listItem.add("控制飞机移动");
+        listItem.add("Post Runnable");
         listItem.add("跟随手指的小球");
         listItem.add("获取系统设备状态");
         listItem.add("监听屏幕方向");
         listItem.add("自动播放动画");
-        listItem.add("线程计算质数");
-        listItem.add("异步任务下载");
-        listItem.add("手势监测");
-        listItem.add("手势缩放图片");
-        listItem.add("手势实现翻页");
-        listItem.add("添加手势");
-        listItem.add("手势识别");
-        listItem.add("自动朗读");
         return listItem;
     }
 }

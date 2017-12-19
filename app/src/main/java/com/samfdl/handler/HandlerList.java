@@ -33,13 +33,13 @@ public class HandlerList extends AppCompatActivity {
                 Intent intent;
                 switch (position) {
                     case 0:
-                        intent = new Intent(HandlerList.this, ControlPlane.class);
+                        intent = new Intent(HandlerList.this, PostRunnable.class);
                         break;
                     case 1:
                         intent = new Intent(HandlerList.this, Ball.class);
                         break;
                     default:
-                        intent = new Intent(HandlerList.this, ControlPlane.class);
+                        intent = new Intent(HandlerList.this, PostRunnable.class);
                 }
                 startActivity(intent);
             }
