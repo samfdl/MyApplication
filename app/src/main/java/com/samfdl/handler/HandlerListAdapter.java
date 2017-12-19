@@ -73,7 +73,8 @@ public class HandlerListAdapter extends BaseAdapter {
         /**为动态数组添加数据*/
         ArrayList<String> listItem = new ArrayList<>();
         listItem.add("Post Runnable");
-        listItem.add("PostDelayed");
+        listItem.add("Post Delayed");
+        listItem.add("Send Message");
         return listItem;
     }
 }

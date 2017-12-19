@@ -11,8 +11,6 @@ import android.widget.ListView;
 
 import com.samfdl.AllList;
 import com.samfdl.R;
-import com.samfdl.event.Ball;
-import com.samfdl.event.ControlPlane;
 
 public class HandlerList extends AppCompatActivity {
     private ListView lv;
@@ -37,6 +35,9 @@ public class HandlerList extends AppCompatActivity {
                         break;
                     case 1:
                         intent = new Intent(HandlerList.this, PostDelayed.class);
+                        break;
+                    case 2:
+                        intent = new Intent(HandlerList.this, SendMessage.class);
                         break;
                     default:
                         intent = new Intent(HandlerList.this, PostRunnable.class);
