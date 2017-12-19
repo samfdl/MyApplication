@@ -77,6 +77,8 @@ public class HandlerListAdapter extends BaseAdapter {
         listItem.add("Send Message");
         listItem.add("Remove CallBacks");
         listItem.add("Handle Message");
+        listItem.add("MyThread Handler");
+
         return listItem;
     }
 }

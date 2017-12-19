@@ -45,6 +45,9 @@ public class HandlerList extends AppCompatActivity {
                     case 4:
                         intent = new Intent(HandlerList.this, HandleMessage.class);
                         break;
+                    case 5:
+                        intent = new Intent(HandlerList.this, MyThreadHandler.class);
+                        break;
                     default:
                         intent = new Intent(HandlerList.this, PostRunnable.class);
                 }

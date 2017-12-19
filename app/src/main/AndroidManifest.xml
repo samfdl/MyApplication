@@ -600,6 +600,7 @@
         <activity android:name=".handler.SendMessage" />
         <activity android:name=".handler.RemoveCallBacks" />
         <activity android:name=".handler.HandleMessage" />
+        <activity android:name=".handler.MyThreadHandler" />
     </application>
 
 </manifest>
