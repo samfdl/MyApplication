@@ -76,6 +76,7 @@ public class HandlerListAdapter extends BaseAdapter {
         listItem.add("Post Delayed");
         listItem.add("Send Message");
         listItem.add("Remove CallBacks");
+        listItem.add("Handle Message");
         return listItem;
     }
 }

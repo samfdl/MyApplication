@@ -599,6 +599,7 @@
         <activity android:name=".handler.PostDelayed" />
         <activity android:name=".handler.SendMessage" />
         <activity android:name=".handler.RemoveCallBacks" />
+        <activity android:name=".handler.HandleMessage" />
     </application>
 
 </manifest>

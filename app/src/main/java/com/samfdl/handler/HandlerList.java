@@ -42,6 +42,9 @@ public class HandlerList extends AppCompatActivity {
                     case 3:
                         intent = new Intent(HandlerList.this, RemoveCallBacks.class);
                         break;
+                    case 4:
+                        intent = new Intent(HandlerList.this, HandleMessage.class);
+                        break;
                     default:
                         intent = new Intent(HandlerList.this, PostRunnable.class);
                 }
