@@ -36,7 +36,7 @@ public class HandlerList extends AppCompatActivity {
                         intent = new Intent(HandlerList.this, PostRunnable.class);
                         break;
                     case 1:
-                        intent = new Intent(HandlerList.this, Ball.class);
+                        intent = new Intent(HandlerList.this, PostDelayed.class);
                         break;
                     default:
                         intent = new Intent(HandlerList.this, PostRunnable.class);

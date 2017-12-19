@@ -596,6 +596,7 @@
 
         <activity android:name=".handler.HandlerList" />
         <activity android:name=".handler.PostRunnable" />
+        <activity android:name=".handler.PostDelayed" />
     </application>
 
 </manifest>
