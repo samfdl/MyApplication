@@ -3,16 +3,12 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/MyApplication.iml" filepath="$PROJECT_DIR$/.idea/MyApplication.iml" />
-      <module fileurl="file://E:\workspace\MyApplication\.idea\MyApplication.iml" filepath="E:\workspace\MyApplication\.idea\MyApplication.iml" />
       <module fileurl="file://C:\D\workspace\MyApplication\MyApplication.iml" filepath="C:\D\workspace\MyApplication\MyApplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/PushSDK/PushSDK.iml" filepath="$PROJECT_DIR$/PushSDK/PushSDK.iml" />
       <module fileurl="file://C:\D\workspace\MyApplication\PushSDK\PushSDK.iml" filepath="C:\D\workspace\MyApplication\PushSDK\PushSDK.iml" />
-      <module fileurl="file://E:\workspace\MyApplication\PushSDK\PushSDK.iml" filepath="E:\workspace\MyApplication\PushSDK\PushSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://C:\D\workspace\MyApplication\app\app.iml" filepath="C:\D\workspace\MyApplication\app\app.iml" />
-      <module fileurl="file://E:\workspace\MyApplication\app\app.iml" filepath="E:\workspace\MyApplication\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/mylibrary/mylibrary.iml" filepath="$PROJECT_DIR$/mylibrary/mylibrary.iml" />
-      <module fileurl="file://E:\workspace\MyApplication\mylibrary\mylibrary.iml" filepath="E:\workspace\MyApplication\mylibrary\mylibrary.iml" />
       <module fileurl="file://C:\D\workspace\MyApplication\mylibrary\mylibrary.iml" filepath="C:\D\workspace\MyApplication\mylibrary\mylibrary.iml" />
     </modules>
   </component>
