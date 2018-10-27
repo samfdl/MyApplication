@@ -13,8 +13,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:src="@drawable/res_i18n_logo" />
+        android:layout_height="wrap_content" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -24,12 +23,10 @@
         <!-- 两个按钮的文本都是通过消息资源指定的 -->
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/res_i18n_ok" />
+            android:layout_height="wrap_content" />
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/res_i18n_cancel" />
+            android:layout_height="wrap_content" />
     </LinearLayout>
 </LinearLayout>

@@ -20,7 +20,7 @@ public class I18N extends AppCompatActivity {
 
         tvShow = (TextView) findViewById(R.id.show);
         // 设置文本框所显示的文本
-        tvShow.setText(R.string.res_i18n_msg);
+//        tvShow.setText(R.string.res_i18n_msg);
     }
 
     @Override
