@@ -1,0 +1,299 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.umeng.message.lib"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="11"
+8-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:8:5-67
+11-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:8:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:9:5-79
+12-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:9:22-76
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:10:5-76
+13-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:10:22-73
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:11:5-81
+14-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:11:22-78
+15    <uses-permission android:name="android.permission.WAKE_LOCK" />
+15-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:12:5-68
+15-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:12:22-65
+16    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+16-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:13:5-75
+16-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:13:22-72
+17    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_ADDED" />
+17-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:14:5-82
+17-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:14:22-79
+18    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+18-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:15:5-84
+18-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:15:22-81
+19    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_INSTALL" />
+19-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:16:5-84
+19-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:16:22-81
+20    <uses-permission android:name="android.permission.BROADCAST_PACKAGE_REPLACED" />
+20-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:17:5-85
+20-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:17:22-82
+21    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+21-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:18:5-75
+21-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:18:22-72
+22    <uses-permission android:name="android.permission.GET_TASKS" />
+22-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:19:5-68
+22-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:19:22-65
+23    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+23-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:20:5-81
+23-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:20:22-78
+24    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+24-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:21:5-79
+24-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:21:22-76
+25    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+25-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:22:5-76
+25-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:22:22-73
+26
+27    <application>
+27-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:24:5-159:19
+28        <service
+28-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:26:9-36:19
+29            android:name="com.taobao.accs.ChannelService"
+29-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:27:13-58
+30            android:exported="true"
+30-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:28:13-36
+31            android:process=":channel" >
+31-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:29:13-39
+32            <intent-filter>
+32-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:30:13-32:29
+33                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+33-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:31:17-80
+33-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:31:25-77
+34            </intent-filter>
+35            <intent-filter>
+35-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:33:13-35:29
+36                <action android:name="com.taobao.accs.intent.action.ELECTION" />
+36-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:34:17-81
+36-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:34:25-78
+37            </intent-filter>
+38        </service>
+39        <service
+39-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:38:9-44:19
+40            android:name="com.taobao.accs.data.MsgDistributeService"
+40-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:39:13-69
+41            android:exported="true" >
+41-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:40:13-36
+42            <intent-filter>
+42-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:41:13-43:29
+43                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+43-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:42:17-80
+43-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:42:25-77
+44            </intent-filter>
+45        </service>
+46
+47        <receiver
+47-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:46:9-62:20
+48            android:name="com.taobao.accs.EventReceiver"
+48-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:47:13-57
+49            android:process=":channel" >
+49-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:48:13-39
+50            <intent-filter>
+50-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:49:13-51:29
+51                <action android:name="android.intent.action.BOOT_COMPLETED" />
+51-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:50:17-79
+51-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:50:25-76
+52            </intent-filter>
+53            <intent-filter>
+53-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:52:13-54:29
+54                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+54-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:53:17-79
+54-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:53:25-76
+55            </intent-filter>
+56            <intent-filter>
+56-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:55:13-58:29
+57                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+57-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:56:17-80
+57-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:56:25-77
+58
+59                <data android:scheme="package" />
+59-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:57:17-50
+59-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:57:23-47
+60            </intent-filter>
+61            <intent-filter>
+61-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:59:13-61:29
+62                <action android:name="android.intent.action.USER_PRESENT" />
+62-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:60:17-77
+62-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:60:25-74
+63            </intent-filter>
+64        </receiver>
+65        <receiver
+65-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:64:9-73:20
+66            android:name="com.taobao.accs.ServiceReceiver"
+66-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:65:13-59
+67            android:process=":channel" >
+67-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:66:13-39
+68            <intent-filter>
+68-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:67:13-69:29
+69                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+69-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:68:17-80
+69-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:68:25-77
+70            </intent-filter>
+71            <intent-filter>
+71-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:70:13-72:29
+72                <action android:name="com.taobao.accs.intent.action.START_FROM_AGOO" />
+72-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:71:17-88
+72-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:71:25-85
+73            </intent-filter>
+74        </receiver>
+75
+76        <service
+76-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:75:9-77:42
+77            android:name="com.taobao.accs.ChannelService$KernelService"
+77-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:76:13-72
+78            android:process=":channel" />
+78-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:77:13-39
+79        <service
+79-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:79:9-85:19
+80            android:name="org.android.agoo.accs.AgooService"
+80-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:80:13-61
+81            android:exported="true" >
+81-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:81:13-36
+82            <intent-filter>
+82-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:41:13-43:29
+83                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+83-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:42:17-80
+83-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:42:25-77
+84            </intent-filter>
+85        </service>
+86        <service
+86-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:87:9-94:19
+87            android:name="com.umeng.message.UmengIntentService"
+87-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:88:13-64
+88            android:exported="true"
+88-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:89:13-36
+89            android:process=":channel" >
+89-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:90:13-39
+90            <intent-filter>
+90-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:91:13-93:29
+91                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+91-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:92:17-81
+91-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:92:25-78
+92            </intent-filter>
+93        </service>
+94        <service
+94-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:96:9-103:19
+95            android:name="com.umeng.message.XiaomiIntentService"
+95-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:97:13-65
+96            android:exported="true"
+96-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:98:13-36
+97            android:process=":channel" >
+97-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:99:13-39
+98            <intent-filter>
+98-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:91:13-93:29
+99                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+99-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:92:17-81
+99-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:92:25-78
+100            </intent-filter>
+101        </service>
+102
+103        <receiver
+103-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:105:9-116:20
+104            android:name="com.taobao.agoo.AgooCommondReceiver"
+104-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:106:13-63
+105            android:exported="true"
+105-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:107:13-36
+106            android:process=":channel" >
+106-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:108:13-39
+107            <intent-filter>
+108                <action android:name="dollar_openBracket_applicationId_closeBracket.intent.action.COMMAND" />
+109            </intent-filter>
+110            <intent-filter>
+110-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:55:13-58:29
+111                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+111-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:56:17-80
+111-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:56:25-77
+112
+113                <data android:scheme="package" />
+113-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:57:17-50
+113-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:57:23-47
+114            </intent-filter>
+115        </receiver>
+116
+117        <service
+117-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:118:9-125:19
+118            android:name="com.umeng.message.UmengMessageIntentReceiverService"
+118-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:119:13-79
+119            android:exported="true"
+119-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:120:13-36
+120            android:process=":channel" >
+120-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:121:13-39
+121            <intent-filter>
+121-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:122:13-124:29
+122                <action android:name="org.android.agoo.client.MessageReceiverService" />
+122-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:123:17-89
+122-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:123:25-86
+123            </intent-filter>
+124        </service>
+125
+126        <receiver
+126-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:127:9-129:40
+127            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+127-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:128:13-80
+128            android:exported="false" />
+128-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:129:13-37
+129
+130        <service
+130-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:131:9-146:19
+131            android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+131-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:132:13-80
+132            android:exported="false" >
+132-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:133:13-37
+133            <intent-filter>
+133-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:134:13-136:29
+134                <action android:name="com.umeng.messge.registercallback.action" />
+134-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:135:17-83
+134-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:135:25-80
+135            </intent-filter>
+136            <intent-filter>
+136-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:137:13-139:29
+137                <action android:name="com.umeng.message.enablecallback.action" />
+137-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:138:17-82
+137-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:138:25-79
+138            </intent-filter>
+139            <intent-filter>
+139-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:140:13-142:29
+140                <action android:name="com.umeng.message.disablecallback.action" />
+140-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:141:17-83
+140-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:141:25-80
+141            </intent-filter>
+142            <intent-filter>
+142-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:143:13-145:29
+143                <action android:name="com.umeng.message.message.handler.action" />
+143-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:144:17-83
+143-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:144:25-80
+144            </intent-filter>
+145        </service>
+146        <service
+146-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:148:9-150:40
+147            android:name="com.umeng.message.UmengDownloadResourceService"
+147-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:149:13-74
+148            android:exported="false" />
+148-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:150:13-37
+149
+150        <provider
+150-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:152:9-157:20
+151            android:name="com.umeng.message.provider.MessageProvider"
+151-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:153:13-70
+152            android:authorities="dollar_openBracket_applicationId_closeBracket.umeng.message"
+152-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:154:13-65
+153            android:exported="false" >
+153-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:155:13-37
+154            <grant-uri-permission android:pathPattern=".*" />
+154-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:156:13-62
+154-->D:\AndroidStudioProjects\MyApplication\PushSDK\AndroidManifest.xml:156:35-59
+155        </provider>
+156    </application>
+157
+158</manifest>
